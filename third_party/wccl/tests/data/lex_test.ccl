@@ -1,0 +1,32 @@
+wholeWccl=indecl.wccl
+sentence=t01.xml
+tagset=nkjp
+---
+[]
+
+["verb1"]
+---
+[]
+
+["adv"]
+---
+[]
+
+["part", "part2"]
+---
+[]
+
+[]
+---
+[]
+
+["part", "part2"]
+---
+[]
+
+["part", "part2", "prep"]
+---
+[]
+
+["adv", "part", "part2"]
+---

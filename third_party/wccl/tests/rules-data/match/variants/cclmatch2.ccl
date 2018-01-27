@@ -1,0 +1,20 @@
+match_rules(
+apply(
+  match(
+    oneof(
+      variant(
+        inter(class[0], {adj})
+      ),
+      variant(
+        inter(class[0], {noun}),
+        inter(class[0], {verb})
+      ),
+      variant(
+        is("B")
+      )
+    )
+  ),
+  actions(mark(M, "C"))
+)
+
+)

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cesAna SYSTEM "xcesAnaIPI.dtd">
+<cesAna xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" type="lex disamb">
+<chunkList>
+ <chunk>
+  <chunk type="s">
+   <tok>
+    <orth>Duże</orth>
+    <lex><base>duży</base><ctag>adj:pl:acc:f:pos</ctag></lex>
+    <lex><base>duży</base><ctag>adj:pl:acc:m2:pos</ctag></lex>
+    <lex><base>duży</base><ctag>adj:pl:acc:m3:pos</ctag></lex>
+    <lex><base>duży</base><ctag>adj:pl:acc:n:pos</ctag></lex>
+    <lex><base>duży</base><ctag>adj:pl:nom:f:pos</ctag></lex>
+    <lex><base>duży</base><ctag>adj:pl:nom:m2:pos</ctag></lex>
+    <lex><base>duży</base><ctag>adj:pl:nom:m3:pos</ctag></lex>
+    <lex><base>duży</base><ctag>adj:pl:nom:n:pos</ctag></lex>
+    <lex><base>duży</base><ctag>adj:pl:voc:f:pos</ctag></lex>
+    <lex><base>duży</base><ctag>adj:pl:voc:m2:pos</ctag></lex>
+    <lex><base>duży</base><ctag>adj:pl:voc:m3:pos</ctag></lex>
+    <lex><base>duży</base><ctag>adj:pl:voc:n:pos</ctag></lex>
+    <lex><base>duży</base><ctag>adj:sg:acc:n:pos</ctag></lex>
+    <lex><base>duży</base><ctag>adj:sg:nom:n:pos</ctag></lex>
+    <lex><base>duży</base><ctag>adj:sg:voc:n:pos</ctag></lex>
+   </tok>
+   <tok>
+    <orth>psy</orth>
+    <lex><base>pies</base><ctag>subst:pl:acc:m2</ctag></lex>
+    <lex><base>pies</base><ctag>subst:pl:nom:m2</ctag></lex>
+    <lex><base>pies</base><ctag>subst:pl:voc:m2</ctag></lex>
+   </tok>
+   <tok>
+    <orth>i</orth>
+    <lex><base>i</base><ctag>conj</ctag></lex>
+   </tok>
+   <tok>
+    <orth>koty</orth>
+    <lex><base>koty</base><ctag>subst:pl:acc:n</ctag></lex>
+    <lex><base>koty</base><ctag>subst:pl:nom:n</ctag></lex>
+    <lex><base>koty</base><ctag>subst:pl:voc:n</ctag></lex>
+   </tok>
+  </chunk>
+ </chunk>
+</chunkList>
+</cesAna>

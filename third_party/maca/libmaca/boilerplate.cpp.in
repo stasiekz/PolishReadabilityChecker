@@ -1,0 +1,5 @@
+#include <libmaca/$LN.h>
+
+namespace Maca {
+
+} /* end ns Maca */

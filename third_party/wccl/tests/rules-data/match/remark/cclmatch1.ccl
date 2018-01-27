@@ -1,0 +1,25 @@
+match_rules(
+  apply(
+    match(
+      is("P"),
+      inter(class[0], adj)
+    ),
+    actions(
+      remark( M, "P" )
+    )
+  ) ;
+
+
+  apply(
+    match(
+      inter(base[0], ["zachodni"]),
+      inter(base[0], ["z"]),
+      inter(base[0], ["dzielnica"]),
+      inter(base[0], ["turecki"])
+    ),
+    actions(
+      remark( M, "AdjN" )
+    )
+  )
+
+)

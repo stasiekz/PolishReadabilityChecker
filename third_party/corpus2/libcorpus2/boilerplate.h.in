@@ -1,0 +1,8 @@
+#ifndef LIBSORPUS2_$UN_H
+#define LIBCORPUS2_$UN_H
+
+namespace Corpus2 {
+
+} /* end ns Corpus2 */
+
+#endif // LIBCORPUS2_$UN_H

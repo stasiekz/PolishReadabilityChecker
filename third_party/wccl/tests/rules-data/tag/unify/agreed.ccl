@@ -1,0 +1,9 @@
+tag_rules(
+	rule("unify3-case",
+		not(
+			equal(cas[0], {}),
+			equal(cas[2], {})
+		),
+		unify(0, 2, {nmb, gnd, cas})
+	)
+)

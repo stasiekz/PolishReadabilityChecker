@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<units_description tagset='kipi'>
+<mwegroup name="SubstAdjSgFlex" type="flex" class="subst">
+                <condition>
+                        or(
+                                and(
+                                        inter(base[1],$s:Adj),
+                                        inter(base[0],$s:Subst),
+                                        setvar($Pos1, 1),
+                                        setvar($Pos2, 0),
+                                        inter(class[1],{adj}),
+                                        equal(nmb[0], {sg}),
+                                        in(class[0],{subst,ger,depr}),
+                                        agrpp(0,1,{nmb,gnd,cas})
+                                ),//and
+                                and(
+                                        inter(base[0],$s:Adj),
+                                        inter(base[1],$s:Subst),
+                                        setvar($Pos1, 0),
+                                        setvar($Pos2, 1),
+                                        inter(class[0],{adj}),
+                                        equal(nmb[1],{sg}),
+                                        in(class[1],{subst,ger,depr}),
+                                        agrpp(0,1,{nmb,gnd,cas})
+                                )
+                        )//or
+                </condition>
+                <instances>
+                        <MWE base="dzień dobry">
+                                <var name="Subst">dzień</var>
+                                <var name="Adj">dobry</var>
+                                <head>in(class[0],{subst,ger,depr})</head>
+                        </MWE>
+		</instances>
+        </mwegroup>
+</units_description>

@@ -1,0 +1,233 @@
+/**
+* @mainpage WCRFT
+* <div class="wiki wiki-page">
+	<p><strong>WCRFT</strong> (Wrocław CRF Tagger) is a simple morpho-syntactic tagger for Polish producing state-of-the-art results.</p>
+
+
+	<p>The tagger combines tiered tagging, conditional random fields (CRF) and features tailored for inflective languages written in <a href="http://nlp.pwr.wroc.pl/redmine/projects/joskipi/wiki" class="external">WCCL</a>. The algorithm and code are inspired by <a href="http://nlp.pwr.wroc.pl/redmine/projects/wmbt/wiki" title="WMBT" class="external">Wrocław Memory-Based Tagger</a>.</p>
+
+
+	<p>WCRFT uses <a href="http://crfpp.googlecode.com/svn/trunk/doc/index.html" class="external">CRF++</a> API as the underlying CRF implementation.</p>
+
+
+	<p>Tiered tagging is assumed. Grammatical class is disambiguated first, then subsequent attributes (as defined in a config file) are taken care of. Each attribute is treated with a separate CRF and  may be supplied a different set of feature templates.</p>
+
+
+	<p>For details of the underlying algorithms, as well as tagger evaluation, please refer to the following paper (<a href="http://nlp.pwr.wroc.pl/ltg/files/publications/wcrft.pdf" class="external">draft in PDF</a>):<br/><pre>
+\@incollection{wcrft,
+title  = "A tiered {CRF} tagger for {P}olish",
+author = "Radziszewski, Adam",
+pages  = "to appear",
+year = "2013",
+booktitle = "Intelligent Tools for Building a Scientific Information Platform:  Advanced Architectures and Solutions",
+editor = "R. Bembenik, {\L}. Skonieczny, H. Rybi\'{n}ski, M. Kryszkiewicz, M. Niezg{\'o}dka",
+publisher = "Springer Verlag" 
+}
+</pre></p>
+
+
+	<p>WCRFT is licensed under <strong>GNU LGPL v3.0</strong>.</p>
+
+
+	<p>The sources may be obtained from our Git repository:</p>
+
+
+	<pre>
+		git clone http://nlp.pwr.wroc.pl/wcrft.git
+	</pre>
+
+
+<h1>Installation</h1>
+
+
+WCRFT requires the following dependencies:
+	<ul>
+		<li><a href="http://crfpp.googlecode.com/svn/trunk/doc/index.html" class="external">CRF++</a></li>
+		<li><a href="http://nlp.pwr.wroc.pl/redmine/projects/corpus2/wiki" class="external">Corpus2</a> library</li>
+		<li><a href="http://nlp.pwr.wroc.pl/redmine/projects/libpltagger/wiki" class="external">MACA</a> package(for morphological analysis of plain text)</li>
+		<li><a href="http://sgjp.pl/morfeusz/index.html" class="external">Morfeusz SGJP</a> (please install it before installing MACA so that Morfeusz plugin is also built)</li>
+		<li><a href="http://nlp.pwr.wroc.pl/redmine/projects/joskipi/wiki" class="external">WCCL</a></li>
+	</ul>
+
+
+	<p>If all the dependencies are installed correctly, WCRFT installation is simple:<br/><pre>
+$ mkdir bin
+$ cd bin
+$ cmake ..
+$ make
+$ sudo make install
+</pre></p>
+
+
+<h1>Usage</h1>
+
+
+	<p>For typical usage scenarios please refer to this <a href="/redmine/projects/wcrft/wiki/User_guide" class="wiki-page">User_guide</a>. It assumes that you are interested in using the default configuration (nkjp_e2.ini or nkjp_s2.ini) and one of the default trained tagger models (trained on <a href="http://nkjp.pl/index.php?page=0&#38;lang=1" class="external">NKJP</a>).</p>
+
+
+	<p>WCRFT is highly configurable and may be used in various ways. Below we give some more detailed information on WCRFT directories where data is sought and tagger training.</p>
+
+
+<h2>Configurations and trained models</h2>
+
+
+	<p>WCRFT's behaviour is defined by a config file (ini). The file specifies which attributes are disambiguated (tagging tiers) and in which order. It also provides features and configuration for CRF++ classifiers.<br/>To tag text you also need a <strong>trained model</strong>. Trained model is a collection of statistical data gathered from a training corpus. Each trained model is tied to a config file at may only work with it (although there may be many models working with one config file, e.g. trained on the whole corpus and on a small part of it).</p>
+
+
+The software package comes with two configurations for tagging Polish using NKJP tagset:
+	<ul>
+		<li><code>nkjp_e2.ini</code>: faster, consumes little memory and works out-of-the-box but mispredicts tags ~5% more often than the one below;</li>
+		<li><code>nkjp_s2.ini</code>: previous default; more accurate but requires downloading of a large model and works slower.</li>
+	</ul>
+
+
+	<p>The model for <code>nkjp_e2.ini</code> config is small and hence included in the source distribution. If WCRFT is installed, you don't need to specify the location of the model, e.g.:<br/><pre>
+wcrft-app nkjp_e2.ini -i txt my_docs/input.txt -O my_docs/tagged.xml
+</pre></p>
+
+
+<h3>Large model for more accurate tagging</h3>
+
+
+	<p>To obtain higher accuracy please use <code>nkjp_s2.ini</code> configuration and a model trained using this configuration. The differences in accuracy values may be found on <a href="/redmine/projects/wcrft/wiki/Evaluation" class="wiki-page">Evaluation</a> page.</p>
+
+
+	<p>This model has been trained on the 1-million subcorpus of <a href="http://nkjp.pl/" class="external">the NKJP</a> (1.0) and is available for download <a href="http://156.17.134.43/share/wcrft/model_nkjp10_wcrft_s2.7z" class="external">here</a> (<strong>436 MB</strong>; to be unpacked and used with the <code>nkjp_s2.ini</code> config and <code>morfeusz-nkjp-official</code> MACA configuration). Note that the original subcorpus is licensed under GNU GPL 3.0 (download from <a href="http://clip.ipipan.waw.pl/LRT" class="external">here</a>).</p>
+
+
+	<p>Example usage:<br/><pre>
+wcrft-app nkjp_s2.ini -d downloaded_wcrft_models/model_nkjp10_wcrft_s2/ -i txt my_docs/input.txt -O my_docs/tagged.xml
+</pre></p>
+
+
+<h3>Where WCRFT looks for configs and models</h3>
+
+
+WCRFT resolves relative paths of config files and model directory in given order:
+	<ol>
+		<li>current working directory</li>
+		<li>data installation directory</li>
+	</ol>
+
+
+By default WCRFT library is installed under user applications directory:
+	<table>
+		<tr>
+			<th>Platform</th>
+			<th>Standard installation location</th>
+			<th>Standard data installation location</th>
+			<th>Default value</th>
+		</tr>
+		<tr>
+			<td>Unix</td>
+			<td>prefix/lib/libwcrft</td>
+			<td>prefix/share/wcrft</td>
+			<td>/usr/local/lib/libwcrft</td>
+		</tr>
+		<!--<tr> Do we need this? Where do CMake installs them?
+			<td>Unix (non-pure) </td>
+			<td>exec-prefix/lib/pythonX.Y/dist-packages </td>
+			<td>/usr/local/lib/pythonX.Y/dist-packages</td>
+		</tr>
+		<tr>
+			<td>Windows</td>
+			<td>prefix\Lib\dist-packages</td>
+			<td>C:\PythonXY\Lib\dist-packages</td>
+		</tr>-->
+	</table>
+
+
+	<p>In the data installation location you can find two directories for config files and model files:<br/><pre>
+prefix/share/wcrft/config
+prefix/share/wcrft/model
+</pre></p>
+
+	<p>If you wish to be able to run WCRFT without having to specify full path to tagger model, just place the model subdir into the installation site wcrft/model directory (e.g. /usr/local/share/wcrft/model). This also allows all system users to use the same model.</p>
+
+	<p>If used with no model directory WCRFT defaults to installation directory. You can link  your model files into prefix/share/wcrft/model (or copy - <strong>linking is recommended</strong>) and then you can call WCRFT from any directory as:<br/><pre>
+wcrft-app nkjp_s2.ini input.xml -O tagged.xml
+	</pre><br/>Or with path to model:<br/><pre>
+		wcrft-app -d path/to/nkjp_model  nkjp_s2.ini input.xml -O tagged.xml
+	</pre></p>
+
+
+<h2>Tagging plain text</h2>
+
+	<p>WCRFT can tag plain text if used with option: <code>-i text</code> (or <code>-i txt</code>). Then WCRFT uses MACA analyser to perform morphological analysis (details on MACA can be found <a href="http://nlp.pwr.wroc.pl/redmine/projects/libpltagger/wiki" class="external">here</a>)</p>
+
+	<pre>
+		wcrft-app -d model_nkjp10_wcrft_s2/ nkjp_s2.ini -i text plain.txt -O morph-tagged.xml
+		</pre>
+
+	<p>MACA configuration is provided to WCRFT within .ini config file (option: macacfg in section general). It can be overriden on command line with option -c.</p>
+
+
+	<p>Using MACA configuration described in config/nkjp.ini file:<br/><pre>
+wcrft-app -d model_nkjp10_wcrft_s2/ nkjp_s2.ini -i text plain.txt -O morph-tagged.xml
+</pre></p>
+
+
+	<p>Using MACA configuration specified on the command line:<br/><pre>
+wcrft-app -d model_nkjp10_wcrft_s2/ nkjp_s2.ini -i text plain.txt -O morph-tagged.xml -c morfeusz-nkjp-guesser
+</pre></p>
+
+
+	<p>Note: WCRFT is also able to tag simple XML files containing division of text into paragraphs (XCES/premorph or similar).</p>
+
+
+In general there are two MACA configurations that may be used with <code>nkjp_s2.ini</code> config:
+	<ol>
+	<li><code>morfeusz-nkjp-official</code>, using <a href="http://sgjp.pl/morfeusz/" class="external">Morfeusz SGJP</a> (<strong>recommended</strong>)</li>
+		<li><code>morfeusz-nkjp-official-guesser</code>, as above, but also using tag guesser from TaKIPI (requires both the Morfeusz SGJP and Corpus1 library from the <a href="http://nlp.pwr.wroc.pl/trac/takipi" class="external">TaKIPI repository</a>)</li>
+	</ol>
+
+
+	<p>The configuration with guesser will probably produce better lemmatisation of input as Corpus1 guesser is able to guess lemmas (WCRFT has built-in simple tag guessing algorithm but it does not attept to guess lemmas).</p>
+
+
+	<p>Note: the guesser is licensed under GNU GPL. To use it with MACA you have to compile MACA with guesser support, which renders all the code to be licensed under GNU GPL (MACA without the GPL plugins has dual licensing: GNU LGPL or GNU GPL).</p>
+
+
+	<p>Maca and WCRFT are built upon the same Corpus2 library, hence they support the same set of corpus formats.</p>
+
+
+<h2>Tagging morphologically analysed corpora</h2>
+
+
+	<p>If you have a corpus that has already been morphologically analysed (e.g. using Maca and Morfeusz SGJP), you can pass it directly to WCRFT. WCRFT supports a range of input formats, including XCES (<code>-i xces</code>) and <a href="http://nlp.pwr.wroc.pl/redmine/projects/corpus2/wiki/CCL_format" class="external">CCL format</a> (<code>-i ccl</code>). Note: using CCL format makes it possible to tag files that also have shallow annotation (e.g. syntactic chunks, proper names) -- this information will be kept intact in tagger output.</p>
+
+
+	<p>Batch mode and stream processing are also supported, see -h for details.</p>
+
+
+	<p>WCRFT supports a range of input and output formats (thanks to <a href="http://nlp.pwr.wroc.pl/redmine/projects/libpltagger/wiki" class="external">corpus2</a>), see <code>-i</code> and <code>-o</code> options. The default is to read and write XCES XML.</p>
+
+
+	<p><strong>NOTE</strong>: By default, the reads sentences only, discarding paragraphs (non-s ‘chunks’ in XCES XML format). When the input is divided into paragraphs, use -C to preserve them in output. Note that if the input is not divided into paragraphs, this may cause the whole input to be loaded into memory before tagging (it is possible that it will be treated as one huge paragraph).</p>
+
+
+	<p><strong>NOTE 2</strong>: By default WCRFT outputs the chosen interpretations only (‘disamb lexemes’). To preserve whole ambiguity in output, use -A.</p>
+
+
+<h2>Training and evaluation</h2>
+
+
+	<p>To train the tagger, specify the configuration file (e.g. bundled <code>nkjp_s2.ini</code>) and a directory to store the model (<code>nkjp_model</code> in the example), e.g.</p>
+
+
+<pre>
+wcrft-app -d path/to/nkjp_model nkjp_s2.ini --train path/to/train_nkjp.xml -v
+</pre>
+
+	<p>NOTE: for best results, it is recommended to train the tagger having <em>reanalysed</em> the training data with the morphological analyser set-up that is going to be used when tagging real input. Here is <a href="/redmine/projects/wcrft/wiki/Training" class="wiki-page">the instruction</a>, please read carefully before training. This procedure has been used to generate the trained model that is distributed on this site.</p>
+
+
+	<p>For evaluation results as well as a detailed instruction on reproducing the published results, please consult <a href="/redmine/projects/wcrft/wiki/Evaluation" class="wiki-page">Evaluation</a> page.</p>
+
+
+<h1>Contact and bug reporting</h1>
+
+
+	<p>To report bugs and feature requests, <a href="http://nlp.pwr.wroc.pl/redmine/projects/corpus2/wiki/How_to_report_issues" class="external">use our bugtracker</a>.<br/>Comments and discussion also welcome, please contact the author (Adam Radziszewski, <code>name.surname</code> at <code>pwr.wroc.pl</code>).</p>
+</div>
+*/

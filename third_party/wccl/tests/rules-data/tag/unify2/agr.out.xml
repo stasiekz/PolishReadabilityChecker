@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cesAna SYSTEM "xcesAnaIPI.dtd">
+<cesAna xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" type="lex disamb">
+<chunkList>
+ <chunk>
+  <chunk type="s">
+   <tok>
+    <orth>nie</orth>
+    <lex><base>nie</base><ctag>qub</ctag></lex>
+    <lex><base>on</base><ctag>ppron3:sg:acc:n:ter:praep</ctag></lex>
+   </tok>
+   <tok>
+    <orth>czuję</orth>
+    <lex><base>czuć</base><ctag>fin:sg:pri:imperf</ctag></lex>
+   </tok>
+   <tok>
+    <orth>już</orth>
+    <lex><base>już</base><ctag>qub</ctag></lex>
+   </tok>
+   <tok>
+    <orth>całym</orth>
+   <lex><base>cały</base><ctag>adj:sg:inst:m1:pos</ctag></lex>
+    <lex><base>cały</base><ctag>adj:sg:inst:m2:pos</ctag></lex>
+    <lex><base>cały</base><ctag>adj:sg:inst:m3:pos</ctag></lex>
+    <lex><base>cały</base><ctag>adj:sg:inst:n:pos</ctag></lex>
+  </tok>
+   <tok>
+    <orth>sobą</orth>
+    <lex><base>się</base><ctag>siebie:inst</ctag></lex>
+   </tok>
+  </chunk>
+ </chunk>
+</chunkList>
+</cesAna>

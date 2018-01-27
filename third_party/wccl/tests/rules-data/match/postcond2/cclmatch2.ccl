@@ -1,0 +1,13 @@
+match_rules(
+apply(
+  match(
+    is("B")
+  ),
+  cond(
+    annsub(M, "A")
+  ),
+  actions(
+    mark(M, "C")
+  )
+)
+)

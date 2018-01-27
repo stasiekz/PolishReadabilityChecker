@@ -1,0 +1,14 @@
+match_rules(
+apply(
+  match(
+    optional(repeat(inter(class[0], {adj}))),
+    repeat(inter(class[0], {subst}))
+  ),
+  cond(
+    equal(orth[last(:2)], "zdania")
+  ),
+  actions(
+    mark(M, "NP")
+  )
+)
+)

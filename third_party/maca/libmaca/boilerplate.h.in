@@ -1,0 +1,8 @@
+#ifndef LIBMACA_$UN_H
+#define LIBMACA_$UN_H
+
+namespace Maca {
+
+} /* end ns Maca */
+
+#endif // LIBMACA_$UN_H

@@ -1,0 +1,120 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+import sys, os
+from xml.sax.saxutils import escape
+from optparse import OptionParser
+from collections import defaultdict as dd
+from itertools import repeat, izip
+import corpus2
+
+descr = """%prog [options] CORPUSFILES
+Reads corpus files and outputs everything.
+Available input formats: """ + ' '.join(corpus2.TokenReader.available_reader_types()) + """
+""" + ' '.join(corpus2.TokenReader.available_reader_types_help()) + """
+Available output formats: """ + ' '.join(corpus2.TokenWriter.available_writer_types()) + """
+""" + ' '.join(corpus2.TokenWriter.available_writer_types_help())
+
+
+def sentences(rdr):
+	"""Yields subsequent sentences from a reader."""
+	while True:
+		sent = rdr.get_next_sentence()
+		if not sent:
+			break
+		yield sent
+
+
+def chunks(rdr):
+	"""Yields subsequent sentences from a reader."""
+	while True:
+		chunk = rdr.get_next_chunk()
+		if not chunk:
+			break
+		yield chunk
+
+def go():
+	parser = OptionParser(usage=descr)
+	parser.add_option('-i', '--input-format', type='string', action='store',
+		dest='input_format', default='xces',
+		help='set the input format; default: xces-fast')
+	parser.add_option('-o', '--output-format', type='string', action='store',
+		dest='output_format', default='xces',
+		help='set the output format; default: xces')
+	parser.add_option('-t', '--tagset', type='string', action='store',
+		dest='tagset', default='kipi',
+		help='set the tagset used in input; default: kipi')
+	parser.add_option('-C', '--chunks', action='store_true',
+		dest='chunks', default=False,
+		help='Process chunks (select chunks/sentences, not tokens)')
+	parser.add_option('--prefix-chunks', action='store_true',
+		dest='prefix_chunks', default=False,
+		help='Prefix chunk ids with filename (file:NAME:ORIGID)')
+	parser.add_option('--prefix-sentences', action='store_true',
+		dest='prefix_sentences', default=False,
+		help='Prefix sentneces ids with filename (file:NAME:ORIGID)')
+	parser.add_option('--documents-as-chunks', action='store_true',
+		dest='documents_as_chunks', default=False,
+		help='Writes every document into single chunk node')
+	parser.add_option('-v', '--verbose', action='store_true',
+		dest='verbose', default=False,
+		help='verbose mode')
+	parser.add_option('--input-list', default=None, help='file with a list of input files')
+	(options, args) = parser.parse_args()
+	
+	if options.input_list is not None:
+		with open(options.input_list) as listfile:
+			for line in listfile:
+				args.append(line.strip())
+
+	if len(args) < 1:
+		print 'You need to provide at least one input corpus.'
+		print 'See %s --help' % sys.argv[0]
+		sys.exit(1)
+	
+	inpath = args[0]
+	# load a tagset, create a reader
+	tagset = corpus2.get_named_tagset(options.tagset)
+	writer = corpus2.TokenWriter.create_stdout_writer(options.output_format, tagset)
+	for arg in args:
+		reader = corpus2.TokenReader.create_path_reader(options.input_format, tagset, arg)
+		fname, _ = os.path.splitext(os.path.basename(arg))
+		fname = escape(fname)
+		if options.chunks:
+			chunk_no = 1
+			for chunk in chunks(reader):
+				if options.prefix_chunks:
+					if chunk.has_attribute('id'):
+						their_id = chunk.get_attribute('id')
+					else:
+						# autogen
+						their_id = ('auto%03d' % chunk_no)
+					full_id = 'file:%s:%s' % (fname, their_id)
+					chunk.set_attribute('id', full_id)
+				writer.write_chunk(chunk)
+				chunk_no += 1
+		else:
+			big_chunk = None
+			if options.documents_as_chunks:
+				big_chunk = corpus2.Chunk()
+				big_chunk.set_attribute('id', 'file:%s:%s' % (fname, 'ch1'))
+			sent_no = 1
+			for sent in sentences(reader):
+				if options.prefix_sentences:
+					if not sent.id():
+						their_id = sent.id()
+					else:
+						#autogen
+						their_id = ('s%d' % sent_no)
+					full_id = 'file:%s:%s' % (fname, their_id)
+					sent.set_id(full_id)
+				if big_chunk:
+					big_chunk.append(sent)
+				else:
+					writer.write_sentence(sent)
+				sent_no += 1
+			if big_chunk:
+				writer.write_chunk(big_chunk)
+		del reader
+
+if __name__ == '__main__':
+	go()

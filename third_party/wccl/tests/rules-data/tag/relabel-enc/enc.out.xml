@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cesAna SYSTEM "xcesAnaIPI.dtd">
+<cesAna xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" type="lex disamb">
+<chunkList>
+ <chunk>
+  <chunk type="s">
+   <tok>
+    <orth>Jedzenie</orth>
+    <lex><base>jedzenie</base><ctag>ger:sg:acc:n</ctag></lex>
+    <lex><base>jedzenie</base><ctag>ger:sg:nom:n</ctag></lex>
+    <lex><base>jedzenie</base><ctag>ger:sg:voc:n</ctag></lex>
+    <lex><base>jeść</base><ctag>ger:sg:acc:n:imperf:aff</ctag></lex>
+    <lex><base>jeść</base><ctag>ger:sg:nom:n:imperf:aff</ctag></lex>
+    <lex><base>jeść</base><ctag>ger:sg:voc:n:imperf:aff</ctag></lex>
+   </tok>
+   <ns/>
+   <tok>
+    <orth>,</orth>
+    <lex><base>,</base><ctag>interp</ctag></lex>
+   </tok>
+   <tok>
+    <orth>siedzenie</orth>
+    <lex><base>siedzenie</base><ctag>ger:sg:acc:n</ctag></lex>
+    <lex><base>siedzenie</base><ctag>ger:sg:nom:n</ctag></lex>
+    <lex><base>siedzenie</base><ctag>ger:sg:voc:n</ctag></lex>
+    <lex><base>siedzieć</base><ctag>ger:sg:acc:n:imperf:aff</ctag></lex>
+    <lex><base>siedzieć</base><ctag>ger:sg:nom:n:imperf:aff</ctag></lex>
+    <lex><base>siedzieć</base><ctag>ger:sg:voc:n:imperf:aff</ctag></lex>
+   </tok>
+   <tok>
+    <orth>i</orth>
+    <lex><base>i</base><ctag>conj</ctag></lex>
+   </tok>
+   <tok>
+    <orth>drzewo</orth>
+    <lex><base>drzewo</base><ctag>subst:sg:acc:n</ctag></lex>
+    <lex><base>drzewo</base><ctag>subst:sg:nom:n</ctag></lex>
+    <lex><base>drzewo</base><ctag>subst:sg:voc:n</ctag></lex>
+   </tok>
+  </chunk>
+ </chunk>
+</chunkList>
+</cesAna>

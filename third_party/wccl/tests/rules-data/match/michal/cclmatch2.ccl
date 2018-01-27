@@ -1,0 +1,17 @@
+match_rules(
+
+
+apply(
+  match(
+    regex( base[0], 'wyżyna'),
+    and( inter(class[0], {subst}), inter(cas[0], {nom}) )
+  ),
+  cond(
+    not( ann(:1, 'capitalized_noun' ) )
+  ),
+  actions(
+    mark(:2, 'HIGHLAND_NAM')
+  )
+)
+
+)

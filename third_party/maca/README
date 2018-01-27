@@ -1,0 +1,31 @@
+DEPENDENCIES
+
+Maca requires several development packages in order to be built, primarily:
+ * Corpus2 and libpwrutils (both from the corpus2 repository)
+ * Toki
+Other dependencies (some of them indirect via the two libraries above) are:
+ * ICU (libicu-dev)
+ * Boost libraries, 1.41 or 1.42 (libboost1.42-all-dev); not tested on newer versions
+ * Loki (libloki-dev)
+ * LibXML++ (libxml++2.6-dev)
+ * bison and flex
+
+Plugins require other libraries that are optional:
+ * The SFST plugin requires the SFST library 1.2 (see below)
+ * The Morfeusz plugin requires the Morfeusz library and header
+ * The Guesser plugin requires the Guesser package from TaKIPI / Corpus
+
+SFST note: The SFST package included in Ubuntu and Debian repositories (libsfst-dev) is apparently missing required header files. The sources downloadable from ims.uni-stuttgart.de in turn need some Makefile modifications to build and install the library and headers. There are two possibilities to overcome this:
+1. Install the version with modified Makefile contained in third_party directory of this package.
+2. Install the Debian package libsfst1-1.2-0-dev, then download the 1.2 sources and copy the missing header files into the proper system header dir (presumably /usr/include/sfst-1.0/sfst/). Make sure those files are given read permissions.
+
+
+USAGE
+
+See the maca-analyse and maca-convert binaries.
+
+
+NOTES
+
+Spurious "array subscript is above array bounds" warnings originating in bits/stl_algo seem to be an artifact of gcc4.4's overly-eager correctness checking in conjunction with boost::algorithm::split and boost::is_any_of. Apparently, they are harmless.
+

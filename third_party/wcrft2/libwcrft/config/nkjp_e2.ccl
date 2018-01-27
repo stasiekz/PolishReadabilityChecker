@@ -1,0 +1,12 @@
+@ "default" (
+   affix(lower(orth[0]), 3);  // 0
+   affix(lower(orth[0]), -3); // 1
+   class[0]; // 2
+   cas[0];   // 3
+   gnd[0];   // 4
+   nmb[0];   // 5
+   agrpp(0,1,{nmb,gnd,cas}); // 6
+   and(inside(-1), inside(1), wagr(-1,1,{nmb,gnd,cas})); // 7
+   regex(orth[0], "\\P{Ll}.*"); regex(orth[0], "\\P{Lu}.*") // 8, 9
+)
+

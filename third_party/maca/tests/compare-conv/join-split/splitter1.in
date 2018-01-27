@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cesAna SYSTEM "xcesAnaIPI.dtd">
+<cesAna xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" type="lex disamb">
+<chunkList>
+ <chunk id="ch1" type="p">
+  <chunk type="s">
+   <tok>
+    <orth>Robiłem</orth>
+    <lex><base>robić</base><ctag>fin:sg:m1:pri:imperf:prt</ctag></lex>
+    <lex><base>robić</base><ctag>fin:sg:m2:pri:imperf:prt</ctag></lex>
+    <lex><base>robić</base><ctag>fin:sg:m3:pri:imperf:prt</ctag></lex>
+   </tok>
+   <ns/>
+   <tok>
+    <orth>.</orth>
+    <lex><base>.</base><ctag>interp</ctag></lex>
+   </tok>
+  </chunk>
+  <chunk type="s">
+   <tok>
+    <orth>ROBILIŚMY</orth>
+    <lex><base>robić</base><ctag>fin:pl:m1:pri:imperf:prt</ctag></lex>
+   </tok>
+   <tok>
+    <orth>(</orth>
+    <lex><base>(</base><ctag>interp</ctag></lex>
+   </tok>
+   <ns/>
+   <tok>
+    <orth>RoBiŁyByŚmY</orth>
+    <lex><base>robić</base><ctag>conjt:pl:f:pri:imperf</ctag></lex>
+    <lex><base>robić</base><ctag>conjt:pl:m2:pri:imperf</ctag></lex>
+    <lex><base>robić</base><ctag>conjt:pl:m3:pri:imperf</ctag></lex>
+    <lex><base>robić</base><ctag>conjt:pl:n:pri:imperf</ctag></lex>
+   </tok>
+   <ns/>
+   <tok>
+    <orth>)</orth>
+    <lex><base>)</base><ctag>interp</ctag></lex>
+   </tok>
+   <ns/>
+   <tok>
+    <orth>--</orth>
+    <lex><base>--</base><ctag>interp</ctag></lex>
+   </tok>
+  </chunk>
+ </chunk>
+</chunkList>
+</cesAna>

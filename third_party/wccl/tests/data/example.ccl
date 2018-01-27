@@ -1,0 +1,23 @@
+  Data tests example
+Everything above the first '---' line (three dashes) is not a testcase. Lines of the form a=b ae checked for special name=value lines, such as tagset=NAME which sets the tagset or sentence=NAME which load a sentence.
+After the --- line comes the first test -- the operator string, followed by an empty line, followed by the expected string output. The operator string can be multiline. 
+If the first operator line is "position=XXX", position is parsed as an int and that is used as the current position in the sentence for this and any following tests. Default position is 0.
+Tests are separated from one another by a --- line.
+This test loads no sentence, but can change the position anyway. Tagset is kipi by default.
+Variable state can be checked by a name=value lines after the expected output.
+tagset=ikipi
+---
+equal(["aaa"], "aaa")
+
+True
+---
+lower(["A"])
+
+["a"]
+---
+setvar($b:A, setvar($t:B, subst))
+
+True
+A=True
+B={subst}
+

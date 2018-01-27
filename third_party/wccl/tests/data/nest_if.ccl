@@ -1,0 +1,17 @@
+---
+if(True, False, True)
+
+False
+---
+if(False, ["a"], ["b"])
+
+["b"]
+---
+if(if(True, False, True), {subst}, {ger})
+
+{ger}
+---
+if(equal(if(if(True, False, True), {subst}, {ger}), {ger}), "ger", "nie")
+
+["ger"]
+---

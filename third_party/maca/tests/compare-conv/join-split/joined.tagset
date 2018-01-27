@@ -1,0 +1,20 @@
+[ATTR]
+nmb	sg pl
+cas	nom gen dat acc inst loc voc
+gnd	m1 m2 m3 f n
+per	pri sec ter
+deg	pos comp sup
+asp	imperf perf
+vcl	wok nwok
+tns	prt prs fut
+
+[POS]
+interp
+adj     nmb cas gnd deg
+fin	nmb [gnd] per asp [tns]
+aglt    nmb per asp vcl
+praet   nmb gnd asp
+conjt	nmb gnd per asp
+qub     [vcl]
+conj
+ign

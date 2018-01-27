@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cesAna SYSTEM "xcesAnaIPI.dtd">
+<cesAna xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" type="lex disamb">
+<chunkList>
+ <chunk id="ch1">
+  <chunk type="s">
+   <tok>
+    <orth>By</orth>
+    <lex disamb="1"><base>by</base><ctag>qub</ctag></lex>
+    <lex><base>by</base><ctag>conj</ctag></lex>
+   </tok>
+   <ns/>
+   <tok>
+    <orth>śmy</orth>
+    <lex disamb="1"><base>być</base><ctag>aglt:pl:pri:imperf:nwok</ctag></lex>
+   </tok>
+   <tok>
+    <orth>mogłyby</orth>
+    <lex disamb="1"><base>móc</base><ctag>conjt:pl:f:ter:imperf</ctag></lex>
+    <lex><base>móc</base><ctag>conjt:pl:m2:ter:imperf</ctag></lex>
+    <lex><base>móc</base><ctag>conjt:pl:m3:ter:imperf</ctag></lex>
+    <lex><base>móc</base><ctag>conjt:pl:n:ter:imperf</ctag></lex>
+   </tok>
+   <tok>
+    <orth>mogłybyśmy</orth>
+    <lex disamb="1"><base>móc</base><ctag>conjt:pl:f:pri:imperf</ctag></lex>
+    <lex><base>móc</base><ctag>conjt:pl:m2:pri:imperf</ctag></lex>
+    <lex><base>móc</base><ctag>conjt:pl:m3:pri:imperf</ctag></lex>
+    <lex><base>móc</base><ctag>conjt:pl:n:pri:imperf</ctag></lex>
+   </tok>
+  </chunk>
+ </chunk>
+</chunkList>
+</cesAna>

@@ -1,0 +1,7 @@
+tag_rules(
+	rule("enc_suger",
+		in({ger,subst}, class[0]),
+		relabel({ger}, equal(class[0], {subst}))
+	)
+)
+

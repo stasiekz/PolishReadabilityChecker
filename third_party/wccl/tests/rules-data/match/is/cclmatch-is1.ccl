@@ -1,0 +1,10 @@
+match_rules(
+apply(
+  match(
+    is('N_NOM')
+  ),
+  actions(
+    mark(M, 'COPY')
+  )
+)
+)

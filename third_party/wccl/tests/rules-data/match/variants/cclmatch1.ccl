@@ -1,0 +1,20 @@
+match_rules(
+apply(
+  match(
+    longest(
+      variant(
+        inter(class[0], {noun}),
+        inter(class[0], {verb})
+      ),
+      variant(
+        is("B")
+      ),
+      variant(
+        inter(class[0], {adj})
+      )
+    )
+  ),
+  actions(mark(M, "C"))
+)
+
+)

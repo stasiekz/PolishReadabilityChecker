@@ -1,0 +1,23 @@
+tag_rules(
+	rule("sel-agr0",
+		and(
+			equal(class[0], subst),
+			equal(class[2], subst),
+			in(base[1], ["i", "lub"])
+		),
+		select(
+			agrpp(0,2,{nmb,gnd,cas})
+		)
+	);
+	rule("sel-agr2",
+		and(
+			equal(class[0], subst),
+			equal(class[-2], subst),
+			in(base[-1], ["i", "lub"])
+		),
+		select(
+			agrpp(-2,0,{nmb,gnd,cas})
+		)
+	)
+)
+

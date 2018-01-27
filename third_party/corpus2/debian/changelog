@@ -1,0 +1,5 @@
+corpus2 (1.0.12-1) lucid; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Adam Radziszewski <adam.radziszewski@pwr.wroc.pl>  Fri, 09 Sep 2011 11:07:41 +0200

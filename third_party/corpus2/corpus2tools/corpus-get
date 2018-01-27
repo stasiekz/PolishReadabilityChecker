@@ -1,0 +1,139 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+import sys
+from optparse import OptionParser
+from collections import defaultdict as dd
+from itertools import repeat, izip
+import corpus2
+
+descr = """%prog [options] CORPUSFILE [SENTENCERANGE[:TOKENRANGE]]
+Reads a corpus file and outputs all or some tokens.
+Available input formats: """ + ' '.join(corpus2.TokenReader.available_reader_types()) + """
+""" + ' '.join(corpus2.TokenReader.available_reader_types_help()) + """
+Available output formats: """ + ' '.join(corpus2.TokenWriter.available_writer_types()) + """
+""" + ' '.join(corpus2.TokenWriter.available_writer_types_help())
+
+def parse_range_info(s):
+	"""Parses a comma-separated list of numbers that
+	can also be dash-separated ranges"""
+	selection = set()
+	for elem in (x.strip() for x in s.split(',')):
+		try:
+			selection.add(int(elem))
+		except:
+			split = [int(x.strip()) for x in elem.split('-')]
+			try:
+				if len(split) == 2:
+					split.sort()
+					for x in xrange(split[0], split[1]+1):
+						selection.add(x)
+				else:
+					raise
+			except:
+				print "Fail:", elem
+	return selection
+
+def sentences(rdr):
+	"""Yields subsequent sentences from a reader.
+	Declared here for demonstration."""
+	while True:
+		sent = rdr.get_next_sentence()
+		if not sent:
+			break
+		yield sent
+
+
+def chunks(rdr):
+	"""Yields subsequent sentences from a reader."""
+	while True:
+		chunk = rdr.get_next_chunk()
+		if not chunk:
+			break
+		yield chunk
+
+
+def write_selected_sentences(sents, writer, selection, maxsel = None):
+	sid = 0
+	for sent in sents:
+		if sid in selection:
+			if len(selection[sid]) == 0:
+				writer.write_sentence(sent)
+			else:
+				tid = 0
+				for tok in sent.tokens():
+					if tid in selection[sid]:
+						writer.write_token(tok)
+					tid += 1
+		sid += 1
+		if maxsel is not None and sid > maxsel: break
+
+def go():
+	parser = OptionParser(usage=descr)
+	parser.add_option('-i', '--input-format', type='string', action='store',
+		dest='input_format', default='xces',
+		help='set the input format; default: xces-fast')
+	parser.add_option('-o', '--output-format', type='string', action='store',
+		dest='output_format', default='xces',
+		help='set the output format; default: xces')
+	parser.add_option('-t', '--tagset', type='string', action='store',
+		dest='tagset', default='kipi',
+		help='set the tagset used in input; default: kipi')
+	parser.add_option('-C', '--chunks', action='store_true',
+		dest='chunks', default=False,
+		help='Process chunks (select chunks/sentences, not tokens)')
+	parser.add_option('-v', '--verbose', action='store_true',
+		dest='verbose', default=False,
+		help='verbose mode')
+	parser.add_option('--input-list', default=None, help='file with a list of input files')
+	(options, args) = parser.parse_args()
+	
+	if len(args) < 1:
+		print 'You need to provide an input corpus.'
+		print 'See %s --help' % sys.argv[0]
+		sys.exit(1)
+	
+	inpath = args[0]
+	# load a tagset, create a reader
+	tagset = corpus2.get_named_tagset(options.tagset)
+	reader = corpus2.TokenReader.create_path_reader(options.input_format, tagset, inpath)
+	writer = corpus2.TokenWriter.create_stdout_writer(options.output_format, tagset)
+	selection = {}
+	
+	for arg in args[1:]:
+		if ':' in arg:
+			sp = arg.split(':')
+			if len(sp) == 2 and options.chunks:
+				selection.update(izip(parse_range_info(sp[0]), repeat(dict(izip(parse_range_info(sp[1]), repeat(()))))))
+			elif len(sp) == 3 and options.chunks:
+				selection.update(izip(parse_range_info(sp[0]), repeat(dict(izip(parse_range_info(sp[1]), repeat(parse_range_info(sp[2])))))))
+			elif len(sp) == 2:
+				selection.update(izip(parse_range_info(sp[0]), repeat(parse_range_info(sp[1]))))
+			else:
+				print >> sys.stderr, "Invalid argument:", arg
+				return
+		else:
+			selection.update(izip(parse_range_info(arg), repeat(())))
+	maxsel = max(selection.keys()) if selection.keys() != [] else None
+	if selection == {}:
+		if options.chunks:
+			for chunk in chunks(reader):
+				writer.write_chunk(chunk)
+		else:
+			for sent in sentences(reader):
+				writer.write_sentence(sent)
+	else:
+		if options.chunks:
+			cid = 0
+			for chunk in chunks(reader):
+				if cid in selection:
+					if len(selection[cid]) == 0:
+						writer.write_chunk(chunk)
+					else:
+						write_selected_sentences(chunk.sentences(), writer, selection[cid])
+				cid += 1
+				if maxsel is not None and cid > maxsel: break
+		else:
+			write_selected_sentences(sentences(reader), writer, selection, maxsel)
+
+if __name__ == '__main__':
+	go()

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cesAna SYSTEM "xcesAnaIPI.dtd">
+<cesAna xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" type="lex disamb">
+<chunkList>
+ <chunk type="s">
+  <tok>
+   <orth>to</orth>
+   <lex><base>ten</base><ctag>adj:sg:nom:n:pos</ctag></lex>
+   <lex><base>ten</base><ctag>adj:sg:acc:n:pos</ctag></lex>
+   <lex><base>ten</base><ctag>adj:sg:voc:n:pos</ctag></lex>
+   <lex><base>to</base><ctag>conj</ctag></lex>
+   <lex><base>to</base><ctag>pred</ctag></lex>
+   <lex><base>to</base><ctag>qub</ctag></lex>
+   <lex><base>to</base><ctag>subst:sg:nom:n</ctag></lex>
+   <lex><base>to</base><ctag>subst:sg:acc:n</ctag></lex>
+  </tok>
+ </chunk>
+</chunkList>
+</cesAna>

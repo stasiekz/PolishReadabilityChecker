@@ -1,0 +1,36 @@
+#!/bin/bash
+which fst-compiler-utf8 > /dev/null
+if [ $? -ne 0 ]
+then
+  echo "Can't find SFST compiler executable (fst-compiler-utf8)."
+  exit 2
+fi
+
+
+if [ $# -ne 1 ]
+then
+  echo "Usage: `basename $0` tabfile"
+  echo
+  echo "tabfile should consist of lines in the following format:"
+  echo "orth	lemma	tag"
+  exit 65
+fi
+
+mydir=`dirname $0`
+stem=${1%.txt}
+
+echo "Converting data to SFST format. This may take a while..."
+$mydir/tab-to-sfst.py $1 $stem.input
+echo
+echo "Running FST compiler"
+# prepare a helper file, containing just one line with quoted filename of the
+# generated input file (the generated input is in a simplified format, we just
+# include it; the helper file is what SFST wants to read)
+echo \"${1%.txt}.input\" > $stem.helper
+# have it compiled into a transducer
+fst-compiler-utf8 -c $stem.helper $stem.fst
+# clean up
+rm $stem.input
+rm $stem.helper
+
+stat --printf "\nAll done\nOutput: %n (%s bytes)\n" $stem.fst

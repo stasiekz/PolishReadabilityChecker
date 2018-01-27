@@ -1,0 +1,16 @@
+*.o
+*.a
+Makefile*
+tests/tests
+*.pro.user
+#*#
+*~
+/tmp/
+CMakeCache.txt
+CMakeFiles
+CMakeLists.txt.user*
+cmake_install.cmake
+/bin/
+/*-build/
+/doxygen/
+/data/local/

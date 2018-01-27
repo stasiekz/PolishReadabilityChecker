@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<units_description tagset='kipi'>
+	<mwegroup name="AdjSubstFix" type="fix" class="subst">
+		<condition>
+			and(
+				inter(base[0],$s:Adj),
+				inter(base[1],$s:Subst),
+				setvar($Pos1, 0),
+				setvar($Pos2, 1),
+				inter(class[0],{adj}),
+				inter(class[1],{subst,ger,depr}),
+				agrpp(0,1,{nmb,gnd,cas})
+			)
+		</condition>
+		<instances>
+			<MWE base="dobra wola">
+				<var name="Adj">dobry</var>
+				<var name="Subst">wola</var>
+				<head>inter(class[0],{subst,ger,depr})</head>
+			</MWE>
+		</instances>
+	</mwegroup>
+
+</units_description>

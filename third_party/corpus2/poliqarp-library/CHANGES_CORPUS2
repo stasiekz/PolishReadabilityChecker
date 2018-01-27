@@ -1,0 +1,7 @@
+This is a fork of poliqarp with changes for C++ compatibility and usability in the Corpus2 project. The modifications are released under Poliqarp's license (i.e. LGPL).
+
+The changes are:
+ - Changed C++-incompatible usage of 'this' as a variable name in headers (via a #define in the cpp code including Poliqarp's headers)
+ - Changed C99 style struct initializer, { .field=0 }, to a C++-compatible { 0 }
+ - Added explicit casts from void* in headers that reached the C++ compiler
+ - Added a CMake build system in parallel to the automake one. The CMake build creates a shared library and poliqarpc/poliqarpd binaries using this library.

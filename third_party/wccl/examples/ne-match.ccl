@@ -1,0 +1,54 @@
+match_rules(
+
+  // „wyżyna X”, gdzie X jest oznaczone anotacją reladj_gaz_based
+  // poza tym wymagane jest uzgodnienie
+  apply(
+    match(
+      regex( base[0], 'wyżyna' ),
+      is( 'reladj_gaz_based' )
+    ),
+    cond(
+      ann(:1, 'capitalized_noun' ),
+      agr(first(:1), first(:2), {nmb,gnd,cas})
+      //equal( nmb[first(:1)], nmb[first(:2)] ),
+      //equal( cas[first(:1)], cas[first(:2)] ),
+      //equal( gnd[first(:1)], gnd[first(:2)] )
+    ),
+    actions(
+      mark(M, 'HIGHLAND_NAM')
+    )
+  );
+
+  // „wyżyna X”, gdzie X może być subst i może być nom
+  // znakuje drugi element jako HIGHLAND_NAM,
+  // pierwszy element nie może być oznakowany jako capitalized_noun
+  apply(
+    match(
+      regex( base[0], 'wyżyna'),
+      and( inter(class[0], {subst}), inter(cas[0], {nom}) )
+    ),
+    cond(
+      not( ann(:1, 'capitalized_noun' ) )
+    ),
+    actions(
+      mark(:2, 'HIGHLAND_NAM')
+    )
+  );
+  
+  // „MIASTO Y”, gdzie MIASTO to anotacja city_trigger (jedno lub wielotokenowa),
+  // a Y to first_capital_word, poza tym mamy post-condition, że Y nie zawiera się
+  // w anotacji city_nam_gaz
+  apply(
+    match(
+      is( 'city_trigger' ),
+      is( 'first_capital_word' )
+    ),
+    cond(
+      not( annsub(:2, 'city_nam_gaz') )
+    ),
+    actions(
+      mark(:2, 'CITY_NAM')
+    )
+  )
+
+)

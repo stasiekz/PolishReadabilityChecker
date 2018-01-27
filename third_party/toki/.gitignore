@@ -1,0 +1,17 @@
+*.o
+*.a
+Makefile*
+toki-app/toki-app
+tests/tests
+*.pro.user
+#*#
+*~
+/tmp/
+CMakeCache.txt
+CMakeFiles
+CMakeLists.txt.user*
+cmake_install.cmake
+/bin/
+/*-build/
+/doxygen/
+/*-bin/

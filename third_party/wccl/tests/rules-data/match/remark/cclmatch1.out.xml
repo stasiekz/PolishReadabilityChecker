@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cesAna SYSTEM "xcesAnaIPI.dtd">
+<chunkList xmlns:xlink="http://www.w3.org/1999/xlink">
+ <chunk>
+  <sentence>
+   <tok>
+    <orth>Miasto</orth>
+    <lex><base>miasto</base><ctag>noun</ctag></lex>
+    <ann chan="AdjN">0</ann>
+    <ann chan="P" head="1">3</ann>
+   </tok>
+   <tok>
+    <orth>stołeczne</orth>
+    <lex><base>stołeczny</base><ctag>adj</ctag></lex>
+    <ann chan="AdjN" head="1">1</ann>
+    <ann chan="P">3</ann>
+   </tok>
+   <tok>
+    <orth>Warszawa</orth>
+    <lex><base>warszawa</base><ctag>noun</ctag></lex>
+    <ann chan="AdjN">1</ann>
+    <ann chan="P">0</ann>
+   </tok>
+   <tok>
+    <orth>centralna</orth>
+    <lex><base>centralny</base><ctag>adj</ctag></lex>
+    <ann chan="AdjN">0</ann>
+    <ann chan="P">0</ann>
+   </tok>
+   <ns/>
+   <tok>
+    <orth>,</orth>
+    <lex><base>,</base><ctag>interp</ctag></lex>
+    <ann chan="AdjN">0</ann>
+    <ann chan="P">0</ann>
+   </tok>
+   <tok>
+    <orth>nowy</orth>
+    <lex><base>nowy</base><ctag>adj</ctag></lex>
+    <ann chan="AdjN">0</ann>
+    <ann chan="P" head="1">1</ann>
+   </tok>
+   <tok>
+    <orth>wielki</orth>
+    <lex><base>wielki</base><ctag>adj</ctag></lex>
+    <ann chan="AdjN" head="1">2</ann>
+    <ann chan="P">1</ann>
+   </tok>
+   <tok>
+    <orth>Berlin</orth>
+    <lex><base>berlin</base><ctag>noun</ctag></lex>
+    <ann chan="AdjN">2</ann>
+    <ann chan="P">0</ann>
+   </tok>
+   <tok>
+    <orth>Zachodni</orth>
+    <lex><base>zachodni</base><ctag>adj</ctag></lex>
+    <lex><base>zachodny</base><ctag>adj</ctag></lex>
+    <ann chan="AdjN" head="1">3</ann>
+    <ann chan="P">0</ann>
+   </tok>
+   <tok>
+    <orth>z</orth>
+    <lex><base>z</base><ctag>other</ctag></lex>
+    <lex><base>z</base><ctag>qub</ctag></lex>
+    <ann chan="AdjN">3</ann>
+    <ann chan="P">0</ann>
+   </tok>
+   <tok>
+    <orth>dzielnicą</orth>
+    <lex><base>dzielnica</base><ctag>noun</ctag></lex>
+    <ann chan="AdjN">3</ann>
+    <ann chan="P">0</ann>
+   </tok>
+   <tok>
+    <orth>turecką</orth>
+    <lex><base>turecki</base><ctag>adj</ctag></lex>
+    <ann chan="AdjN">3</ann>
+    <ann chan="P">0</ann>
+   </tok>
+   <ns/>
+   <tok>
+    <orth>.</orth>
+    <lex><base>.</base><ctag>interp</ctag></lex>
+    <ann chan="AdjN">0</ann>
+    <ann chan="P">0</ann>
+   </tok>
+  </sentence>
+ </chunk>
+</chunkList>

@@ -1,0 +1,48 @@
+aA	asp
+Ap 	perf
+Ai 	imperf
+
+aV	vform
+Vb 	inf
+Vp 	pers
+Vi 	imps
+
+aM	mood
+Md 	decla
+Mc 	cond
+Mi 	impt
+
+aT	tns
+Ta 	past
+Tr 	pres
+Tf 	fut
+
+aP	per
+P1 	pri
+P2 	sec
+P3 	ter
+
+aD	deg
+Dp 	pos
+Dc 	comp
+Ds 	sup
+
+aN	nmb
+Ns 	sg
+Np 	pl
+
+aC	cas
+Cn 	nom
+Cg 	gen
+Cd 	dat
+Ca 	acc
+Ci 	inst
+Cl 	loc
+Cv 	voc
+
+aG	gnd
+Gp 	m1
+Ga 	m2
+Gi 	m3
+Gf 	f
+Gn 	n

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cesAna SYSTEM "xcesAnaIPI.dtd">
+<cesAna xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" type="lex disamb">
+<chunkList>
+ <chunk>
+  <sentence>
+   <tok>
+    <orth>To</orth>
+    <lex><base>ten</base><ctag>adj:sg:nom:n:pos</ctag></lex>
+    <lex><base>ten</base><ctag>adj:sg:acc:n:pos</ctag></lex>
+    <lex><base>to</base><ctag>conj</ctag></lex>
+    <lex><base>to</base><ctag>pred</ctag></lex>
+    <lex><base>to</base><ctag>qub</ctag></lex>
+    <lex><base>to</base><ctag>subst:sg:nom:n</ctag></lex>
+    <lex><base>to</base><ctag>subst:sg:acc:n</ctag></lex>
+    <lex><base>to</base><ctag>subst:sg:voc:n</ctag></lex>
+    <ann chan="capitalized_noun" head="1">1</ann>
+    <ann chan="city_trigger">0</ann>
+    <ann chan="first_capital_word">0</ann>
+    <ann chan="reladj_gaz_based">0</ann>
+    <ann chan="HIGHLAND_NAM">0</ann>
+   </tok>
+   <tok>
+    <orth>Wyżyna</orth>
+    <lex><base>wyżyna</base><ctag>subst:sg:nom:f</ctag></lex>
+    <ann chan="capitalized_noun" head="1">2</ann>
+    <ann chan="city_trigger">0</ann>
+    <ann chan="first_capital_word">0</ann>
+    <ann chan="reladj_gaz_based">0</ann>
+    <ann chan="HIGHLAND_NAM">0</ann>
+   </tok>
+   <tok>
+    <orth>Płaska</orth>
+    <lex><base>płaski</base><ctag>adj:sg:nom:f:pos</ctag></lex>
+    <ann chan="capitalized_noun" head="1">3</ann>
+    <ann chan="city_trigger">0</ann>
+    <ann chan="first_capital_word">0</ann>
+    <ann chan="reladj_gaz_based" head="1">1</ann>
+    <ann chan="HIGHLAND_NAM">0</ann>
+   </tok>
+   <ns/>
+   <tok>
+    <orth>,</orth>
+    <lex><base>,</base><ctag>interp</ctag></lex>
+    <ann chan="capitalized_noun">0</ann>
+    <ann chan="city_trigger">0</ann>
+    <ann chan="first_capital_word">0</ann>
+    <ann chan="reladj_gaz_based">0</ann>
+    <ann chan="HIGHLAND_NAM">0</ann>
+   </tok>
+   <tok>
+    <orth>Wyżyna</orth>
+    <lex><base>wyżyna</base><ctag>subst:sg:nom:f</ctag></lex>
+    <ann chan="capitalized_noun" head="1">4</ann>
+    <ann chan="city_trigger">0</ann>
+    <ann chan="first_capital_word">0</ann>
+    <ann chan="reladj_gaz_based">0</ann>
+    <ann chan="HIGHLAND_NAM">0</ann>
+   </tok>
+   <tok>
+    <orth>Wypukła</orth>
+    <lex><base>wypukły</base><ctag>adj:sg:nom:f:pos</ctag></lex>
+    <ann chan="capitalized_noun" head="1">5</ann>
+    <ann chan="city_trigger">0</ann>
+    <ann chan="first_capital_word">0</ann>
+    <ann chan="reladj_gaz_based" head="1">2</ann>
+    <ann chan="HIGHLAND_NAM">0</ann>
+   </tok>
+   <ns/>
+   <tok>
+    <orth>,</orth>
+    <lex><base>,</base><ctag>interp</ctag></lex>
+    <ann chan="capitalized_noun">0</ann>
+    <ann chan="city_trigger">0</ann>
+    <ann chan="first_capital_word">0</ann>
+    <ann chan="reladj_gaz_based">0</ann>
+    <ann chan="HIGHLAND_NAM">0</ann>
+   </tok>
+   <tok>
+    <orth>wyżyna</orth>
+    <lex><base>wyżyna</base><ctag>subst:sg:nom:f</ctag></lex>
+    <ann chan="capitalized_noun">0</ann>
+    <ann chan="city_trigger">0</ann>
+    <ann chan="first_capital_word">0</ann>
+    <ann chan="reladj_gaz_based">0</ann>
+    <ann chan="HIGHLAND_NAM">0</ann>
+   </tok>
+   <tok>
+    <orth>Kot</orth>
+    <lex><base>kot</base><ctag>subst:sg:nom:m2</ctag></lex>
+    <ann chan="capitalized_noun" head="1">7</ann>
+    <ann chan="city_trigger">0</ann>
+    <ann chan="first_capital_word" head="1">1</ann>
+    <ann chan="reladj_gaz_based">0</ann>
+    <ann chan="HIGHLAND_NAM" head="1">1</ann>
+   </tok>
+   <tok>
+    <orth>i</orth>
+    <lex><base>i</base><ctag>conj</ctag></lex>
+    <ann chan="capitalized_noun">0</ann>
+    <ann chan="city_trigger">0</ann>
+    <ann chan="first_capital_word">0</ann>
+    <ann chan="reladj_gaz_based">0</ann>
+   </tok>
+   <tok>
+    <orth>miasto</orth>
+    <lex><base>miasto</base><ctag>subst:sg:nom:n</ctag></lex>
+    <ann chan="capitalized_noun">0</ann>
+    <ann chan="city_trigger" head="1">1</ann>
+    <ann chan="first_capital_word">0</ann>
+    <ann chan="reladj_gaz_based">0</ann>
+   </tok>
+   <tok>
+    <orth>Gdańsk</orth>
+    <lex><base>gdańsk</base><ctag>subst:sg:nom:m3</ctag></lex>
+    <ann chan="capitalized_noun" head="1">8</ann>
+    <ann chan="city_trigger">0</ann>
+    <ann chan="first_capital_word" head="1">2</ann>
+    <ann chan="reladj_gaz_based">0</ann>
+   </tok>
+   <ns/>
+   <tok>
+    <orth>.</orth>
+    <lex><base>.</base><ctag>interp</ctag></lex>
+    <ann chan="capitalized_noun">0</ann>
+    <ann chan="city_trigger">0</ann>
+    <ann chan="first_capital_word">0</ann>
+    <ann chan="reladj_gaz_based">0</ann>
+   </tok>
+  </sentence>
+ </chunk>
+</chunkList>
+</cesAna>

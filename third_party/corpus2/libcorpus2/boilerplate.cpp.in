@@ -1,0 +1,5 @@
+#include <libcorpus2/$LN.h>
+
+namespace Corpus2 {
+
+} /* end ns Corpus2 */

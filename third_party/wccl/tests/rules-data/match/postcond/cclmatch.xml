@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cesAna SYSTEM "xcesAnaIPI.dtd">
+<cesAna xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" type="lex disamb">
+<chunkList>
+ <chunk id="ch1" type="p">
+  <sentence>
+   <tok>
+    <orth>Tę</orth>
+    <lex><base>ten</base><ctag>adj:sg:acc:f:pos</ctag></lex>
+    <ann chan="Person">0</ann>
+   </tok>
+   <tok>
+    <orth>wyżynę</orth>
+    <lex><base>wyżyna</base><ctag>subst:sg:acc:f</ctag></lex>
+    <ann chan="Person">0</ann>
+   </tok>
+   <tok>
+    <orth>Paweł</orth>
+    <lex><base>Paweł</base><ctag>subst:sg:nom:m1</ctag></lex>
+    <lex><base>Pawła</base><ctag>subst:pl:gen:f</ctag></lex>
+    <lex><base>paweł</base><ctag>subst:sg:nom:m3</ctag></lex>
+    <lex><base>paweł</base><ctag>subst:sg:acc:m3</ctag></lex>
+    <ann chan="Person" head="1">1</ann>
+   </tok>
+   <tok>
+    <orth>Nowak</orth>
+    <lex><base>Nowak</base><ctag>subst:sg:nom:m1</ctag></lex>
+    <lex><base>nowak</base><ctag>subst:sg:nom:m1</ctag></lex>
+    <ann chan="Person">1</ann>
+   </tok>
+   <tok>
+    <orth>Nowicki</orth>
+    <lex><base>Nowicki</base><ctag>subst:sg:nom:m1</ctag></lex>
+    <lex><base>Nowicki</base><ctag>subst:sg:voc:m1</ctag></lex>
+    <ann chan="Person">1</ann>
+   </tok>
+   <tok>
+    <orth>zwiedził</orth>
+    <lex><base>zwiedzić</base><ctag>praet:sg:m1:perf</ctag></lex>
+    <lex><base>zwiedzić</base><ctag>praet:sg:m2:perf</ctag></lex>
+    <lex><base>zwiedzić</base><ctag>praet:sg:m3:perf</ctag></lex>
+    <ann chan="Person">0</ann>
+   </tok>
+   <ns/>
+   <tok>
+    <orth>,</orth>
+    <lex><base>,</base><ctag>interp</ctag></lex>
+    <ann chan="Person">0</ann>
+   </tok>
+   <tok>
+    <orth>to</orth>
+    <lex><base>ten</base><ctag>adj:sg:nom:n:pos</ctag></lex>
+    <lex><base>ten</base><ctag>adj:sg:acc:n:pos</ctag></lex>
+    <lex><base>ten</base><ctag>adj:sg:voc:n:pos</ctag></lex>
+    <lex><base>to</base><ctag>conj</ctag></lex>
+    <lex><base>to</base><ctag>pred</ctag></lex>
+    <lex><base>to</base><ctag>qub</ctag></lex>
+    <lex><base>to</base><ctag>subst:sg:nom:n</ctag></lex>
+    <lex><base>to</base><ctag>subst:sg:acc:n</ctag></lex>
+    <ann chan="Person">0</ann>
+   </tok>
+   <tok>
+    <orth>jest</orth>
+    <lex><base>być</base><ctag>fin:sg:ter:imperf</ctag></lex>
+    <ann chan="Person">0</ann>
+   </tok>
+   <tok>
+    <orth>wyżyna</orth>
+    <lex><base>wyżyna</base><ctag>subst:sg:nom:f</ctag></lex>
+    <lex><base>wyżynać</base><ctag>fin:sg:ter:imperf</ctag></lex>
+    <ann chan="Person">0</ann>
+   </tok>
+   <tok>
+    <orth>Kot</orth>
+    <lex><base>Kot</base><ctag>subst:sg:nom:m1</ctag></lex>
+    <lex><base>kot</base><ctag>subst:sg:nom:m1</ctag></lex>
+    <lex><base>kot</base><ctag>subst:sg:nom:m2</ctag></lex>
+    <lex><base>kota</base><ctag>subst:pl:gen:f</ctag></lex>
+    <ann chan="Person">0</ann>
+   </tok>
+   <tok>
+    <orth>Pies</orth>
+    <lex><base>pies</base><ctag>subst:sg:nom:m1</ctag></lex>
+    <lex><base>pies</base><ctag>subst:sg:nom:m2</ctag></lex>
+    <ann chan="Person">0</ann>
+   </tok>
+   <tok>
+    <orth>i</orth>
+    <lex><base>i</base><ctag>conj</ctag></lex>
+    <lex><base>i</base><ctag>qub</ctag></lex>
+    <ann chan="Person">0</ann>
+   </tok>
+   <tok>
+    <orth>wyżyna</orth>
+    <lex><base>wyżyna</base><ctag>subst:sg:nom:f</ctag></lex>
+    <lex><base>wyżynać</base><ctag>fin:sg:ter:imperf</ctag></lex>
+    <ann chan="Person">0</ann>
+   </tok>
+   <tok>
+    <orth>Pies</orth>
+    <lex><base>pies</base><ctag>subst:sg:nom:m1</ctag></lex>
+    <lex><base>pies</base><ctag>subst:sg:nom:m2</ctag></lex>
+    <ann chan="Person">0</ann>
+   </tok>
+   <tok>
+    <orth>Kot</orth>
+    <lex><base>Kot</base><ctag>subst:sg:nom:m1</ctag></lex>
+    <lex><base>kot</base><ctag>subst:sg:nom:m1</ctag></lex>
+    <lex><base>kot</base><ctag>subst:sg:nom:m2</ctag></lex>
+    <lex><base>kota</base><ctag>subst:pl:gen:f</ctag></lex>
+    <ann chan="Person">0</ann>
+   </tok>
+   <ns/>
+   <tok>
+    <orth>.</orth>
+    <lex><base>.</base><ctag>interp</ctag></lex>
+    <ann chan="Person">0</ann>
+   </tok>
+  </sentence>
+ </chunk>
+</chunkList>
+</cesAna>

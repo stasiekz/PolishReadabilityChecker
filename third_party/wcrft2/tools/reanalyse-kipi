@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Reads an XCES input (reference corpus), re-analyses it as plain text using the MACA config set below,
+# synchronises the tokenisation and sentence division to ref corpus and outputs to $2.
+#
+# The result ($2) shall be the same corpus as ref ($1) but with morphology taken from the analyser.
+# Forms assigned disamb interpretations that are unknown to the analyser are reverted to just this
+# disamb plus one unknown word tag -- this is to tell the tagger that they are actually unknown.
+#
+# This whole procedure is to be run against the training data to mimic the conditions met during
+# regular tagging: the same forms should appear unknown when training and when tagging.
+
+TAGSET=kipi
+MACA_CONF=morfeusz-kipi-guesser
+
+REANAL="$(dirname $0)"/reana.py
+
+corpus-get $1 -o orth -t $TAGSET | maca-analyse -qs $MACA_CONF -o xces,flat > $1.ANAL
+$REANAL $1 $1.ANAL $2
+rm $1.ANAL
+

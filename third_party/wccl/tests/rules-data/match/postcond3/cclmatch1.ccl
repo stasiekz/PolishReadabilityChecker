@@ -1,0 +1,14 @@
+match_rules(
+apply(
+  match(
+    optional(repeat(inter(class[0], {adj}))),
+    repeat(inter(class[0], {subst}))
+  ),
+  cond(
+    not(empty(:1))
+  ),
+  actions(
+    mark(M, "NP")
+  )
+)
+)

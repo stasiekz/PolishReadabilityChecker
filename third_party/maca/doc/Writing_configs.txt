@@ -1,0 +1,61 @@
+This document explains how to write config files describing (combined) morphological analysers.
+
+This library makes use of toki, configurable tokeniser. Toki divides running text into sequences of tokens and, optionally, groups these tokens into sentences. Each token is assigned a label describing the general type of token (e.g. word, number, URL, expression containing hyphens). The exact behaviour of the tokeniser, including segmentation strategies and employed token labels, depends on its configuration file. Thus, configuration files for analysers should be written assuming a particular toki configuration, possibly the default one (for Polish). For details, see toki documentation.
+
+1. Configuration search path
+
+The installed configuration files are stored within the system library directory (currently LIB/maca, however the library name “maca“ is still subject to change). They should have .ini extension. The analyser application (currently named “analyse”) or using the underlying library, the current directory is checked first and then the system library directory. The same goes for other files referenced by the config file.
+
+TODO: mention the API part to instantiate a working analyser using given config name.
+
+2. Configuration file syntax
+
+The syntax roughly follows the commonly accepted INI file format. A notable exception is that keys may be duplicated and the order of entries is significant. E.g. the following section describes an ordering of three analysers:
+
+[rule]
+	toki_type=th
+	ma=morfeusz
+	ma=acro_suffix
+	ma=unknown
+
+The file may contain the following sections:
+• [general] — with obligatory tagset value (tagset=name, s.t. there exists name.tagset file) and optional toki-config (toki-config=name, s.t. toki recognises, default=config),
+• [ma:analyser_name] – defines a component of the whole combined analyser; required keys are class and tagset, the rest depends on the class.
+• [rule] – defines a sequence of analyser components to be applied for a particular token label or set thereof (toki_type=comma_separated_list).
+• [default] – defines a sequence of analyser components to be applied for token labels not covered by other rules.
+
+3. Writing rules
+
+The following snippet (taken from morfeusz-ipi.ini) defines two rules. First rule assigns just one analyser (defined by [ma:interp] section which must be contained within the config) to tokens bearing ‘p’ label. The second rule works for tokens labelled ‘th’, firing a sequence of three analysers. Note that interp, morfeusz, etc. are just names which must be present as [ma:name].
+
+[rule]
+	toki_type=p
+	ma=interp
+
+[rule]
+	toki_type=th
+	ma=morfeusz
+	ma=acro_suffix
+	ma=unknown
+
+[default]
+	ma=patch
+	ma=morfeusz
+	ma=acro_stem
+	ma=unknown
+
+4. Available analysers
+
+4.1. Const analyser (class=const) assigns just one specified tag to any token (tag=the_tag). The token's orth will be taken as lemma.
+
+TODO: add lower-lemma option
+
+4.2. Map analysers (class=map, map-case, hashmap, hashmap-case) uses an implementation of map and assigns the tags and lemmas loaded from a text file (defined by data=filename.txt). The -case variants are case-sensitive. The files are stored in a simple whitespace-delimited format, where three columns define form, lemma and tags. The same form may be repeated with different lemmas or tags. One form may be assigned more than one tag my using the plus character (+, no spaces surrounding). Several tag attribute values may also be specified using dot character (.) or underscore (_). Examples of such data may be found in the .txt files within the data dir. For more details consult a section on input file format in SFST-Howto.txt.
+
+4.3. SFST analyser — working as map analyser, yet using data compiled into a transducer in the SFST format (Stuttgart Finite State Transducer Toolkit). This is the recommended format for keeping morphological data: it's compact and therefore doesn't require loads of memory when reading. For details, see SFST-Howto.txt.
+
+4.4. Morfeusz is a wrapper for Morfeusz, a morphological analyser for Polish. Note that Morfeusz is non-free and the availability of its support depends on compilation-time options.
+
+This wrapper has been tested on Morfeusz SIAT, yet it should also work with Morfeusz SGJP. The wrapper may perform tagset conversion. The tagset of the component should be set to the desired tagset of the whole analyser. Another obligatory argument specifies the used converter (converter=name.conv). The tagset of the material directly output by Morfeusz library must be correctly set within the converter config file (.conv).
+
+For a list of available converters as well as working configs using Morfeusz, see INFO.txt in the data dir. For details on tagset conversion, see Tagsets.txt.

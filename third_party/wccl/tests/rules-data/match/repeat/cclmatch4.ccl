@@ -1,0 +1,14 @@
+match_rules(
+apply(
+  match(
+    repeat(
+      optional(inter(class[0], {prep})),
+      optional(repeat(inter(class[0], {adj, pact, ppas}))),
+      inter(class[0], {subst, ger, depr})
+    )
+  ),
+  actions(
+    mark(M, 'MultiNP')
+  )
+)
+)

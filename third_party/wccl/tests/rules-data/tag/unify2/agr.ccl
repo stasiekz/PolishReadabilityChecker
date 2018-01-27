@@ -1,0 +1,5 @@
+tag_rules(
+	rule("agr3",
+		unify(0, 2, {nmb, gnd, cas})
+	)
+)

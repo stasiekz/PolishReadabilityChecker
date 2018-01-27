@@ -1,0 +1,38 @@
+tagset=kipi
+---
+True
+
+True
+---
+False
+
+False
+---
+[]
+
+[]
+---
+{}
+
+{}
+---
+["a"]
+
+["a"]
+---
+{subst}
+
+{subst}
+---
+["a", "a"]
+
+["a"]
+---
+{ign, ign}
+
+{ign}
+---
+{sg, pl}
+
+{nmb}
+---

@@ -1,0 +1,32 @@
+strach	strach	pred
+strach	strach	subst:sg:nom.acc:m3
+
+krem	krem	subst:sg:nom.acc:m3
+
+krów	krowa	subst:sg:gen:f
+
+specjalistów	specjalista	subst:pl:gen.acc:m1
+
+kolegów	kolega	subst:pl:gen.acc:m1
+
+księcia	książę	subst:sg:gen.acc:m1
+
+informatycy	informatyk	subst:pl:nom.voc:m1
+informatyk	informatyk	subst:sg:nom:m1
+informatyk	informatyka	subst:pl:gen:f
+informatyka	informatyk	subst:sg:acc.gen:m1
+informatyka	informatyka	subst:sg:nom:f
+informatykach	informatyk	subst:pl:loc:m1
+informatykach	informatyka	subst:pl:loc:f
+informatykami	informatyk	subst:pl:inst:m1
+informatykami	informatyka	subst:pl:inst:f
+informatyki	informatyka	subst:pl:nom.acc.voc:f+subst:sg:gen:f
+informatykiem	informatyk	subst:sg:inst:m1
+informatyko	informatyka	subst:sg:voc:f
+informatykom	informatyk	subst:pl:dat:m1
+informatykom	informatyka	subst:pl:dat:f
+informatykowi	informatyk	subst:sg:dat:m1
+informatyku	informatyk	subst:sg:loc.voc:m1
+informatyką	informatyka	subst:sg:inst:f
+informatykę	informatyka	subst:sg:acc:f
+informatyków	informatyk	subst:pl:acc.gen:m1

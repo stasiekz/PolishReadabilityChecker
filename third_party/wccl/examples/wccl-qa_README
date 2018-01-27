@@ -1,0 +1,100 @@
+	
+	Przykład użycia skryptu wccl-qa.py
+
+	
+	0. Uwagi:
+
+*skrypt docelowo będzie wywoływany na tekście otagowanym i (może) ochunkowanym
+*jeden plik interpretowany jest jako jedno pytanie, tzn. jedno uruchomienie skryptu zwraca jedną etykietę rodzaju pytania, który wynika z właściwości qtype1, qtype2, qtype3
+*jeżeli użyto opcji -r (--result) wtedy wynik działania skryptu jest dołączany (append) do wskazanego pliku (nowa etykieta na nowej linii)
+
+
+	1. Przykład działania skryptu:
+
+Pytania (przetworzone przy pomocy narzędzi MACA, WCRFT, IOBBER - opis znajduje się poniżej):
+
+./qa-input0.xml: Gdzie jest Bagdad?
+./qa-input1.xml: Za ile można kupić buty do biegania?
+./qa-input2.xml: Po ilu dniach mogę znowu zacząć śpiewać?
+./qa-input3.xml: Za ile godzin będzie można kupić telewizor po niższej cenie?
+
+./qa-prop-match.wccl - plik z regułami definiującymi właściwoci qtype1, qtype2, qtype3
+
+
+
+	1.1 Uruchomienie skryptu:
+
+	Uwagi:
+
+*qa-inputN.xml: N = {0,1,2,3}:
+*opcjonalny plik: wccl_processed_output zawiera przetworzony plik wejściowy z dodanymi przez reguły WCCL elementami
+
+
+	Uruchomienie:
+
+A) z plikiem wejściowym (-I):
+
+$> cd ../doc 
+$> ./wccl-qa.py ../examples/qa-prop-match.ccl -I ../examples/qa-inputN.xml -t nkjp -O ~/wccl_processed_output
+
+B) ze strumieniem wejściowym:
+
+$> cd ../doc 
+$> cat ../examples/qa-inputN.xml | ./wccl-qa.py ../examples/qa-prop-match.ccl -t nkjp -O ~/wccl_processed_output
+
+
+
+Wyniki działania skryptu (tylko wartość podana po 'OUTPUT: ') otrzymane dla przykładowych pytań oraz rozkład wartości qtypeX będący podstawą do wygenerowania wyniku:
+ 
+* oznaczenie: {wartość właściwości qtypeX:liczba wystąpień na poziomie X:suma wystąpień na wszystkich poziomach}:
+* położenie OUTPUT oznacza miejsce gdzie następuje podjęcie decyzji (nie są rozpatrywane niższe poziomy qtypeX)
+
+	qa-input0.xml: Gdzie jest Bagdad?
+qtype1 = {}
+qtype2 = {where:1:1} 	OUTPUT: where
+qtype3 = {}
+
+
+	qa-input1.xml: Za ile można kupić buty do biegania?
+qtype1 = {price:1:1} 	OUTPUT: price
+qtype2 = {}
+qtype3 = {}
+
+
+	qa-input2.xml: Po ilu dniach mogę znowu zacząć śpiewać?
+qtype1 = {}
+qtype2 = {price:1:1, time:1:1}
+qtype3 = {price:0:1, time:1:2}	OUTPUT: time
+
+
+	qa-input3.xml: Za ile godzin będzie można kupić telewizor po niższej cenie?
+qtype1 = {price:1:1}		OUTPUT: price
+qtype2 = {price:2:3, time:1:1}
+qtype3 = {price:0:3, time:1:2}
+
+
+==================================================================
+=     Wygenerowanie plików wejściowych dla skryptu wccl-qa.py    =
+==================================================================
+
+* %WCRFT_ROOT_DIR% - główny katalog projektu WCRFT
+* do otagowania przykładowych pytań użyto WCRFT z opcją -i text która korzysta z instalacji programu MACA - może wystąpić konieczność dostosowania w pliku %WCRFT_ROOT_DIR%/config/nkjp.ini konfiguracji MACA'y:
+
+macacfg = morfeusz-nkjp ; zależnie od zainstalowanej wersji Morfeusza
+			; patrz Available configurations w:
+			; maca-analyse --help 
+
+* konfiguracji wymaga:
+	- ścieżka do modelu WCRFT (można go pobrać z: http://156.17.129.129/share/)
+	- ścieżka do modelu IOBBERa (obecnie dostępny w projekcie IOBBER w katalogu %IOBBER_ROOT_DIR%/iobber/data/model-kpwr03/)
+
+
+	Użycie:
+
+$> cd %WCRFT_ROOT_DIR%
+$> echo "Za ile godzin będzie można kupić telewizor po niższej cenie?" | wcrft/wcrft.py -d /path/to/wcrft/model/model_nkjp10_wcrft -i text config/nkjp.ini - -o ccl | iobber kpwr.ini -d /path/to/iobber/model/model-kpwr03/ - > qa-input3.xml
+
+Zamiast przekierowania wyjścia do pliku qa-input3.xml można od razu zastosować skrypt wccl-qa.py:
+
+$> cd %WCRFT_ROOT_DIR%
+$> echo "Za ile godzin będzie można kupić telewizor po niższej cenie?" | wcrft/wcrft.py -d /path/to/wcrft/model/model_nkjp10_wcrft -i text config/nkjp.ini - -o ccl | iobber kpwr.ini -d /path/to/iobber/model/model-kpwr03/ - | %WCCL_ROOT_DIR%/doc/wccl-qa.py %WCCL_ROOT_DIR%/examples/qa-prop-match.ccl -t nkjp

@@ -1,0 +1,9 @@
+#ifndef LIBPWRUTILS_VERSION_H
+#define LIBPWRUTILS_VERSION_H
+
+#define LIBPWRUTILS_VERSION_MAJOR @pwrutils_ver_major@
+#define LIBPWRUTILS_VERSION_MINOR @pwrutils_ver_minor@
+#define LIBPWRUTILS_VERSION_PATCH @pwrutils_ver_patch@
+#define LIBPWRUTILS_VERSION "@LIBPWRUTILS_VERSION@"
+
+#endif

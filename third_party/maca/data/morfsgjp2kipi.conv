@@ -1,0 +1,42 @@
+; This routine converts from 'morfeusz' dialect of NKJP tagset (more genders)
+; into the 'proper' dialect of KIPI tagset (less genders).
+; The conversion is rought and some important details may be missing.
+
+[convert]
+tagset_from=sgjp
+tagset_to=kipi
+check=ignore
+; make the gender set smaller as defined in the "two tagsets" paper
+override=n1:n
+override=n2:n
+override=n3:n
+override=p1:m1
+override=p2:n
+override=p3:n
+; cast the new indeclinable stuff as qubs
+override=interj:qub
+override=burk:qub
+; reduce brev:any to xxx, can't do any better
+override=brev:xxx
+; cast complementisers as conjunctions
+override=comp:conj
+; should be adj:sg:nom:m1.m2.m3:pos
+override=adjc:adj
+; numcol as num? optionally
+; override=numcol:num
+; degree value
+override=com:comp
+late-check=true
+
+[tag]
+; cast adverbs not specified for degree as qubs
+pre=adv:deg
+post=qub
+
+[tag]
+; should be m1.m2.m3 but tag-to-set conversion currently not supported
+; (and m1 seems most likely for the adjc class)
+pre=adj:cas
+post=adj:sg:nom:m1:pos
+
+[remove_duplicates]

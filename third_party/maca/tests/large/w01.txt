@@ -1,0 +1,260 @@
+[zamknij]
+Ukryj
+Wikipedia się zmienia.
+Pomóż nam odnaleźć błędy i uzupełnić tłumaczenie interfejsu użytkownika. (before 25/08/2010).
+[edytuj]
+Skrót: WP:KOP
+Pomoc:Kopiowanie z Wikipedii
+Z Wikipedii, wolnej encyklopedii
+Skocz do: nawigacji, szukaj
+Copyleft.svg Prawa autorskie w Wikipedii
+NPA (Lista) · Jak unikać NPA · Patrolowanie · Kopiowanie z Wikipedii · FAQ
+Edit-copy green.svg
+Spis treści
+[ukryj]
+* 1 Filozofia wolnych licencji
+o 1.1 Wolność...
+o 1.2 ... ale pod pewnymi warunkami
+* 2 Co z tego praktycznie wynika
+o 2.1 Cytowanie na zasadach ogólnych
+* 3 Korzystanie z licencji CC-BY-SA 3.0
+* 4 Korzystanie z plików multimedialnych
+o 4.1 FAL
+o 4.2 Copyrighted Free Use
+o 4.3 Copyrighted Free Use Provided That
+o 4.4 Pliki w domenie publicznej
+* 5 Korzystanie z materiałów na licencji GNU FDL
+o 5.1 Ogólne zasady
+o 5.2 Problemy z tekstami edytowanymi po 15 czerwca 2009
+o 5.3 Korzystanie z treści GNU FDL na stronach WWW
+o 5.4 Korzystanie "off-line" z materiałów na licencji GNU FDL
+* 6 Treści wątpliwe
+* 7 Multilicencjonowanie
+* 8 Jak znaleźć autora pliku i nakłonić go do zmiany licencji
+* 9 Kopie całej Wikipedii
+* 10 Własna wiki
+U podstaw projektu internetowego jakim jest Wikipedia leży umożliwienie każdemu w nieskrępowany sposób wykorzystywanie wszelkich tekstów i plików multimedialnych (grafik, zdjęć, muzyki itp.) w zupełnie dowolnych celach, także komercyjnych, bez konieczności wnoszenia opłat i pytania o zgodę właścicieli praw autorskich do tych materiałów.
+Filozofia wolnych licencji [edytuj]
+Aby dowolne wykorzystanie treści było możliwe Wikipedia wykorzystuje kilka tzw. wolnych licencji. Sama Wikipedia, ani też instytucja, która za nią prawnie odpowiada, czyli Wikimedia Foundation nie są właścicielami praw autorskich do udostępnianych materiałów. Jednakże, każdy autor piszący w Wikipedii czy wstawiający plik multimedialny musi zgodzić się nieodwołalnie na objęcie swojej twórczości jedną z wcześniej wspomnianych licencji.
+Wolność... [edytuj]
+Za wolne licencje uważamy te, które zezwalają na:
+* dowolne kopiowanie – każdy musi mieć prawo do wykonania tylu kopii źródłowego materiału ile mu potrzeba, stosując do kopiowania dowolne środki techniczne
+* dowolną redystrybucję, w tym również w celach komercyjnych – można zatem np: stworzyć wyciąg z Wikipedii i sprzedawać go w formie książkowej bez wnoszenia żadnych opłat autorom wybranych artykułów, albo użyć zdjęcie pobrane z Wikipedii na okładce swojej książki
+* dowolne przeróbki – każdy może przerobić źródłowe materiały wg własnego uznania – np.: przekadrować zdjęcie lub zrobić fotomontaż, albo wpleść fragment tekstu z Wikipedii do swojego opracowania czy reportażu
+Jeśli licencja zabrania którejś z tych czynności to nie uważamy jej za "wolną" i dlatego jej nie stosujemy. Za "wolne" licencje uważamy m.in: GNU FDL, CC-BY-SA, CC-BY, FAL i parę innych. Oprócz tego, za "wolne" uważamy też materiały, które na mocy prawa autorskiego albo wolą ich twórców znajdują się w domenie publicznej.
+... ale pod pewnymi warunkami [edytuj]
+Wolne licencje zezwalając na wiele różnych działań, które normalnie są zabronione przez prawo autorskie nakazują jednak zachowywać przy tych działaniach pewne zasady. Na ogół wymagają one podania na każdej kopii materiału wyraźnej i dobrze widocznej dla czytelnika dokładnej informacji o:
+* źródle i autorach (czyli tzw. warunek atrybucji)
+* o tym na jakiej konkretnie licencji dostępny jest dany materiał (warunek określenia licencji)
+niektóre licencje oprócz tego:
+* zakazują przenoszenia skopiowanych materiałów pod inną licencję (warunek zachowania licencji)
+* nakazują objąć tą samą licencją materiały, które powstały w wyniku przeróbki materiałów źródłowych (warunek przeniesienia licencji)
+Oprócz tego licencje te mają wiele innych, mniej istotnych wymagań, o których należy jednak także wiedzieć, gdy kopiuje się materiały, które są nimi objęte.
+Warunki te, choć na pozór sprzeczne z pojęciem "zupełnej wolności" chronią udostępnione w ten sposób materiały przed "zawłaszczeniem", aby na zawsze pozostały one rzeczywiście wolne. Np. zasada podania źródła i autorów oraz warunek przeniesienia licencji powoduje, że gdy ktoś skopiuje nasze zdjęcie, a następnie podda je przekadrowaniu, nie będzie mógł wynikowego dzieła przypisać wyłącznie sobie i żądać od nas w przyszłości opłaty za jego wykorzystanie. Warto zwrócić uwagę, że proste zrzeczenie się wszelkich praw autorskich do swojego dzieła nie gwarantuje, że w przyszłości ktoś nie przypisze sobie do niego praw autorskich, po jego drobnej przeróbce.
+Co z tego praktycznie wynika [edytuj]
+* Po pierwsze – jeśli chcemy coś skopiować z Wikipedii nie musimy się nikogo pytać o zgodę.
+* Po drugie – musimy się dowiedzieć na jakiej licencji jest udostępniony materiał, który chcemy skopiować i zapoznać się z warunkami tej licencji.
+* Po trzecie – musimy się do tych warunków w pełni dostosować.
+* Po czwarte – jeśli warunki danej licencji nam nie odpowiadają, możemy spróbować dotrzeć do autorów i poprosić ich o zmianę licencji - często jest to jednak trudne do wykonania.
+Cytowanie na zasadach ogólnych [edytuj]
+Warto też pamiętać, że podobnie jak każdą inną twórczość, zgodnie z polskim prawem autorskim wolno cytować Wikipedię na ogólnie przyjętych zasadach, a więc przytaczać wyraźnie wyróżnione cudzysłowami, krótkie fragmenty artykułów z jawnym podaniem źródła, o ile ten fragment nie zastępuje tekstu własnego oraz jego umieszczenie jest uzasadnione strukturą tekstu oryginalnego.
+W przypadku korzystania z prawa cytatu nie istnieje konieczność przestrzegania zasad wolnych licencji. Zalecamy jednak przy cytowaniu podawać dokładnie źródło - t.j. dokładną nazwę artykułu i czas dostępu do niego. Wikipedia zaleca podawać siebie jako źródło cytatu za pomocą poprawnego odwołania bibliograficznego, który można sobie wygenerować klikając na "Cytowanie tego artykułu" w bocznym menu.
+Korzystanie z licencji CC-BY-SA 3.0 [edytuj]
+CC some rights reserved new 2.svg
+Cc-by new.svg
+
+Cc-sa.svg
+Obecnie wszystkie teksty w Wikipedii są dostępne na licencji CC-BY-SA 3.0 oraz równolegle na licencji GNU FDL 1.3, ale z wyjątkami. Użycie licencji GNU FDL jest bardziej kłopotliwe (patrz #Korzystanie z materiałów na licencji GNU FDL), dlatego też zachęcamy do korzystania raczej z licencji CC-BY-SA 3.0.
+Licencja CC-BY-SA 3.0 została stworzona przez organizację o nazwie Creative Commons.
+Skróty w nazwie licencji oznaczają:
+* CC – jest to licencja stworzona przez Creative Commons
+* BY – wymagana jest atrybucja, czyli podanie pełnej listy autorów lub linku/URL do niej
+* SA – wymagane jest zachowanie licencji, tzn. ew. modyfikacja tego pliku musi być udostępniona na tej samej licencji
+W praktyce, w przypadku zarówno materiału użytego na stronie WWW, jak i w dowolnej formie "off-line" sprawę załatwia dołączenie do pliku w sposób widoczny dla czytelnika następującego tekstu:
+© [Lista autorów], źródło: [Link lub inna forma opisu źródła], licencja: [CC-BY-SA 3.0 Deed]
+(link do: http://creativecommons.org/licenses/by-sa/3.0/deed.pl)
+Zwyczajowo (choć nie jest to obowiązkowe) dołącza się do opisu znaczek symbolizujący tę licencję.
+Oprócz tego licencja ta daje pełną wolność w dysponowaniu, kopiowaniu i modyfikowaniu materiałów nią objętych, w tym również w celach komercyjnych, czyli jej działanie jest bardzo zbliżone do GNU FDL.
+Jest ona jednak prostsza do stosowania od GNU FDL, ponieważ:
+* po pierwsze – nie trzeba dołączać do pliku pełnego tekstu licencji – wystarczy podać do niej link
+* po drugie – nie trzeba podawać linku do tekstu angielskiego – można podać do tekstu w kilku innych językach, w tym również do tekstu polskiego
+* po trzecie – nie ma żadnych dodatkowych wymagań, np: dołączania do pliku sekcji niezmiennych.
+Korzystanie z plików multimedialnych [edytuj]
+Przykładowa metryczka pliku
+Każdy plik multimedialny w Wikipedii zawiera stronę ze swoim opisem. Większość plików multimedialnych znajduje się w repozytorium plików Wikimedia Commons, a część jest załadowana bezpośrednio na Wikipedię. Niezależnie od tego czy coś znajduje się bezpośrednio w Wikipedii, czy też jest załadowane do Wikimedia Commons po kliknięciu w zdjęcie wyświetla się strona z dużą wersją obrazka oraz z jej "metryczką". Metryczka ta zawiera zwykle następujące informacje:
+1. oryginalna wielkość (wyświetlana jest najczęściej miniatura) i rozdzielczość oraz rodzaj pliku;
+2. nazwa pliku i informacja czy znajduje się on na Commons;
+3. opis pliku, a poniżej także data i źródło (praca własna lub inne oryginalne źródło);
+4. autor pliku (imię i nazwisko lub nazwa użytkownika, jeśli ten nie chce ujawniać swoich danych);
+5. licencja na jakiej jest udostępniony w Wikipedii;
+6. historia edycji pliku (lista poprzednich wersji i autorów wraz z datami modyfikacji); poprzedni autorzy mogą czasami nie być wymienieni w polu "autor" powyżej;
+7. listę stron, na których został użyty plik.
+Z tego wszystkiego najważniejsze są informacje o licencji i autorze. Informacja o licencji jest ona umieszczona w specjalnym szablonie (tekst w ramce, jak poniżej), w którym są zazwyczaj linki do oryginalnego tekstu tej licencji i kilka dodatkowych informacji, ułatwiających ew. wykorzystanie tego pliku. Na przykład:
+Licencja Creative Commons
+Ikona Creative Commons AttributionIkona Creative Commons Share Alike Ten plik udostępniony jest na licencji Creative Commons Attribution ShareAlike 2.5.
+Część grafik i zdjęć (coraz mniejsza) znajduje się bezpośrednio w Wikipedii, natomiast większość w repozytorium plików o nazwie Wikimedia Commons. Zasady licencjonowania grafik i zdjęć w Wikipedii są identyczne z tymi na Wikimedia Commons. Opis wszystkich licencji dozwolonych w Wikimedia Commons znajduje się na stronie http://commons.wikimedia.org/wiki/Commons:Licensing.
+Najczęściej spotykane licencje zdjęć i grafik to:
+* CC-BY-SA (różne wersje, zasady użycia zostały już wyjaśnione wyżej)
+* CC-BY – czyli wymagająca podania źródła i autorów, ale nie wymagająca obejmowania modyfikacji tą samą licencją, wszystkie pozostałe warunki są identyczne z CC-BY-SA
+* GNU FDL
+* FAL (Free Art Licence)
+* Copyrighted Free Use
+Ponadto w Wikipedii i Wikimedia Commons są też dostępne grafiki i zdjęcia, do których wygasły prawa autorskie, lub które tymi prawami nie są z różnych względów objęte, czyli będące w domenie publicznej.
+Uwaga
+Wszystkie pozostałe licencje Creative Commons nie są dopuszczalne w projektach Wikimedia. W szczególności nie są dozwolone licencje "NC" i "ND" – to jest zabraniające wykorzystania komercyjnego lub modyfikowania objętych nimi plików.
+FAL [edytuj]
+Licencja Free Art. Jest to licencja w duchu podobna do GNU FDL, ale lepiej dostosowana do dzieł sztuki. Daje ona takie same prawa jak GNU FDL, tj. możliwość dowolnego kopiowania, dystrybucji i modyfikacji objętego nią dzieła. Ustala ona jednak bardziej precyzyjnie jaki tekst należy dołączyć do dzieła. Brzmi on dokładnie:
+[Oryginalny opis dzieła]
+[Opis jego modyfikacji]
+Prawa autorskie © [data] [nazwa autorów lub artystów]
+Copyleft: to dzieło sztuki jest wolne, możesz je rozprowadzać i/lub
+modyfikować zgodnie z warunkami Licencji Free Art.
+Wzór tej licencji możesz znaleźć na stronie Copyleft Attitude
+http://artlibre.org jak również na innych stronach.
+W tej chwili nie ma bezpośrednio w Wikipedii grafik na licencji FAL - ale są one dostępne w Wikimedia Commons [1] i można z nich swobodnie korzystać w Wikipedii.
+Copyrighted Free Use [edytuj]
+Copyrighted Free Use to pseudo-licencja, w której autor pozostawia sobie prawa autorskie do pliku, ale daje jednocześnie pełną swobodę do korzystania z niego. Nie wymaga zatem ani podania informacji o źródle ani o autorze, zezwala na dowolne modyfikowanie i udostępniania modyfikacji pod dowolnymi innymi licencjami. Wymagane jest tylko - przy kopii dosłownej podanie informacji do kogo należą prawa autorskie do oryginalnego pliku.
+Obecnie nie ma bezpośrednio w Wikipedii grafik "Copyrighted Free Use", ale są one dostępne w Wikimedia Commons [2] i można z nich swobodnie korzystać w ramach Wikipedii.
+Copyrighted Free Use Provided That [edytuj]
+Inną odmianą tej pseudo-licencji jest:
+Copyrighted Free Use Provided That, która pozwala na dowolne dysponowanie objętym nią plikiem ale po spełnieniu określonych, wyłożonych osobiście przez autora warunków; w ramach Wikipedii warunki te nie mogą być jednak sprzeczne z podaną w pierwszej sekcji tego tekstu definicją "wolności użytkowania".
+Obecnie nie ma bezpośrednio w Wikipedii grafik "Copyrighted Free Use Provided That", ale są one dostępne w Wikimedia Commons [3] i można z nich swobodnie korzystać w ramach Wikipedii.
+Pliki w domenie publicznej [edytuj]
+Domena publiczna to ogół twórczości, która z różnych powodów nie jest w ogóle objęta niczyimi prawami autorskimi.
+Nieoficjalnym znakiem, którym są opatrywane w Wikipedii pliki znajdujące się w domenie publicznej jest:
+Symbol domeny publicznej
+Pliki mogą się znaleźć w domenie publicznej z wielu różnych powodów, m.in:
+* bo zgodnie z polskim prawem - wszelkie prawa autorskie ustają w 70 lat po śmierci twórcy dzieła - w innych krajach ten limit czasowy jest inny (np: w Izraelu jest to tylko 50 lat.). W UE i USA jest to również 70 lat;
+* bo dzieło jest w domenie publicznej na podstawie zapisów prawa danego kraju - np: w USA w domenie publicznej są automatycznie wszelkie dzieła wykonane na zamówienie rządu tego kraju za pieniądze podatnika; w Polsce w domenie publicznej są teksty wszystkich państwowych aktów prawnych, a także wzory urzędowych symboli stosowanych przez wszelkie organa państwa (np: oficjalne herby miast);
+* bo tak postanowił pierwotny właściciel praw autorskich do danego dzieła.
+W Wikipedii pliki dostępne na zasadzie domeny publicznej są opatrywane specjalnymi szablonami, które informują dlaczego uznano, że są one w tej domenie. Przykład:
+Public domain Na podstawie art. 4 pkt 1 i 2 ustawy z dnia 4 lutego 1994 r. o prawie autorskim i prawach pokrewnych (Dz. U. z 2006 r. Nr 90, poz. 631) nie stanowią przedmiotu prawa autorskiego akty normatywne, ich projekty, urzędowe dokumenty, materiały, znaki i symbole. Powyższa grafika należy do tej grupy, a zatem nie jest przedmiotem prawa autorskiego (należy więc do domeny publicznej). Godło RP
+Pliki w domenie publicznej można wykorzystywać w zupełnie dowolny sposób i nie ma nawet obowiązku podawania jego źródła i autorów.
+Korzystanie z materiałów na licencji GNU FDL [edytuj]
+Łeb GNU - symbol wszystkich licencji z rodziny GNU
+Wikipedia długo działała na licencji GNU FDL, którą objęte były dokładnie wszystkie teksty. 15 czerwca 2009 nastąpiła migracja do licencji Creative Commons CC-BY-SA 3.0 z jednoczesnym zachowaniem warunków licencji GNU FDL 1.3. Zmiana ta była podyktowana względami praktycznymi, gdyż licencja CC-BY-SA jest łatwiejsza w użyciu. Jest to też licencja najczęściej stosowana do zdjęć i grafik w Wikipedii. Mimo to, wciąż jest w Wikipedii i Wikimedia Commons wiele zdjęć i grafik dostępnych wyłącznie na różnych wersjach GNU FDL.
+Ogólne zasady [edytuj]
+Licencja GNU FDL wymaga, aby dołączyć w widoczny dla czytelnika sposób do kopii artykułów z Wikipedii:
+* pełen tekst licencji w angielskim oryginale (jest ona dostępna na stronie: http://www.gnu.org/copyleft/fdl.html)
+* informację o tym, że skopiowany tekst jest objęty licencją GNU FDL
+* dokładną informację o źródle w postaci linku do oryginalnego artykułu w Wikipedii
+* informację o autorach
+Dotyczy to zarówno kopiowania całych tekstów artykułów jak również ich części, chyba, że kopiowanie odbywa się na tzw. prawie cytatu. Dotyczy to również zdjęć, grafik i innych plików multimedialnych udostępnianych na tej licencji.
+Jeśli tekst lub grafika z Wikipedii nie jest bezpośrednio skopiowany, lecz jakoś przerobiony (np. przez włączenie do większej treści) utwór w ten sposób stworzony musi również być objęty licencją GNU FDL i muszą do niego być dołączone wszystkie informacje, tak jak do dosłownej kopii artykułu. Dokładnie w ten sam sposób licencja ta traktuje także tłumaczenia tekstów. Są one w jej świetle "przeróbkami" oryginalnego tekstu i dlatego trzeba je objąć tą samą licencją.
+Nie istnieje natomiast obowiązek dołączania do kopii artykułu strony tytułowej Wikipedii i innych tzw. sekcji niezmiennych, czego formalnie licencja GNU FDL wymaga, gdyż Wikipedia nie posiada takowych.
+Obowiązek dołączania pełnego tekstu licencji jest szczególnie kłopotliwy, gdy zależy nam tylko np. na jednym zdjęciu, lub jednym, krótkim artykule. W odróżnieniu jednak od tekstów, zdjęcia mają zwykle tylko jednego autora. Możemy zatem próbować go odnaleźć i nakłonić do udostępnienia nam tego zdjęcia na innych zasadach. Jak to zrobić jest omówione w sekcji Jak znaleźć autora pliku i nakłonić go do zmiany licencji.
+Problemy z tekstami edytowanymi po 15 czerwca 2009 [edytuj]
+Po przejściu Wikipedii na licencję CC-BY-SA 3.0, teksty powstałe przed 15 czerwca 2009 można nadal kopiować i modyfikować na licencji GNU FDL 1.3. Artykuły, które powstały po tym terminie, lub były po tym terminie edytowane, również można kopiować i modyfikować na licencji GNU FDL 1.3 ale pod warunkiem, że nie zawierają one treści pochodzących spoza Wikipedii, które zostały włączone ze źródeł, które zostały udostępnione wyłącznie na CC-BY-SA 3.0.
+W praktyce, jeśli komuś bardzo zależy aby opublikować tekst z Wikipedii na licencji GNU FDL 1.3 a nie CC-BY-SA 3.0 musi on/ona sprawdzić historię artykułu i następnie:
+* jeśli artykuł nie był edytowany po 15 czerwca 2009 - można go bezpiecznie użyć na licencji GNU FDL 1.3
+* jeśli artykuł powstał przed 15 czerwca 2009 ale był edytowany po tej dacie - można bezpiecznie użyć jego wersję sprzed tej daty
+* jeśli artykuł powstał po 15 czerwca 2009 lub chcemy użyć jego wersję stworzoną po tej dacie musimy sprawdzić, czy nie zawiera on treści "wyłącznie na licencji CC-BY-SA"
+o jeśli w ramach edycji po 15 czerwca nie dodano do artykułu nowych treści - możemy spokojnie przyjąć, że nie zawiera on treści "wyłącznie na CC-BY-SA"
+o jeśli po 15 czerwca dodano nowe fragmenty tekstu - musimy zwrócić się do autora, czy przypadkiem nie pochodzą one ze źródła "tylko na licencji CC-BY-SA".
+W sumie, znacznie prościej jest jednak skorzystać po prostu z licencji CC-BY-SA 3.0 ...
+Korzystanie z treści GNU FDL na stronach WWW [edytuj]
+W przypadku kopiowania tekstów lub grafik z Wikipedii na stronach WWW użycie licencji GNU FDL jest sprawą stosunkowo prostą. Wystarczy bowiem umieścić na dole lub na górze kopii następujący tekst:
+źródło: artykuł [XXX] w Wikipedii, licencja: [GNU FDL], autorzy: [wikipedyści]
+przy czym należy to tak zrobić, aby po kliknięciu na [XXX], [GNU FDL] i [wikipedyści] czytelnik był kierowany odpowiednio do oryginalnego tekstu artykułu, lokalnej kopii tekstu licencji i historii zmian danego artykułu.
+Przykład poprawnego użycia materiału z Wikipedii: [4]
+Korzystanie "off-line" z materiałów na licencji GNU FDL [edytuj]
+W przypadku kopii materiału, który zamierza się rozprowadzać na licencji GNU FDL poza internetem – np. w formie drukowanej lub na płycie DVD – konieczne jest dołączenie do każdej kopii: tekstu licencji GFDL, informacji o autorach i źródle oryginału oraz fakcie, że jest on objęty tą licencją, stosując te same techniki kopiowania jakie były zastosowane do stworzenia kopii.
+Np. jeśli drukujemy artykuł z Wikipedii, który możemy objąć licencją GNU FDL to musimy dołączyć do niego wydrukowany tekst licencji w oryginale oraz informacje o autorach, źródle i fakcie, że nasza kopia jest objęta również licencją GNU FDL.
+Treści wątpliwe [edytuj]
+Ze względu na naturę Wikipedii jest w niej obecna zawsze pewna, niewielka liczba niedawno załadowanych przez użytkowników plików, których status prawny jest nieznany, gdyż osoba ją wstawiająca nie podała kluczowych informacji o jego pochodzeniu lub zapomniała określić na jakiej licencji go udostępnia, lub też pojawiło się podejrzenie, że plik został "skradziony" czyli umieszczony w Wikipedii bez wiedzy i zgody prawowitego właściciela praw autorskich.
+Informuje o tym specjalny szablon:
+Warning sign Stan prawny tej grafiki nie jest znany
+Wykorzystywanie tej grafiki w artykułach Wikipedii i poza nią nie jest zalecane. Jeśli informacja o licencji nie zostanie uzupełniona, ta grafika będzie usunięta z Wikipedii. Po dodatkowe informacje zgłoś się do wikipedysty, który załadował ten plik na serwer - możesz wstawić zawiadomienie do jego dyskusji:
+== [[:Pomoc:Kopiowanie z Wikipedii]] ==
+{{subst:Dodaj licencję}}--~~~~
+Informacje o autorze tej grafiki zostały podane, brak jednak informacji o prawach autorskich. Jeśli dysponujesz informacjami o stanie prawnym tej grafiki, wpisz je. Jeśli grafika ta jest chroniona prawami autorskimi i nie jest udostępniona na licencji zgodnej z zasadami Wikipedii, poinformuj nas o tym.
+Dziękujemy.
+Dodane: ?
+Zobacz instrukcję, jak dodać informację o licencji.
+Gdy odnajdziemy taki plik nie powinniśmy go kopiować i używać do własnych celów - przynajmniej do czasu wyjaśnienia sprawy jego licencji. Pliki takie, o ile sprawa się nie wyjaśni, są z Wikipedii po pewnym czasie usuwane a osobie, które go wstawiła jest zwracana uwaga, aby więcej tego nie czyniła.
+Oprócz tego w Wikipedii można natknąć się na pliki i teksty, które aktualnie są jawnie podejrzewane o naruszenia praw autorskich - gdyż ktoś z wikipedystów znalazł tę samą grafikę lub plik w serwisie internetowym lub wydawnictwie papierowym, które jest objęte czyimiś "twardymi" prawami autorskimi. Informuje o tym szablon:
+Stop hand nuvola.svgCopyright.svg
+Ostrzeżenie
+Zawartość tej strony może naruszać prawa autorskie
+Tekst źródłowy prawdopodobnie pochodzi z:
+{{{1}}}
+Link do tej strony został dodany do Wikipedia:Lista NPA.
+Wskazówki dla twórców hasła
+1. Nie usuwaj tego szablonu. Zostanie on usunięty, jeżeli prawa autorskie tego artykułu zostaną wyjaśnione.
+2. Jeżeli potrafisz, napisz artykuł tak, aby nie naruszał praw autorskich.
+3. Jeżeli posiadasz prawa autorskie do tej treści lub posiadasz zgodę na publikację zgodną z naszą licencją, proszę, napisz o tym fakcie na stronie dyskusji tego artykułu i na stronie Wikipedia:Lista NPA oraz zastosuj procedurę zamieszczania haseł wcześniej opublikowanych.
+4. Jeśli status praw autorskich tego artykułu nie zostanie wyjaśniony, strona ta zostanie usunięta.
+Powielanie materiałów chronionych prawami autorskimi – bez zezwolenia właściciela tych praw – jest pogwałceniem obowiązującego prawa, jest też sprzeczne z ustaleniami Wikipedii. Osobom, które regularnie wstawiają takie materiały, może zostać odebrane prawo edycji Wikipedii.
+Jeżeli oznaczyłeś tę stronę jako podejrzaną o naruszenie praw autorskich, dodaj link do sekcji zgłoszone artykuły na WP:NPA:
+=== [[Kopiowanie z Wikipedii]] ===
+* źródło: {{{1}}}. ~~~~
+Oczywiście takiego materiału nie należy kopiować do czasu wyjaśnienia sprawy. Materiały tak oznakowane trafiają na specjalną listę WP:NPA, a następnie do prawdopodobnego właściciela praw autorskich jest wysyłane zapytanie o zgodę na objęcie go jedną z wolnych licencji. Materiały takie nie są od razu kasowane, gdyż czasami zdarza się, że zostały one załadowane przez osobę, która ma do nich pełne prawa autorskie, ale nie wie, że aby umieścić to w Wikipedii musi to objąć jedną z wolnych licencji. W przypadku braku zgody lub niemożności skontaktowania się z właścicielem materiałów - są one usuwane.
+Multilicencjonowanie [edytuj]
+Większość wolnych licencji nie dopuszcza możliwości nagłego odstąpienia od ich warunków przez właściciela praw autorskich. Jeśli raz udostępniliśmy plik na licencji GNU FDL nie możemy nagle oświadczyć, że się z tego wycofujemy i np: zażądać pieniędzy od wszystkich, którzy go skopiowali.
+Dzięki temu jednak, że autor po udzieleniu zgody na udostępnianie swojego dzieła na jednej z wolnych licencji pozostaje nadal właścicielem praw autorskich, może on jednocześnie udostępnić to dzieło na innej licencji, nawet jeśli licencje te są wzajemnie sprzeczne.
+W istocie, wielu autorów Wikipedii udostępnia pliki na wielu licencjach na raz - szczególnie częste jest jednoczesne udostępnianie na licencjach GNU FDL i CC-BY-SA. Gdy napotkamy plik opisany kilkoma szablonami wolnych licencji na raz, możemy sami wybrać tę, która nam bardziej odpowiada.
+Warto zauważyć, że nie dotyczy to przypadków, gdy autor zdecydował się przenieść swoje dzieło do domeny publicznej. Wówczas rezygnuje on z wszelkich praw autorskich - nie ma zatem sensu udostępniać jednocześnie swojego dzieła na jednej z wolnych licencji.
+Jak znaleźć autora pliku i nakłonić go do zmiany licencji [edytuj]
+Jeśli nie odpowiadają nam warunki licencji na jakiej został udostępniony interesujący nas plik, możemy zawsze odszukać i poprosić jego autora o udostępnienie nam go na innych zasadach. Oto prosta instrukcja jak to zrobić:
+* klikamy na obrazek lub link do interesującego nas pliku multimedialnego
+* pokazuje się nam metryczka tego pliku
+* na samym dole tej metryczki jest tabela, w której jest link do strony osobistej osoby, która umieściła interesujący nas plik w Wikipedii
+* klikamy na ten link - jeśli mamy szczęście - osoba ta napisała na swojej stronie osobistej parę słów o sobie i być może dodała nawet informację jak się z nią skontaktować (np: numer Gadu-Gadu, adres e-mail itp.)
+* jeśli nie - klikamy na zakładkę "dyskusja" i piszemy tam prośbę o skontaktowanie się z nami.
+Ze względu na to, że Wikipedia nie gromadzi żadnych danych osobowych swoich edytorów, oprócz tych, które oni sami zechcą napisać na swojej stronie osobistej - nie ma sensu wysyłać do nas próśb o podanie tych danych. My ich po prostu nie posiadamy, a nawet jeślibyśmy je posiadali, nie podamy ich, gdyż szanujemy prywatność naszych edytorów. Dodatkowo dane te są chronione prawnie - ustawą o ochronie danych osobowych.
+Kopie całej Wikipedii [edytuj]
+Cała zawartość Wikipedii, w tym artykuły z historią zmian, przechowywana jest w bazie danych zarządzanej przez MySQL. Wikimedia Foundation od czasu do czasu tworzy kopie tej bazy (tzw. dumpy) i udostępnia w formacie XML oraz jako statyczny HTML. Kopie te można pobrać ze strony: http://download.wikimedia.org/ :
+* Zbiór dumpów polskiej Wikipedii (XML) (najbardziej aktualna wersja)
+* Statyczna wersja HTML
+Z opisem struktury i sposobu użycia tych dumpów można zapoznać się na stronie: meta:Data_dumps.
+Uwaga
+Dumpy, podobnie jak i oryginalna Wikipedia są udostępniane na licencji CC-BY-SA 3.0, ich użycie zatem wymaga spełnienia warunków tej licencji opisanych w sekcji: Pomoc:Kopiowanie_z_Wikipedii#Korzystanie_z_licencji_CC-BY-SA_3.0. Społeczność Wikipedii bacznie przygląda się użyciu treści projektu. Informacja o kopiach i zmodyfikowanych wersjach Wikipedii dostępnych publicznie jest gromadzona na stronie Wikipedia:Mirrory i forki polskiej Wikipedii.
+Własna wiki [edytuj]
+Wikipedia działa w oparciu o oprogramowanie MediaWiki, które jest dostępne na licencji GPL. Mając odpowiednie warunki (serwer z zainstalowanym Apache, PHP i MySQL) można pobrać to oprogramowanie i uruchomić własną wiki. Wikipedia nie pomaga w instalowaniu tego oprogramowania. Osoby zainteresowane postawieniem własnej wiki mogą się zapoznać z dokumentacją oprogramowania MediaWiki na stronie: http://www.mediawiki.org/
+Źródło „http://pl.wikipedia.org/wiki/Pomoc:Kopiowanie_z_Wikipedii”
+Kategoria: Prawa autorskie w Wikipedii
+Ukryta kategoria: Strony nieindeksowane
+Osobiste
+* Stary układ stron
+* Nowe funkcje
+* Logowanie i rejestracja
+Przestrzenie nazw
+* Strona pomocy
+* Dyskusja
+Warianty
+Widok
+* Czytaj
+* Edytuj
+* Historia i autorzy
+Działania
+Szukaj
+Szukaj
+Nawigacja
+* Strona główna
+* Kategorie artykułów
+* Bieżące wydarzenia
+* Losuj artykuł
+Dla czytelników
+* Zgłoś/popraw błąd
+* Zgłoś błąd w pliku
+* Częste pytania (FAQ)
+* Kontakt z Wikipedią
+* Wspomóż Wikipedię
+Dla edytorów
+* Ostatnie zmiany
+* Zasady edytowania
+* Pomoc
+* Portal wikipedystów
+* Ogłoszenia
+Narzędzia
+* Linkujące
+* Zmiany w dolinkowanych
+* Strony specjalne
+* Link do tej wersji
+* Tę stronę ostatnio zmodyfikowano 15:24, 25 cze 2010.
+* Tekst udostępniany na licencji Creative Commons: uznanie autorstwa, na tych samych warunkach, z możliwością obowiązywania dodatkowych ograniczeń. Zobacz szczegółowe informacje o warunkach korzystania.
+* Zasady ochrony prywatności
+* O Wikipedii
+* Informacje prawne
+* Powered by MediaWiki
+* Wikimedia Foundation

@@ -1,0 +1,19 @@
+#!/bin/bash
+if [ $# -ne 1 ]
+then
+  echo "Usage: `basename $0` tagset-name"
+  echo
+  echo "Reads stdin as tab-separated file and feeds each tag representation"
+  echo "through tagset-tool -p in order to get a decomposed tag representation"
+  echo "(useful for testing if two tabfiles resolve to the same tags)."
+  echo "NOTE: to get meaningful results, ensure that each line contains a"
+  echo "unique (form, lemma) pair. To get this format, use tablines.py."
+  exit 65
+fi
+
+while read line
+do
+	echo "$line" | cut -f 1,2 | tr '\n' '\t'
+	echo "$line" | cut -f 3 | tagset-tool -pq -t $1 | sort | sed -e :a -e '$!N; s/\n/+/; ta'
+	
+done

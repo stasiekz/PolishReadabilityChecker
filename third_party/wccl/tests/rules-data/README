@@ -1,0 +1,12 @@
+Test cases are defined by .ccl files, one .ccl file is one testcase. 
+
+If the test case filename contains the string "match", it is treated as a match rule, otherwise a disambiguation rule. Match rules require CCL input files as described below.
+
+A test case loads a corpus from an .xml file thet is not an .out.xml file from the test case directory, or directories above if there are none.
+Behavior is undefined if there is more than one .xml file in a directory. Only the first chunk is processed (all sentences from the chunk).
+If the xml filename contains the string "ccl", it will be read as a CCL format xml as opposed to the default XCES.
+
+A foo.ccl file should be accompanied by a foo.out.xml file defining the expected output. Output is compared intelligently, lexeme order / duplicates does not matter.
+If the output filenale contains the string "ccl", it will be read as a CCL file as in the input file. Additionally, annotations will be compared.
+
+A magic file with the extension .is-the-tagset defines the tagset for testcases in this directory and all subdirectories, unless overrden by another .is-the-tagset file.

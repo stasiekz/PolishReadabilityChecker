@@ -1,0 +1,84 @@
+tagset=kipi
+sentence=t01.xml
+---
+rlook(begin, end, $Test, True)
+
+True
+---
+llook(0, end, $V, False)
+
+False
+V=nowhere
+---
+position=0
+rlook(0,end,$P,
+	inter(class[$P], {subst})
+)
+
+True
+P=3
+---
+position=3
+rlook(0,end,$P,
+	inter(class[$P], {subst})
+)
+
+True
+P=0
+---
+position=4
+rlook(0,end,$P,
+	inter(class[$P], {subst})
+)
+
+True
+P=8
+---
+position=19
+rlook(0,end,$P,inter(class[$P], {subst}))
+
+False
+P=nowhere
+---
+position=26
+llook(0,begin,$NomAcc, equal(cas[$NomAcc],{nom,acc}))
+
+True
+NomAcc=-1
+---
+position=12
+llook(0,begin,$NomAcc, equal(cas[$NomAcc],{nom,acc}))
+
+True
+NomAcc=-4
+---
+position=2
+llook(0,begin,$NomAcc, equal(cas[$NomAcc],{nom,acc}))
+
+False
+NomAcc=nowhere
+---
+position=0
+only(10,12,$Loc, in(loc, cas[$Loc]))
+
+True
+Loc=12
+---
+position=0
+only(10,13,$Loc, in(loc, cas[$Loc]))
+
+False
+Loc=nowhere
+---
+position=0
+atleast(9,13,$Loc, in(loc, cas[$Loc]), 3)
+
+True
+Loc=12
+---
+position=0
+atleast(9,13,$Loc, in(loc, cas[$Loc]), 4)
+
+False
+Loc=nowhere
+---

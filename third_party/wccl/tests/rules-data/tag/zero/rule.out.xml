@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cesAna SYSTEM "xcesAnaIPI.dtd">
+<cesAna version="1.0" type="lex disamb">
+<chunkList>
+<chunk id="ch51" type="tok">
+<chunk type="s">
+<tok>
+<orth>Uważam</orth>
+<lex disamb="1"><base>uważać</base><ctag>fin:sg:pri:imperf</ctag></lex>
+</tok>
+<ns/>
+<tok>
+<orth>,</orth>
+<lex disamb="1"><base>,</base><ctag>interp</ctag></lex>
+</tok>
+<tok>
+<orth>że</orth>
+<lex disamb="1"><base>że</base><ctag>conj</ctag></lex>
+</tok>
+<tok>
+<orth>światopogląd</orth>
+<lex><base>światopogląd</base><ctag>subst:sg:acc:m3</ctag></lex>
+<lex disamb="1"><base>światopogląd</base><ctag>subst:sg:nom:m3</ctag></lex>
+</tok>
+<tok>
+<orth>może</orth>
+<lex><base>może</base><ctag>qub</ctag></lex>
+<lex disamb="1"><base>móc</base><ctag>fin:sg:ter:imperf</ctag></lex>
+</tok>
+<tok>
+<orth>być</orth>
+<lex disamb="1"><base>być</base><ctag>inf:imperf</ctag></lex>
+</tok>
+<tok>
+<orth>materialistyczny</orth>
+<lex><base>materialistyczny</base><ctag>adj:sg:acc:m3:pos</ctag></lex>
+<lex><base>materialistyczny</base><ctag>adj:sg:nom:m1:pos</ctag></lex>
+<lex><base>materialistyczny</base><ctag>adj:sg:nom:m2:pos</ctag></lex>
+<lex disamb="1"><base>materialistyczny</base><ctag>adj:sg:nom:m3:pos</ctag></lex>
+</tok>
+<tok>
+<orth>lub</orth>
+<lex disamb="1"><base>lub</base><ctag>conj</ctag></lex>
+<lex><base>lubić</base><ctag>impt:sg:sec:imperf</ctag></lex>
+</tok>
+<tok>
+<orth>idealistyczny</orth>
+<lex><base>idealistyczny</base><ctag>adj:sg:acc:m3:pos</ctag></lex>
+<lex><base>idealistyczny</base><ctag>adj:sg:nom:m1:pos</ctag></lex>
+<lex><base>idealistyczny</base><ctag>adj:sg:nom:m2:pos</ctag></lex>
+<lex disamb="1"><base>idealistyczny</base><ctag>adj:sg:nom:m3:pos</ctag></lex>
+</tok>
+<tok>
+<orth>(</orth>
+<lex disamb="1"><base>(</base><ctag>interp</ctag></lex>
+</tok>
+<ns/>
+<tok>
+<orth>w</orth>
+<lex><base>w</base><ctag>prep:acc:nwok</ctag></lex>
+<lex disamb="1"><base>w</base><ctag>prep:loc:nwok</ctag></lex>
+</tok>
+<tok>
+<orth>prymitywnych</orth>
+<lex><base>prymitywny</base><ctag>adj:pl:acc:m1:pos</ctag></lex>
+<lex><base>prymitywny</base><ctag>adj:pl:gen:f:pos</ctag></lex>
+<lex><base>prymitywny</base><ctag>adj:pl:gen:m1:pos</ctag></lex>
+<lex><base>prymitywny</base><ctag>adj:pl:gen:m2:pos</ctag></lex>
+<lex><base>prymitywny</base><ctag>adj:pl:gen:m3:pos</ctag></lex>
+<lex><base>prymitywny</base><ctag>adj:pl:gen:n:pos</ctag></lex>
+<lex disamb="1"><base>prymitywny</base><ctag>adj:pl:loc:f:pos</ctag></lex>
+<lex><base>prymitywny</base><ctag>adj:pl:loc:m1:pos</ctag></lex>
+<lex><base>prymitywny</base><ctag>adj:pl:loc:m2:pos</ctag></lex>
+<lex><base>prymitywny</base><ctag>adj:pl:loc:m3:pos</ctag></lex>
+<lex><base>prymitywny</base><ctag>adj:pl:loc:n:pos</ctag></lex>
+</tok>
+<tok>
+<orth>cywilizacjach</orth>
+<lex disamb="1"><base>cywilizacja</base><ctag>subst:pl:loc:f</ctag></lex>
+</tok>
+<tok>
+<orth>nawet</orth>
+<lex disamb="1"><base>nawet</base><ctag>qub</ctag></lex>
+</tok>
+<tok>
+<orth>magiczny</orth>
+<lex><base>magiczny</base><ctag>adj:sg:acc:m3:pos</ctag></lex>
+<lex><base>magiczny</base><ctag>adj:sg:nom:m1:pos</ctag></lex>
+<lex><base>magiczny</base><ctag>adj:sg:nom:m2:pos</ctag></lex>
+<lex disamb="1"><base>magiczny</base><ctag>adj:sg:nom:m3:pos</ctag></lex>
+</tok>
+<ns/>
+<tok>
+<orth>)</orth>
+<lex disamb="1"><base>)</base><ctag>interp</ctag></lex>
+</tok>
+<ns/>
+<tok>
+<orth>,</orth>
+<lex disamb="1"><base>,</base><ctag>interp</ctag></lex>
+</tok>
+<tok>
+<orth>ale</orth>
+<lex disamb="1"><base>ale</base><ctag>conj</ctag></lex>
+</tok>
+<tok>
+<orth>nie</orth>
+<lex disamb="1"><base>nie</base><ctag>qub</ctag></lex>
+<lex><base>on</base><ctag>ppron3:pl:acc:f:ter:praep</ctag></lex>
+<lex><base>on</base><ctag>ppron3:pl:acc:m2:ter:praep</ctag></lex>
+<lex><base>on</base><ctag>ppron3:pl:acc:m3:ter:praep</ctag></lex>
+<lex><base>on</base><ctag>ppron3:pl:acc:n:ter:praep</ctag></lex>
+<lex><base>on</base><ctag>ppron3:sg:acc:n:ter:praep</ctag></lex>
+</tok>
+<tok>
+<orth>morski</orth>
+<lex><base>morski</base><ctag>adj:sg:acc:m3:pos</ctag></lex>
+<lex><base>morski</base><ctag>adj:sg:nom:m1:pos</ctag></lex>
+<lex><base>morski</base><ctag>adj:sg:nom:m2:pos</ctag></lex>
+<lex disamb="1"><base>morski</base><ctag>adj:sg:nom:m3:pos</ctag></lex>
+</tok>
+<ns/>
+<tok>
+<orth>,</orth>
+<lex disamb="1"><base>,</base><ctag>interp</ctag></lex>
+</tok>
+<tok>
+<orth>lotniczy</orth>
+<lex><base>lotniczy</base><ctag>adj:pl:nom:m1:pos</ctag></lex>
+<lex><base>lotniczy</base><ctag>adj:sg:acc:m3:pos</ctag></lex>
+<lex><base>lotniczy</base><ctag>adj:sg:nom:m1:pos</ctag></lex>
+<lex><base>lotniczy</base><ctag>adj:sg:nom:m2:pos</ctag></lex>
+<lex disamb="1"><base>lotniczy</base><ctag>adj:sg:nom:m3:pos</ctag></lex>
+</tok>
+<ns/>
+<tok>
+<orth>,</orth>
+<lex disamb="1"><base>,</base><ctag>interp</ctag></lex>
+</tok>
+<tok>
+<orth>rolny</orth>
+<lex><base>rolny</base><ctag>adj:sg:acc:m3:pos</ctag></lex>
+<lex><base>rolny</base><ctag>adj:sg:nom:m1:pos</ctag></lex>
+<lex><base>rolny</base><ctag>adj:sg:nom:m2:pos</ctag></lex>
+<lex disamb="1"><base>rolny</base><ctag>adj:sg:nom:m3:pos</ctag></lex>
+</tok>
+<tok>
+<orth>czy</orth>
+<lex disamb="1"><base>czy</base><ctag>conj</ctag></lex>
+</tok>
+<tok>
+<orth>leśny</orth>
+<lex><base>leśny</base><ctag>adj:sg:acc:m3:pos</ctag></lex>
+<lex><base>leśny</base><ctag>adj:sg:nom:m1:pos</ctag></lex>
+<lex><base>leśny</base><ctag>adj:sg:nom:m2:pos</ctag></lex>
+<lex disamb="1"><base>leśny</base><ctag>adj:sg:nom:m3:pos</ctag></lex>
+</tok>
+<ns/>
+<tok>
+<orth>.</orth>
+<lex disamb="1"><base>.</base><ctag>interp</ctag></lex>
+</tok>
+</chunk>
+</chunk>
+</chunkList>
+</cesAna>
+

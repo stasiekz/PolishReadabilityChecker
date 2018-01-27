@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cesAna SYSTEM "xcesAnaIPI.dtd">
+<chunkList xmlns:xlink="http://www.w3.org/1999/xlink">
+ <chunk id="ch1" type="p">
+  <sentence>
+   <tok>
+    <orth>Ile</orth>
+    <lex disamb="1"><base>ile</base><ctag>num:pl:acc:m3:rec</ctag></lex>
+    <ann chan="chunk_adjp">0</ann>
+    <ann chan="chunk_agp">1</ann>
+    <ann chan="chunk_np">1</ann>
+    <ann chan="chunk_vp">0</ann>
+   </tok>
+   <tok>
+    <orth>kosztują</orth>
+    <lex disamb="1"><base>kosztować</base><ctag>fin:pl:ter:imperf</ctag></lex>
+    <ann chan="chunk_adjp">0</ann>
+    <ann chan="chunk_agp">0</ann>
+    <ann chan="chunk_np">0</ann>
+    <ann chan="chunk_vp">1</ann>
+   </tok>
+   <tok>
+    <orth>buty</orth>
+    <lex disamb="1"><base>but</base><ctag>subst:pl:acc:m3</ctag></lex>
+    <ann chan="chunk_adjp">0</ann>
+    <ann chan="chunk_agp">2</ann>
+    <ann chan="chunk_np">2</ann>
+    <ann chan="chunk_vp">0</ann>
+   </tok>
+   <tok>
+    <orth>do</orth>
+    <lex disamb="1"><base>do</base><ctag>prep:gen</ctag></lex>
+    <ann chan="chunk_adjp">0</ann>
+    <ann chan="chunk_agp">3</ann>
+    <ann chan="chunk_np">2</ann>
+    <ann chan="chunk_vp">0</ann>
+   </tok>
+   <tok>
+    <orth>biegania</orth>
+    <lex disamb="1"><base>biegać</base><ctag>ger:sg:gen:n:imperf:aff</ctag></lex>
+    <ann chan="chunk_adjp">0</ann>
+    <ann chan="chunk_agp">3</ann>
+    <ann chan="chunk_np">2</ann>
+    <ann chan="chunk_vp">0</ann>
+   </tok>
+   <ns/>
+   <tok>
+    <orth>?</orth>
+    <lex disamb="1"><base>?</base><ctag>interp</ctag></lex>
+    <ann chan="chunk_adjp">0</ann>
+    <ann chan="chunk_agp">0</ann>
+    <ann chan="chunk_np">0</ann>
+    <ann chan="chunk_vp">0</ann>
+   </tok>
+  </sentence>
+ </chunk>
+</chunkList>

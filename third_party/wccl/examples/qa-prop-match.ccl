@@ -1,0 +1,47 @@
+match_rules(
+	apply(
+		match(
+			and(
+				inter(lower(base[0]), ["za", "po"]),
+				inter(lower(base[1]), ["ile"])
+			)
+		),		
+		actions(
+			setprop(M, "qtype2", "price"),
+			setprop(M, "qtype3", "time")
+		)
+	);
+	apply(
+		match(
+			inter(base[0], ["kupić", "płacić", "nabyć", "sprzedać", "kosztować"])
+		),
+		actions(
+			setprop(M, "qtype1", "price")
+		)
+	);
+	apply(
+		match(
+			inter(base[0], ["cena"])
+		),
+		actions(
+			setprop(M, "qtype2", "price")
+		)
+	);
+	apply(
+		match(
+			inter(base[0], ["gdzie"])
+		),
+		actions(
+			setprop(M, "qtype2", "where")
+		)
+	);
+	apply(
+		match(
+			inter(base[0], ["sekunda", "minuta", "godzina", "rok", "dzień"])
+		),
+		actions(
+			setprop(M, "qtype2", "time")
+		)
+	)
+
+)

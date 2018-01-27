@@ -1,0 +1,58 @@
+FROM ubuntu:12.04
+RUN apt-get update
+RUN apt-get install --reinstall -y wget
+RUN /usr/bin/wget -O - http://sgjp.pl/apt/sgjp.gpg.key | apt-key add -
+RUN apt-get install -y python-software-properties
+RUN add-apt-repository -y ppa:bartosz-zaborowski/nlp
+RUN apt-get update
+RUN apt-get install -y python-dev python-pip python-setuptools python-numpy python-scipy python-zsi python-networkx python-mysqldb python-software-properties python-nose python3
+RUN apt-get install -y morfeusz-sgjp
+RUN apt-get install -y build-essential cmake bison flex python-dev swig
+RUN apt-get install -y libboost-dev libboost-program-options-dev libboost-filesystem-dev libboost-system-dev libboost-regex-dev libboost-iostreams-dev libboost-thread-dev libicu-dev libloki-dev libxml++2.6-dev libedit-dev libreadline-dev
+RUN apt-get install -y libsfst1-1.2-0 libsfst1-1.2-0-dev
+RUN apt-get install -y libantlr-dev
+
+COPY third_party /
+
+WORKDIR /CRF++-0.58
+RUN ./configure
+RUN make
+RUN make install
+RUN ldconfig
+
+WORKDIR /corpus2/bin
+RUN cmake ..
+RUN make
+RUN make install
+RUN ldconfig
+
+WORKDIR /toki/bin
+RUN cmake ..
+RUN make
+RUN make install
+RUN ldconfig
+
+WORKDIR /maca/third_party/SFST-1.2/SFST/src
+RUN make -j
+RUN make install
+RUN ldconfig
+WORKDIR /maca/bin
+RUN cmake ..
+RUN make
+RUN make install
+RUN ldconfig
+
+WORKDIR /wccl/bin
+RUN cmake ..
+RUN make
+RUN make install
+RUN ldconfig
+
+WORKDIR /wcrft2/bin
+RUN cmake ..
+RUN make
+RUN make install
+RUN ldconfig
+
+WORKDIR /
+COPY wcrft2_server.py /

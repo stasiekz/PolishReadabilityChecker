@@ -1,0 +1,458 @@
+[zamknij]
+Ukryj
+Wikipedia się zmienia.
+Pomóż nam odnaleźć błędy i uzupełnić tłumaczenie interfejsu użytkownika. (before 25/08/2010).
+[edytuj]
+Wikipedia:Pytania nowicjuszy/Prawa autorskie
+Z Wikipedii, wolnej encyklopedii
+< Wikipedia:Pytania nowicjuszy
+Skocz do: nawigacji, szukaj
+Copyleft.svg Prawa autorskie w Wikipedii
+NPA (Lista) · Jak unikać NPA · Patrolowanie · Kopiowanie z Wikipedii · FAQ
+Pytania nowicjuszy
+(FAQ)
+Ogólnie o Wikipedii, jej funkcjonowaniu i przeszukiwaniu  • Zamieszczanie i poprawianie treści
+Korzystanie z Wikipedii i prawa autorskie  • Edytowanie artykułów  • Wersje oznaczone artykułów  • Grafiki i inne pliki
+Problemy techniczne (szablony, narzędzia)  • Konto użytkownika (własna strona, preferencje)
+Jeżeli szukasz tekstu ustawy o prawie autorskim, znajdziesz ją na stronie Wikiźródeł
+Important-3.svg
+Zanim zadasz pytanie – proszę, przeczytaj poniższy komunikat.
+Strona służy do zadawania pytań dotyczących wyłącznie problemów związanych z prawami autorskimi materiałów (grafiki, treści artykułów) zamieszczanych w polskojęzycznej Wikipedii oraz ich wykorzystaniem – a więc plagiatami, licencjami, procedurami wychwytywania łamania praw autorskich itp. Jeśli szukasz odpowiedzi na pytania dotyczące innych problemów, kliknij w odpowiedni link powyżej.
+Aby nie zadawać pytania, które ktoś wcześniej mógł zadać, przejrzyj najczęściej pojawiające się pytania – wyróżnione białe tło poniżej.
+Jeśli poniżej nie udało Ci się znaleźć satysfakcjonujących odpowiedzi, kliknij tu, by zadać pytanie
+Red copyright.svg
+Spis treści
+[ukryj]
+* 1 Pytania dotyczące wykorzystywania treści Wikipedii, praw autorskich i plagiatów
+o 1.1 Chcę wykorzystać zawartość Wikipedii. Jak to zrobić?
++ 1.1.1 Cytowanie fragmentów
++ 1.1.2 Zamieszczanie całych artykułów
+o 1.2 Czy jeśli znalazłem w internecie jakiś tekst, mogę go skopiować do Wikipedii?
+o 1.3 Mam starą książkę/gazetę, czy mogę umieścić jej treści/ilustracje w Wikipedii?
+o 1.4 W Wikipedii znajduje się plagiat. Co powinienem zrobić?
++ 1.4.1 Tekst w Wikipedii jest rzeczywiście skopiowany z innego źródła
++ 1.4.2 To jednak znaleziona publikacja (lub jej część) jest kopią treści z Wikipedii
+o 1.5 Czy jeśli przetłumaczę tekst z jakiegoś zagranicznego źródła, tłumaczenie może być zamieszczone w Wikipedii?
+o 1.6 Czy można tłumaczyć artykuły z Wikipedii w innych językach?
+o 1.7 Czy, wstawiając grafiki, też powinienem zamieszczać je na licencji GFDL?
+o 1.8 Fair use. Czy można zamieszczać materiały na zasadzie dozwolonego użytku?
+o 1.9 Przeczytałem w prasie, że wikipedyści są plagiatorami. Czy to prawda?
+o 1.10 W jaki sposób sprawdzacie, czy dany tekst nie jest plagiatem?
++ 1.10.1 A jeżeli dany tekst jest plagiatem z pozycji niepublikowanej w internecie?
+* 2 Pozostałe pytania dotyczące kwestii praw autorskich
+o 2.1 korzystanie z ilustracji w Wikipedii
+o 2.2 dot.edycji artykulu
+o 2.3 Prawa autorskie
+o 2.4 Logo
+o 2.5 z FAQ
+o 2.6 Do pytania 1.3
+o 2.7 czy naruszeniem praw autorskich będzi taka sytuacja
+o 2.8 Trzy pytania
+o 2.9 Co do autorów
+o 2.10 Prawa autorskie do banknotów
+o 2.11 Fair use
+o 2.12 Herb miasta
+o 2.13 szkic fotografi
+o 2.14 Zamieszczenie grafiki na swojej stronie
+o 2.15 Jak ma wyglądać zgoda na udostępnienie pliku na podanej licencji?
+o 2.16 Wikipedia w innych językach jako jedno ze źródeł
+o 2.17 Zdjecie budynkow i wnetrz
+o 2.18 Szablon
+o 2.19 E-mail
+o 2.20 Grafiki
+o 2.21 pobranie współrzędnych
+o 2.22 Wykorzystanie tłumaczenia artykułu z polskiej Wikipedii
+o 2.23 Pytania
+o 2.24 Zdjęcie rysunku z tablicy informacyjnej
+o 2.25 link do Wikicytaty, Wikimedia i Wikipedia
+o 2.26 Praca
+o 2.27 czy przeredagowany tekst jest plagiatem jeżeli podam źródło że wiadomości zostały zaczerpnięte z wikipedii?
+o 2.28 zdjęcie z albumu
+o 2.29 jak definiowac stwierdzenie "przetworzenie jej w sposób twórczy"
+o 2.30 Jak prawidłowo oznaczyć źródła
+o 2.31 Korzystanie z własnych publikacji
+o 2.32 Nie podano źródła
+o 2.33 Źródła
+o 2.34 Zapytanie
+o 2.35 Kilka pytań
+o 2.36 Czas oczekiwania na decyzję po wysłaniu potwierdzenia praw autorskich
+o 2.37 ISBN
+o 2.38 Dowody na prawo do własnej grafiki ??? dlaczego chcecie usunąć ?
+o 2.39 BIP, a prawo autorskie
+o 2.40 ZAPYTANIE
+o 2.41 robert schumann
+o 2.42 Inne serwisy używające nazwy "Wikipedia" - co robić?
+o 2.43 Youtube
+o 2.44 dlaczego udajemy się do Niemiec ale na Węgry, Słowację, Ukrainę itp
+o 2.45 Kopiowanie treści z innych stron na licencji CC
+o 2.46 Zamieszczenie starego zdjęcia
+o 2.47 Wykorzystanie informacji zawartych w wikipedii w celach komercyjnych
+o 2.48 własność prawa autorskiego - spadkobierca
+o 2.49 Zdjęcie wykonane ponad 70 lat temu
+o 2.50 Mam własną stronę www mogę użyć tekstów z wikipedii,żeby uatrakcyjnić swoją stronę?
+o 2.51 Skopiowane z "Avatar Wiki"
+o 2.52 Jak konkretnie ma wyglądać odwołanie do źródła
+o 2.53 pytanie o cytowanie stron www
+o 2.54 Plik z "dziwną" licencją
+Info icon 002.svg Pytania dotyczące wykorzystywania treści Wikipedii, praw autorskich i plagiatów [edytuj]
+Chcę wykorzystać zawartość Wikipedii. Jak to zrobić? [edytuj]
+Cytowanie fragmentów [edytuj]
+Możesz cytować fragmenty tekstów zamieszczonych w Wikipedii, wystarczy, że jako źródło Twoich wiadomości podasz po prostu Wikipedię. Nie dotyczy to zamieszczania całych lub prawie całych artykułów – te informacje znajdziesz w kolejnej sekcji.
+Przykłady dokładnego opisu źródła w różnych stylach znajdziesz na specjalnej stronie Cytuj - podaj tam tylko tytuł interesującego Cię artykułu. Taki opis można też wygenerować bezpośrednio ze strony artykułu poprzez link "Cytowanie tego artykułu", który w standardowej skórce widoczny jest w lewej kolumnie, w sekcji "Narzędzia".
+Zamieszczanie całych artykułów [edytuj]
+Warto pamiętać, że cytowanie to nie jest przepisywanie całych artykułów, tylko ich krótkich fragmentów. Jeżeli chcesz wykorzystać cały artykuł, musisz objąć go licencją CC-BY-SA 3.0 lub GNU FDL, co oznacza m.in. podanie wszystkich autorów artykułu. Przykładowo, kopiując tę stronę, należałoby umieścić:
+Źródło: Wikipedia (autorzy, na licencji CC-BY-SA 3.0)
+Aby wstawić link do autorów – użyj zakładki Historia strony na danej stronie. A więc – kopiujesz adres internetowy strony głównej Wikipedii, adres strony artykułu i adres historii tego artykułu oraz adres licencji CC-BY-SA 3.0.
+W przypadku, gdybyś chciał wykorzystać treść poza internetem – dodaj do tekstu:
+* Źródło: pl.wikipedia.org, nazwa strony. Zamieść adres do danej strony (lub wypisz z jej historii wszystkich autorów) oraz do strony informacyjnej licencji CC-BY-SA 3.0.
+Information icon.svg Zobacz też: Wikipedia:Prawa autorskie i Pomoc:Kopiowanie z Wikipedii.
+Czy jeśli znalazłem w internecie jakiś tekst, mogę go skopiować do Wikipedii? [edytuj]
+* Możesz to zrobić tylko za pisemną zgodą osoby, która ma prawa autorskie do tego tekstu. W tym celu możesz wysłać zapytanie, czy jest ona autorem tego tekstu i czy zgodziłaby się na to, by był on (lub jego fragment) opublikowany w Wikipedii na wolnej licencji CC-BY-SA 3.0 oraz GFDL. W tym celu użyj najlepiej szablonu: Szablon zapytania o prawa autorskie, a odpowiedź prześlij (forward) na adres permissions-pl@wikimedia.org.
+* Oczywiście, publikując teksty znalezione w sieci, nie zapomnij o pozostałych zasadach Wikipedii, w szczególności zadbaj o to, aby tekst był neutralny i poparty źródłami, jeśli nie jest on tworzony na bazie stron oficjalnych instytucji.
+Mam starą książkę/gazetę, czy mogę umieścić jej treści/ilustracje w Wikipedii? [edytuj]
+* Prawa autorskie wygasają 70 lat od śmierci autora. Z tego względu nie jest istotna data wydania danej pozycji, tylko data śmierci osoby, która w tej pozycji tekst zamieściła. Jedynie w przypadku, gdy nie da się określić autorstwa danego tekstu, można liczyć, że prawa do tekstu wygasły po 70 latach od ich opublikowania. To samo dotyczy fotografii czy innych ilustracji.
+W Wikipedii znajduje się plagiat. Co powinienem zrobić? [edytuj]
+* Wpierw upewnij się, czy wersja w Wikipedii jest kopią tej ze strony internetowej lub publikacji papierowej, czy może jest odwrotnie. Sprawdź datę publikacji tekstu poza Wikipedią i porównaj go z wersją w Wikipedii na bazie historii zmian danej strony. Często bywa tak, że to teksty z Wikipedii są kopiowane poza nią.
+Tekst w Wikipedii jest rzeczywiście skopiowany z innego źródła [edytuj]
+Jeżeli jest to kopia z PWN, encyklopedii internetowych (np. WIEM Onetu) czy innych źródeł, które na pewno nie zgadzają się na publikację, zgłoś artykuł do usunięcia, wpisując na jego stronie {{ek|kopia ze strony http://tu.wpisz/odpowiedni/adres.strony}}. Wejdź na stronę Zapytania o zgodę na wykorzystanie, aby sprawdzić, które serwisy zgadzają się na kopiowanie, a które nie.
+* Jeśli nie masz pewności, czy dany serwis mógłby się zgodzić na publikację treści w Wikipedii na wolnej licencji, zgłoś to za pomocą szablonu {{NPA}}. Opis procedury znajdziesz na stronie WP:NPA.
+* Jeżeli jest to tekst autora nieżyjącego od ponad 70 lat, taka treść nie podlega ochronie prawa autorskiego i każdy nawet bez podawania autora może ją publikować. Autora jednak warto podać, aby właśnie było wiadomo, że treść ta jest wolna ze względu na upłynięcie tych 70 lat.
+To jednak znaleziona publikacja (lub jej część) jest kopią treści z Wikipedii [edytuj]
+W takim przypadku upewnij się, czy jest to zrobione zgodnie z licencją CC-BY-SA 3.0 lub GNU FDL 1.3 – powinien być podany link do strony artykułu, historii tej strony w Wikipedii (czyli do autorów), link do strony głównej Wikipedii i link do licencji CC-BY-SA 3.0 lub GNU FDL 1.3. W przypadku niewielkich cytatów wystarczy, że jest informacja typu "Źródło: Wikipedia".
+* Jeżeli nie jest to zamieszczone zgodnie z licencją, możesz taką stronę zgłosić tutaj: Wikipedia:Korzystają z Wikipedii.
+W tej publikacji http://ksiazki.wp.pl/wiadomosci/id,36416,wiadomosc.html użyto fragmetu tekstu z Wikipedii, z artykułu http://pl.wikipedia.org/wiki/Miko%C5%82aj_Kopernik, bez podania zródła:
+Z polecenia króla Gustawa II Adolfa księgi trafiły do biblioteki uniwersyteckiej w Uppsali. Posiada ona najsłynniejsze na świecie kopernikana. Z 46 tomów z notatkami astronoma aż 39 znajduje się w bibliotece uniwersyteckiej w Uppsali, dwa w uppsalskiej bibliotece Obserwatorium Astronomicznego i jeden w Bibliotece Królewskiej w Sztokholmie.
+Artykuł pochodzi z serwisu prasowego PAP.
+Czy jeśli przetłumaczę tekst z jakiegoś zagranicznego źródła, tłumaczenie może być zamieszczone w Wikipedii? [edytuj]
+Nie, jeśli autor danej treści nie zgodził się na ich zamieszczenie na wolnej licencji, niezależnie od tego, jakim językiem była napisana. To właśnie m.in. z tego względu zamknięto w połowie 2007 roku jeden z serwisów, który oferował napisy do filmów, ponieważ bez pozwolenia tłumaczone były ścieżki dialogowe do filmów, które oczywiście miały swoich autorów.
+Czy można tłumaczyć artykuły z Wikipedii w innych językach? [edytuj]
+Tak, oczywiście – wszystkie wersje językowe Wikipedii są tworzone na tej samej licencji CC-BY-SA i GFDL. Należy jedynie zaznaczyć (w polu "Opis zmian"), że jest to tłumaczenie z danej Wikipedii. Najlepiej w postaci: "tłumaczenie z anglojęzycznej Wikipedii" lub krócej "tłumaczenie z en wiki". Do artykułu dodaj link lub linki interwiki: [[en:Tytuł w anglojęzycznej Wikipedii]], [[ru:tytuł w rosyjskiej Wikipedii]]. W ten sposób każdy będzie mógł sprawdzić autorów tłumaczonej wersji w tej obcojęzycznej Wikipedii.
+* Możesz dołączyć także do osób podejmujących się tłumaczenia dużych artykułów: Wikipedia:Tłumaczenie miesiąca.
+Czy, wstawiając grafiki, też powinienem zamieszczać je na licencji GFDL? [edytuj]
+Niekoniecznie, możesz użyć także innych wolnych licencji, preferowane są licencje Creative Commons z wyłączeniem licencji nc (niepozwalających na komercyjne wykorzystanie) i nd (niepozwalających tworzyć dzieł pochodnych). Innymi słowy muszą być to wolne licencje, pozwalające na wykorzystanie tych grafik również do celów komercyjnych i na ich modyfikację.
+Fair use. Czy można zamieszczać materiały na zasadzie dozwolonego użytku? [edytuj]
+Nie, ze względu na ograniczenia w polskim prawie autorskim. Nie można byłoby takich grafik wykorzystać później komercyjnie – np. w celu promowania Wikipedii.
+Przeczytałem w prasie, że wikipedyści są plagiatorami. Czy to prawda? [edytuj]
+Czasami zdarzają się przypadki, że nowicjusz, nie znając zasad, przekopiuje jakieś treści do Wikipedii, łamiąc w ten sposób prawo autorskie. W takich przypadkach reagujemy bardzo szybko, upominając takie osoby od razu, jeśli przyczyniły się do stworzenia plagiatu, a wstawione przez nie treści usuwamy lub przeredagowujemy w taki sposób, aby po plagiacie nie było śladu. Oczywiście mogą zdarzyć się przypadki nierozpoznanego naruszenia praw autorskich. Wtedy liczymy także na Twoją pomoc. W tym celu zapoznaj się ze stroną WP:NPA. Zobacz też: Wikipedia:Nie jesteśmy plagiatorami.
+W jaki sposób sprawdzacie, czy dany tekst nie jest plagiatem? [edytuj]
+Sprawdzamy przede wszystkim teksty nowicjuszy, co do których nie mamy pewności, czy znają zasady działania w projekcie. Zazwyczaj teksty są sprawdzane przy pomocy wyszukiwarkek internetowych. Wyszukujemy po prostu, czy na innych stronach nie ma tych samych dużych fragmentów tekstu, i w ten sposób porównujemy ich zawartość z zawartością treści danego hasła w Wikipedii.
+A jeżeli dany tekst jest plagiatem z pozycji niepublikowanej w internecie? [edytuj]
+Z tym jest rzeczywiście większy problem, ale ponieważ dodawane treści powinny być uźródłowione, sprawdzamy, czy w danym papierowym źródle jest to zgodne z artykułem i czy nie jest to plagiat. Tu jest oczywiście pewne ograniczenie, ze względu na to, że nie mamy własnej biblioteki, ale nad tym także powoli zaczynamy pracować:
+Information icon.svg Zobacz też: Wikipedia:Biblioteka.
+Jeżeli nie ma tu zadowalającej Cię odpowiedzi, kliknij, by zadać bardziej precyzyjne pytanie.
+Pozostałe pytania dotyczące kwestii praw autorskich [edytuj]
+korzystanie z ilustracji w Wikipedii [edytuj]
+Czy można wykorzystać w pracy naukowej bądź katalogu wystawy ilustracje umieszczone w Wikipedii? Na jakich zasadach?
+Warunki wykorzystania konkretnej ilustracji zależy od licencji jaka jest jej przypisana. Z reguły wymaga się zamieszczenia informacji o autorze danej grafiki, często także tekstu licencji na jakiej może być wykorzystywany. Myślę, że w tej sprawie przydatna powinna okazać się ta strona pomocy. Pozdrawiam — EMeczKa dyskusja 00:10, 28 lut 2008 (CET)
+Znam portale - komercyjne, które wykorzystują ilustracje z Wikipedii nie przytaczając danych o ich pochodzeniu, tekstów licencji itd., mimo, że grafiki nie są na licencji PD. Czy można ich jakoś zdyscyplinować, żeby stosowali się do zasad Wikipedii?
+dot.edycji artykulu [edytuj]
+Dzien dobry,jestem troche juz wiekowa i nie bardzo umiem sobie poradzic,otoz znalazlam interesujacy mnie artykul,konkretnie :dworek w dabrowie w nawiasie jest napisane fragment jak moge znalezc cala tresc artykulu.? Z gory bardzo dziekuje Maria
+Niestety nie udało się mi odnaleźć ww. artykuł. Proszę o podanie pełnej nazwy artykułu lub link do niego prowadzący. Patrol110 dyskusja 11:44, 20 mar 2008 (CET)
+Prawa autorskie [edytuj]
+Witam. Mam pytanie odnośnie możliwości wykorzystania grafiki pochodzącej z książki (konkretnie planów modelarskich). Nie byłby to jednak skan, ale dokładne przerysowanie przeze mnie danego rysunku, a więc moja własna praca. Czy Wikipedia dopuszcza możliwość zamieszczania tego typu grafik i czy ja sam nie łamie w ten sposób praw autorskich? Pozdrawiam. Shape Dyskusja 04:24, 20 mar 2008 (CET)
+Niestety plany modelarskie charakteryzują się tym, że zawierają pewną myśl, ideę, która stanowi przedmiot własności intelektualnej w rozumieniu praw autorskich i praw pokrewnych (w tym wypadku prawa autorskie spoczywają na wydawnictwie, które przygotowało te plany). Zatem nawet wierne przerysowanie tychże planów na własną rękę jest łamaniem prawa. Przykład: wyobraźmy sobie, że urząd jakiegoś miasta rozpisał otwarty konkurs na projekt zagospodarowania parku miejskiego. Jeden architekt sporo się napracował i stworzył własny projekt, a drugi sporządził wierną kopię pracy poprzednika i tym samym złamał prawo. Pozdrawiam, Patrol110 dyskusja 11:44, 20 mar 2008 (CET)
+Logo [edytuj]
+dlaczego w innych wikipediach można uzywać logo jakiś programów a w polskiej wikipedii nie?--Kurka Wodna (dyskusja) 14:26, 28 mar 2008 (CET)
+Najkrócej mówiąc - bo polska Wiki (podobie jak też Commons, deWiki i wiele, wiele innych) nie akceptuje plików fair use (dozwolonego użytku). N.ogg (dyskusja) 15:28, 28 mar 2008 (CET)
+Czy sprawa dotyczy również zdjęć przedstawiających logo? Np. zbliżenie logo na masce samochodu, drzwiach lodówki itp. Jak wtedy wygląda sytuacja prawna? Czy to sytuacja podobna do tej przedstawionej w pytaniu Wikipedia:Pytania_nowicjuszy/Prawa_autorskie#Fair_use? Sei (dyskusja) 01:13, 31 sty 2009 (CET)
+Jesli logo jest glownym elementem zdjecia, to oczywiscie ladowanie go nie jest dobrym pomyslem, podobnie jak z kamerowaniem filmu w kinie. Niby my zrobilismy kopie filmu, ale nie posiadamy do nich praw autorskich, wiec nie mozemy dac go na wolnej licencji. Herr Kriss ✉ 02:23, 31 sty 2009 (CET)
+Wydaje mi się, że mylisz dwie rzeczy: prawo autorskie i znak towarowy (choć nie jestem pewien czy logo nie jest też chronione prawem autorskim). Oba wprawdzie należą do grupy praw intelektualnych, ale istnieją między nimi różnice. Sei (dyskusja) 12:05, 1 lut 2009 (CET)
+Logo też jest chronione prawem autorskim (prawa majątkowe są zresztą na ogół przenoszone na właściciela znaku towarowego). Niemniej, wracając do tematu, fotografii samego logo na przedmiocie umieścić nie można - w takim przypadku intencją fotografującego jest pokazanie samego, zastrzeżonego znaku. Co innego fotografia całego przedmiotu: samochodu, komórki czy lodówki, nawet z dobrze widocznym logo i w rozdzielczości umożliwiającej ew. wykadrowanie - tu intencją jest pokazanie przedmiotu, co jest dozwolone. Dość dobrym przykładem jest np. to zdjęcie - samo zdjęcie jest OK, natomiast w warunkach korzystania znajduje się zastrzeżenie wskazujące, że jednym z jego elementów jest zastrzeżony znak towarowy. Gytha (dyskusja) 12:27, 1 lut 2009 (CET)
+z FAQ [edytuj]
+czy wydawca czasopisma nie będzie miał (uzasadnionych) pretensji jeśli zamieści się artykół w WikiSources? Chodzi mi konkretnie o artykuły z prasy naukowej dotyczące klasycznychch już doświadczeń. Jakie tu obowiązują zasady? Sfp przeniosłem z FAQ Przykuta (dyskusja) 23:36, 3 kwi 2008 (CEST)
+Nie mozna tego robic bez pozwolenia autora na uzycie na wolnej licencji, lub wydawnictwa, jesli zostaly mu przekazane prawa autorskie. Herr Kriss ✉ 02:25, 31 sty 2009 (CET)
+Do pytania 1.3 [edytuj]
+Czy jeżeli prawa autorskie obrazu wygasły (ponieważ minęło 70 lat od śmierci autora), to wolno umieszczać gdziekolwiek jego reprodukcje (np. ze strony internetowej z reprodukcjami), mimo że inna osoba wykonała elektroniczną kopię tego obrazu? Andy89 (dyskusja) 14:21, 12 kwi 2008 (CEST)
+Zalecane jest wówczas publikowanie oryginalnych dzieł, co do których wygasły prawa autorskie. Reprodukcja może, aczkolwiek nie musi, wnosić coś dodatkowego do dzieła (np. jakiś drobiazg kolorystyczny), który uczyni ową reprodukcję niezależnym dziełem i tym samym stanie się przedmiotem objętym prawami autorskimi. Odnośnie wiernych reprodukcji nie jestem przekonany czy stosuje się do nich prawo autorskie i prawa pokrewne czy też a priori prawa do nich uznaje się za wygasłe. Pozdrawiam, Patrol110 dyskusja 12:13, 14 kwi 2008 (CEST)
+Dzięki za wyczerpującą odpowiedź! Pzdr. Andy89 (dyskusja) 12:24, 14 kwi 2008 (CEST)
+czy naruszeniem praw autorskich będzi taka sytuacja [edytuj]
+W pewnej kategorii brakuje moim zdaniem konkretnego hasła, chciałbym je uzupełnić, ale jedyne źródło jakie mam to inna encyklopedia. Rozumiem że nie można po prostu przepisać hasła, ale czy NPA będzie jeżeli zmienię treść zachowując sens?
+Aby nie mieć wątpliwości, najlepiej zrób na podstawie tego hasła skrótowy opis, bo gdybyś napisał zmieniając szyk zdania to dalej byłoby to NPA. Przykuta (dyskusja) 13:38, 18 kwi 2008 (CEST)
+Trzy pytania [edytuj]
+Witam.
+* Czy jeśli fotografia pochodząca z roku 1944 (dostępna zarówno w książkach jak i w necie) jest okreslano jako "autor nieznany" to zamieszczenie jej w wiki będzie naruszeniem praw autorskich? (autora nie ma, ale ma mniej niż 70 lat)
+* Jest kategoria "na podstawie starych encyklopedii". Czy prawo autorskie, w tym przypadku, też wygasa po 70 latach?
+i przy okazji
+* Czy jako "źródła" do hasła można podać strone internetową? np: oficjalna stonę miasta.
+dziękuje i pozdrawiam
+Myślę że odpowiedzi na pierwsze dwa pytania znajdują się w artykule o prawach autorskich (czyli najprawdopodobniej w pierwszym przypadku prawa autorskie wygasły, podobnie jak w przypadku encyklopedii sprzed 70 lat). Jeżeli chodzi o trzecie pytanie: owszem można, o ile są to wiarygodne źródła - a takim może być oficjalna strona miasta. Dobrze jest w takim przypadku użyć szablonu {{cytuj stronę}}. Pozdrawiam — EMeczKa dyskusja 18:24, 25 kwi 2008 (CEST)
+Co do autorów [edytuj]
+Jakie znaczenie ma to, Co jest fotografowane? Tzn. czy jest jakaś różnica jeśli zrobię zdjęcie budynku wybudowanego 200 lat temu (czyli autor na 100% nie żyje) a pomnika postawionego w zeszłym tygodniu (autor żyje)? A jeśli otrzymam zgodę na wykorzystanie zdjęcia przedmiotu, którego prawa autorskie nie wygasły? I czy jako autora mam zaznaczyć autora fotografii, czy fotografowanego obiektu? Adrian17 (dyskusja) 17:39, 2 maj 2008 (CEST)
+W Polsce jest "freedom of panorama", czyli "The copyright act from July 4th, 1994 in article 33 point 1 allows to propagate works that are permanently exhibited on the publicly accessible roads, streets, squares or gardens provided that the propagation is not for the same use.". Czyli mozesz fotografowac pomnik, ktory stoi gdzies na ulicy, nawet jesli autor zyje. Musi byc on jednak stale umieszczony w miejscu publicznym, czyli np. jakby pomnik znajdowal sie w muzeum, a codziennie rano wyjezdzal na kolkach na ulice, to juz tego nie dotyczy freedom of panorama ;) W przypadku zdjecia z FOP podajesz siebie jako autora. Herr Kriss ✉ 00:02, 3 maj 2008 (CEST)
+Aha, jeszcze jedno. Jelsi to mozliwe, to podaj tez autora pomniku. Herr Kriss ✉ 00:25, 3 maj 2008 (CEST)
+A jak ma się to do wnętrz budynków i dzieł sztuki? Adrian17 (dyskusja) 10:18, 3 maj 2008 (CEST)
+Wtedy musi minac 70 lat od smierci autora, poniewaz nie obowiazuje tam FoP. Herr Kriss ✉ 02:00, 10 cze 2008 (CEST)
+Prawa autorskie do banknotów [edytuj]
+Mam problem z prawami autorskimi zdjęć banknotu. Zrobiłem zdjęcie makro mikrodruku na polskim banknocie i teraz nie wiem czy mogę je zamieścić na Wikipedii. Tutaj przeczytałem, że np. do reklamy trzeba uzyskać zgodę na publikacje "wizerunku" pieniądza. Znowu tutaj zdjęcie banknotu jest z licencją public domain. Ktoś może wie jak jest naprawdę. Będę wdzięczny za pomoc. Sei (dyskusja) 16:59, 17 maj 2008 (CEST)
+Osobiście bym pofatygował się o wysłanie wniosku o zgodę na wykorzystywanie (oczywiście w niskich rozdzielczościach) ;) Pozdrawiam, Patrol110 dyskusja 22:57, 17 maj 2008 (CEST)
+Tyle, że tu chodzi o pokazanie fragmentu 5mm x 5mm właśnie w wysokiej rozdzielczości. Może rzeczywiście do nich napiszę o zgodę i zobaczę co będzie. Sei (dyskusja) 00:12, 18 maj 2008 (CEST)
+Dostałem taką odpowiedź (może się komuś przyda w podobnej sytuacji):
+"W odpowiedzi na Pana e-mail z dnia 27 maja br. uprzejmie informuję, że nie zgłaszam sprzeciwu co do zamieszczenia na serwisie www.wikipedia.pl zdjęcia fragmentu banknotu o nominale 20 zł, pokazującego mikrodruk zastosowany na tym banknocie. Ww. wykorzystanie fragmentu wizerunku banknotu dotyczącego jednego z jego zabezpieczeń przed fałszowaniem nie wymaga nabycia licencji."
+Sei (dyskusja) 01:11, 31 sty 2009 (CET)
+Fair use [edytuj]
+Quolav (dyskusja) 00:42, 10 cze 2008 (CEST)
+Piszę artykuł o serialu Głowa rodziny i chciałbym w infoboxie serialu wstawić obrazek ilustrujący to hasło. Jednak obrazków z angielskiej Wiki wykorzystać nie mogę, gdyż są na licencji fair use (http://en.wikipedia.org/wiki/Image:FamilyGuyFamilyPromo.png i http://en.wikipedia.org/wiki/Image:Family_Guy.png). Jakie obrazki mogę więc zamieścić by były zgodne z zasadami polskiej wikipedii? Może to być zrzut ekranu tytułowego serialu? Albo jakakolwiek własny zrzut ekranu z serialu? Czy cała zawartość seriali amerykańskich jest chroniona przez fair use i po prostu nie można zamieścić nic?
+Raczej nie ma szans na jakakolwiek wolna grafike z tego serialu. Nawet jakbys sam narysowal jedna z postaci i umiescil, to byloby to lamanie praw autorskich. Herr Kriss ✉ 01:58, 10 cze 2008 (CEST)
+A co ze zdjęciem telewizora, w którym wyświetlany jest aktualnie odcinek danego serialu (zakładamy,że zdjęcie jest na dopuszczalnej licencji)? Jest to przecież zdjęcie telewizora, a nie serialu. Jak się do tego mają prawa autorskie? Kpc21 DYSKUSJA 23:07, 5 lip 2008 (CEST)
+Jeżeli jest to zdjęcie telewizora wraz z otoczeniem, a nie wycięty fragment z obrazkiem, to ok, bo wiadomo, że intencją jest sfotografowanie urządzenia. Podobnie zdjęcie zabytkowego budynku, na którym wisi reklama nie jest zdjęciem tej reklamy. Natomiast celowe wycięcie tej reklamy, samego ekranu i np. użycie loga Coca-Coli do sprzedaży własnego produktu, byłoby już nadużyciem. Czyli zrobienie zdjęcia telewizora dla hasła o tym sprzęcie - ok, ale robienie zdjęć telewizora, by zilustrować wszystkie odcinki Kiepskich i uratować je przed SDU - nie ok :) Przykuta (dyskusja) 10:38, 6 lip 2008 (CEST)
+Ale... zobacz Robin z Sherwood - znalazłem fotki na Commons związane z serialem. Przykuta (dyskusja) 10:39, 6 lip 2008 (CEST)
+Herb miasta [edytuj]
+Interesuje mnie wykorzystanie na potrzeby własnej strony internetowej grafiki pochodzącej z Wikipedii. Grafika ta przedstawia herb miasta, czyli symbol narodowy. Czy mogę więc taką grafikę wykorzystać w banerze na własnej stronie www, bez odwoływania się skąd pobrałem tą grafikę, będąca częścią stworzonego przez mnie baneru?
+Witaj! Symbole państwowe są publikowane na Wikipedii na wolnych licencjach typu public domain, gdyż wynika to ze stosownej ustawy. W związku z powyższym możesz używać je swobodnie, aczkolwiek z grzeczności możesz zaznaczyć na swojej stronie, że herb pochodzi z Wikipedii ;) Pozdrawiam, Patrol110 dyskusja 11:41, 23 lip 2008 (CEST)
+szkic fotografi [edytuj]
+Witam. Mam pytanie: Czy jeżeli wykonam szkic kolorowej fotografi znalezionej w internecie przedstawiającej ..np. owoce, ptaki, kwiaty - i udostępnie szkice np. w gazecie, to jest to łamanie praw autorskich?
+Zazwyczaj to bedzie lamanie praw autorskich, ale jesli przerysowanie bedzie polegalo jedynie na inspiracji danym dzielem, to bedzie to ok. Herr Kriss ✉ 00:19, 10 sie 2008 (CEST)
+Zamieszczenie grafiki na swojej stronie [edytuj]
+Chciałbym zamieścić grafikę znalezioną w wikimedii na swojej stronie www. Czy postanowienia licencji GNU i CC mogę wypełnić zamieszczając stosowne informacje w pliku wskazanym w atrybucie longdesc grafiki?
+Jak ma wyglądać zgoda na udostępnienie pliku na podanej licencji? [edytuj]
+W mojej grafice "podane jest źródło, ale nie ma żadnego dowodu, że autor lub właściciel praw autorskich naprawdę zgodził się na udostępnienie pliku na podanej licencji". No właśnie. Co musi zawierać moja zgoda (tzn. autora) na udostępnienie przesłanego pliku na licencji? (chodzi mi o każdą możliwą na Wikipedii licencję, do której potrzeba zgody autora. Na pewno przyda się również innym użytkownikom podstrona dotycząca takich zgód). Bardzo proszę o dość szybką odpowiedź, ponieważ nie chcę, aby moje fotografie zniknęły z Wikipedii.
+Witaj! Odpowiedzi na swoje pytania znajdziesz na tej stronie. Pozdrawiam, Patrol110 dyskusja 13:18, 18 sie 2008 (CEST)
+Predzej sie znajda tu. Herr Kriss ✉ 13:31, 18 sie 2008 (CEST)
+Wikipedia w innych językach jako jedno ze źródeł [edytuj]
+Jeżeli korzystam w tworzeniu artykułu ze źródeł książkowych i jednocześnie z informacji zawartych w Wikipedii, również obcojęzycznych, to jak tworzyć przypisy i bibliografię do takiego artykułu?
+Wikipedia nie powinna być traktowana jako pierwotne źródło informacji. Cóż to za encyklopedia, która powołuje się na inną encyklopedię? Albo encyklopedia powołująca się na inną encyklopedię, powołującą się na inną jeszcze encyklopedię? Weryfikowalność artykułów powinna udostępniać czytelnikowi pierwotne źródło informacji - opracowanie, w którym dane zjawisko zaistniało najpierw. Hasła z obcojęzycznych Wikipedii powinny powoływać się na książki, czasopisma, serwisy internetowe, itd. - i to one właśnie stanowią bibliografię i materiał referencyjny. Wojciech Pędzich Dyskusja 22:27, 22 sie 2008 (CEST)
+Zdjecie budynkow i wnetrz [edytuj]
+Jak wyglada sprawa, z fotografowanie budynkow uzytecznosci publicznej (konkretnie chodzi mi o szkole). Czy moge umiescic zdjecia gmachu (domyslam sie, ze tak)? I czy moge zamiescic zdjecia wnetrza budynku (tutaj mam juz watpliwosci)? Kamil Filip Ulryk (dyskusja) 22:27, 31 sie 2008 (CEST)
+Polskie budynki mozna fotografowac zgodnie z freedom of panorama, ktora wystepuje w polskim prawie autorskim. Wiecej o tym tu (po angielsku). Co do wnetrz budynkow - jesli nie ma tam nic ze sztuki, czyli np. rzezb, obrazow, tylko zwykle sciany i posadzki, to mozna spokojnie publikowac. Herr Kriss ✉ 22:31, 31 sie 2008 (CEST)
+Szablon [edytuj]
+Czy dozwolone jest kopiowanie szablonów, infoboksów z Wikipedii do innych projektów opartych na oprogramowaniu MediaWiki (własna Wiki oparta na licencji GNU FDL)? Quolav (dyskusja) 21:58, 2 wrz 2008 (CEST)
+Całośc treści w Wikipedii objęta jest licencją GFDL - szablony również. Wojciech Pędzich Dyskusja 21:59, 2 wrz 2008 (CEST)
+E-mail [edytuj]
+Czy jest dozwolone podanie w artykule o naukowcu (który spełnia kryteria encyklopedyczności) jego e-maila (który np. jest podany ogólnodostępnie na stronie jednostki naukowej w której on pracuje)? Chodzi mi głównie o to, czy nie kłóci się to z żadnymi przepisami, czy taki e-mail to sprawa prywatna czy nie. Quolav (dyskusja) 22:22, 13 wrz 2008 (CEST)
+Zwyczajowo takie dane nie są udostępniane w Wikipedii, dlatego też odradzam tego typu edycji. Jeśli zaistnieje konieczność kontaktu z taka osobą, zainteresowany czytelnik poszuka adresu mailowego we własnym zakresie (np. na stronie profilu naukowego, do którego link będzie widniał w artykule). Pozdrawiam, Patrol110 dyskusja 00:36, 14 lis 2008 (CET)
+Grafiki [edytuj]
+Czy, posiadając własnego bloga, mogę w nim umieszczać nieliczne zdjęcia i grafiki znajdujące się w Wikipedii?
+Oczywiscie, mozna. Nalezy tylko pamietac o zachowaniu licencji. Wiecej o tym na stronie Pomoc:Kopiowanie z Wikipedii. Herr Kriss ✉ 19:15, 5 lis 2008 (CET)
+pobranie współrzędnych [edytuj]
+Witam,
+szukałem pomocy tutaj, ale bezskutecznie. Chciałbym wykorzystać współrzędne miejscowości (tudzież obiektów innego typu) w swojej mapie GIS. Nie chcę pobierać całego zasobu wikipedii bo to kilkaset MB a nawet GB. W jaki sposób moge pobrać tylko współrzędne z nazwą artykułu/jego kategorią?
+Należy tego dokonać ręcznie, kopiując współrzędne z ekranu (współrzędne wyświetlone na górze okna; patrz przykład) lub poszukać w treści artykułu stosowne dane (zazwyczaj znajdują się one w szablonach, stąd łatwo je odnaleźć). Patrol110 dyskusja 00:34, 14 lis 2008 (CET)
+Wykorzystanie tłumaczenia artykułu z polskiej Wikipedii [edytuj]
+W jaki sposób legalnie wykorzystać tłumaczenie artykułu z polskiej Wikipedii na własnej stronie internetowej? Moja strona jest w języku angielskim i chciałbym na niej zamieścić artykuł(y) przetłumaczone przeze mnie z polskiej Wiki (np. biografie).
+Wikipedia:Prawa autorskie - możesz dowolnie modyfikować teksty polskiej Wikipedii, włącznie z tłumaczeniami, pod warunkiem, że Twoje tłumaczenie wymieni autorów tekstu oryginalnego (masz ich wymienionych w zakładce "Historia i autorzy" hasła) oraz opublikowane zostanie na takiej samej zasadzie, jak tekst Wikipedii - pod licencją GFDL. Ją z kolei masz podlinkowaną pod każdym artykułem. Wojciech Pędzich Dyskusja 21:15, 20 lis 2008 (CET)
+Pytania [edytuj]
+Doxepine
+Domyślam się, że wzory chemiczne nie są chronione prawem autorskim. Jak sytuacja przedstawia się w przypadku drogi syntezy substancji? Czy jej przedstawienie graficzne również nie podlega ochronie?
+Czy materiały badawcze, które każda firma farmaceutyczna ma obowiązek przygotować i udostępnić wszystkim zainteresowanym (chodzi mi również o popularne "ulotki" dołączane do opakowań z lekami) są chronione prawem autorskim? Z góry dziękuję za odpowiedź.
+Wzory chemiczne nie są objęte prawe autorskim, gdyż wynika to z ich powszechności. Natomiast ulotki dołączane do farmaceutyków i parafarmaceutyków są wytworem działalności intelektualnej podmiotów, które je sporządzają - zatem są objęte prawem autorskim. Oczywiście wspomniany fakt nie wyklucza sytuacji, w której na Wikipedii jest cytowany jakiś materiał badawczy tego typu. Zabronione jest jedynie zamieszczanie tych treści w formie oryginalnej w całości bądź też fragmentarycznie. Pozdrawiam, Patrol110 dyskusja 12:58, 18 gru 2008 (CET)
+Dziękuję za odpowiedź i również pozdrawiam :)
+Zdjęcie rysunku z tablicy informacyjnej [edytuj]
+Czy mogę umieścić w swoim artykule zdjęcie fragmentu tablicy informacyjnej (turystycznej), a właściwie zdjęcie zamieszczonego na tej tablicy rysunku. Tablica stoi na wolnym powietrzu w parku. Zdjęcie wykonałem własnoręcznie. --Kapitel (dyskusja) 11:59, 4 lut 2009 (CET)
+Jeśli chcesz opublikować zdjęcie przedstawiające wyłącznie fragment tej tablicy (w tym przypadku zdjęcie), to będzie to naruszenie praw autorskich. Natomiast jeśli opublikujesz zdjęcie całej tablicy (jako element kadru), to wówczas do naruszenia praw nie dojdzie w związku z niepisanym prawem zwanym freedom of panorama, tj. swobodą wykonywania zdjęć w przestrzeni publicznej. Pozdrawiam, Patrol110 dyskusja 15:40, 4 lut 2009 (CET)
+No nie wiem, moim zdaniem nawet cala tablica podlega pod freedom of panorama, poza tym to nie jest niepisane prawo. Herr Kriss ✉ 16:26, 4 lut 2009 (CET)
+Czy nie ma tu zastosowania art. 33. Prawa autorskiego, który brzmi: Wolno rozpowszechniać: 1) utwory wystawione na stałe na ogólnie dostępnych drogach, ulicach, placach lub w ogrodach, jednakże nie do tego samego użytku. Wydaje mi się, że rysunek znajdujący się na planszy stojącej w ogólnie dostępnym miejscu "podpada" pod w/w artykuł i z tego tytułu może być rozpowszechniany.--Kapitel (dyskusja) 16:37, 4 lut 2009 (CET)
+To jest wlasnie freedom of panorama, o ktorej mowimy. Moim zdaniem mozna cos takiego umiescic, ale glowy sobie nie dam uciac. Herr Kriss ✉ 18:25, 4 lut 2009 (CET)
+link do Wikicytaty, Wikimedia i Wikipedia [edytuj]
+Czy na moim "prywatnym" wiki mogę stworzyć sobie szablony (technicznie to wiadomo że mogę, chodzi o to czy mi wolno) takie jak tu po prawej zamieściłem
+Wikicytaty
+Zobacz w Wikicytatach kolekcję cytatów
+ktośtam
+Commons in image icon.svg
+Wikimedia Commons ma galerię ilustracji związaną z tematem:
+Pytania nowicjuszy/Prawa autorskie
+dokładnie takie same (z ikonami i identycznym tekstem) przekierowujące na odpowiednie wikimiejsca ?
+Nie widzę powodów dla którego informacje z projektów Wikimedia można by udostępniać tylko w projektach Wikimedia. Toć to wolna wiedza :) Wojciech Pędzich Dyskusja 16:41, 22 lut 2009 (CET)
+Ale mi chodzi konkretnie o logo(loga?) i szablon. Samo linkowanie na pewno jest ok, ale chcę wykorzystać dokładnie te ikonki i ten sam układ - normalnie brutalnie na żywca. Żeby wyglądało jak na wikipedii - przykład co chcę zrobić jest tu: http://www.upr.org.pl/wiki/Stanisław_Michalkiewicz --SledgehammerPL (dyskusja) 00:06, 23 lut 2009 (CET)
+Praca [edytuj]
+Witam. Chcialem zapytac, czy jest mozliwosc otrzymania pracy (platnej) jako wikipedysta? Znam biegle jezyk wloski do tlumaczen i jestem bardzo dobrze obeznany w dziedzinach sztuki, zwlaszcza sztuki wspolczesnej (doktorat ze Sztuki Wspolczesnej na Akademii Sztuk Pieknych w Ravennie). Zwazajac na fakt, ze w polskiej edycji wikipedii jest naprawde niewiele pozycji zwiazanych ze sztuka po II Wojnie Swiatowej i z uwagi na moj obecny status bezrobotnego, pomyslalem, ze moze bylaby mozliwosc podjecia takowej pracy... Bardzo prosze o odpowiedz.
+Bartosz Keska
+nedion@o2.pl
+Wikipedia jest tworzona przez wolontariuszy i nie jest mozliwe zarabianie przez jej edytowanie. Herr Kriss ✉ 00:13, 10 mar 2009 (CET)
+czy przeredagowany tekst jest plagiatem jeżeli podam źródło że wiadomości zostały zaczerpnięte z wikipedii? [edytuj]
+czy przeredagowany tekst jest plagiatem jeżeli podam źródło że wiadomości zostały zaczerpnięte z wikipedii? pisząc prace inżynierską mam problemy poniewaz promotor wszytsko co w jakims stopniu przeredajuje z wikipedii uważa za plagiat chociaz podaje zrodlo
+Witam! Proszę zapoznać się z informacją prawną na temat wykorzystywania informacji z Wikipedii. W skrócie: Wikipedia nie jest źródłem naukowym i nie może być tak traktowana. Patrol110 dyskusja 22:16, 1 kwi 2009 (CEST)
+Drogi Patrolu, pytajacy chcial sie dowiedziec czy przeredagowany tekst z Wikipedii to plagiat, a nie czy powinien z jej korzystac. Herr Kriss ✉ 19:21, 3 kwi 2009 (CEST)
+zdjęcie z albumu [edytuj]
+SZ.P. prosze o udzielenie informacji na temat licencji, praw aurtorskich zdjęć które chce umieścic w Wikipeddi. sa to zdjecia z lat 70tych których jestem włąscicielka ale nie są mojego autorstwa.
+Zdjęcia dokumentuja przedstawienia Amatorskiego Teatru w Żelechowie.
+ZdjĘcia zostały opublikowane w ksiażce o teatrze niestety nie ma w niej danych autorza zdjęć.
+Były by one wartościowym dopełnieniem hasła Wikipedii.
+Proszę o odpowiedz jak sobie w tej sytuacji poradziĆ Jolanta Bernacka
+W którym roku została wydana ta książka? Gytha (dyskusja) 22:11, 31 mar 2009 (CEST)
+Książka wydana w 2008 r. Jeśli jest to pierwsza publikacja tego tego zdjęcia, to jest ono automatycznie objęte prawami autorskimi i potrzeba by zgody autora lub spadkobierców na publikację na wolnej licencji. Ale skoro nie znasz autora zdjęcia to niestety nie może się ono znaleźć się w Wikipedii zgodnie z prawem. Chyba, że zdjęcie było opublikowane przed 1994 r. gdzieś indziej — wtedy może być taka możliwość. sfu (re:) 09:06, 1 kwi 2009 (CEST)
+jak definiowac stwierdzenie "przetworzenie jej w sposób twórczy" [edytuj]
+Zostałem upomniany za zaproponowany wpis dotyczacy osoby. Faktografia dotyczaca tej osoby pochodzi z serwisu xxxx.yy który IMHO nie figuruje na liscie udzielonych zgod lub braku takich zgod. Na stronie brak jest informacji o charakterze praw autorskich i mozliwosci ich dalszego przekazywania. Strona IMHO odpowiada okresleniu "inna encyklopedia" a szczegółowo okreslil bym to jako leksykon osob
+Tresc mojego wpisu dotyczyla faktografii. Zmiany polegały na wycięciu fragmentów tresci wpisu znajdujacego sie w serwisie xxx.yy Nie zmieniona byla kolejnosc modolow (tzn zachowano pierwotny porzadek informacji)
+Podane zostalo zrodlo informacji wraz z linkiem
+Zastanawiam sie czy wpis ten nie odpowiadal stwierdzeniu zawartym w wikipedia cyt "Informacja nie jest objęta prawem autorskim, dlatego jest zupełnie dozwolone wykorzystanie informacji zawartej w jakimś źródle (np. innej encyklopedii), przetworzenie jej w sposób twórczy i zamieszczenie w Wikipedii." a jezeli nie to kiedy mamy do czynienia z zrodlem informacji ? i kiedy mamy do czynienia z jej twórczym przetworzeniem?
+Pozdrawiam
+JB
+Brak informacji na temat praw autorskich oznacza, że musimy przejąć że autor zastrzega sobie wszystkie swoje prawa. Twórcze przetworzenie oznacza, że żaden fragment nie jest przepisany dosłownie; należy napisać na dany temat "po swojemu" korzystając z danego źródła (zachowując treść, ale przekazując ją w innej formie ;) ). Tak więc Twoje zmiany nie są "twórcze" w rozumieniu powyższego zdania. Pozdrawiam lepiej późno niż wcale ;) — EMeczKa dyskusja 14:44, 11 kwi 2009 (CEST)
+Zgoda ale jak jest to mozliwe skoro caly tekst sklada sie z tytulow wykonanych prac/publikacji lub tyłów naukowych. Tak naprawde mozliwe jest tylko 1. inne uporzadkowanie danych 2. pominiecie czesci z nich 3. uzupelnienie ale trudno "nie przepisywac doslownie zadnego fragmentu" bo przeciez wiekszosc to nazwy wlasne ? Pozdrawiam swiatecznie JB
+Najlepiej by było niestety zastosować punkt trzeci – wesprzeć się jakimś innym źródłem, o ile oczywiście jest taka możliwość. Jeśli nie to punkt pierwszy. W ogóle polecam lekturze wątek z listy dyskusyjnej pl-wiki z podobnej sprawy. Zresztą może jeszcze ktoś inny, mądrzejszy ode mnie, wypowie się w tej sprawie :) — EMeczKa dyskusja 21:54, 13 kwi 2009 (CEST)
+Mam pytanie dotyczące sporządzonego przeze mnie tekstu. Napisałem artykuł, ale nie byłem zalogowany wówczas na Wikipedii. W związku z tym, czy mógłbym być zapisany jako autor tego tekstu? Jak tak, to w jaki sposób mógłbym to zrobić?
+Mam pytanie dotyczące sporządzonego przeze mnie tekstu. Napisałem artykuł, ale nie byłem zalogowany wówczas na Wikipedii. W związku z tym, czy mógłbym być zapisany jako autor tego tekstu? Jak tak, to w jaki sposób mógłbym to zrobić?
+Jak prawidłowo oznaczyć źródła [edytuj]
+Chcę utworzyć nowe hasło dotyczące kampanii bezpieczny przejazd. Niestety mimo podania źródeł hasło jest kasowane. Dodam, że hasło chcę dodać na polecenie organizatora kampanii (jest zgoda PKP PLK S.A. na publikowanie treści ze strony kampanii). Jak powinien wyglądać prawidłowo sformatowany artykuł?
+A jak dokladnie nazywal sie artykul? Herr Kriss ✉ 16:50, 1 cze 2009 (CEST)
+Korzystanie z własnych publikacji [edytuj]
+Witam :)
+Pytanie jest następujące: zajmuję się m.in. historią polskiego ruchu skatowego. Wczoraj zamieściłem pierwszy artykuł Maraton skatowy i w przyszłości również zamierzam zajmować sie tą tematyką. Problem w tym, że w sporej części przypadków muszę się powoływać na moją własną książkę, bo innych źródeł drukowanych brak. Poza nią ukazały się zaledwie trzy książki instruktażowe (dot. zasad gry w skata). I nic więcej.
+Informacje, które zamieszczam, są teoretycznie weryfikowalne w oparciu o inne źródła - jeśli ktoś zechce poświęcić kilka miesięcy i poszperać, z pewnością znajdzie. No ale nie w literaturze...
+Nawiasem mówiąc, podobna sytuacja wystąpi w chwili, gdy przejdę do niektórych tematów mikołowskich: jestem autorem jedynej jak dotąd książki o tutejszej parafii ewangelickiej i jedynej monografii dzielnicy Kamionka. Widzę, że niektórzy Wikipedyści już korzystali z tych książek i zamieszczali je w bibliografii.
+Czy więc powołując się na własną książkę, łamię zasady?
+Aajmik (dyskusja) 23:32, 6 cze 2009 (CEST)Aajmik
+Absolutnie nie. Korzystanie z opublikowanych własnych prac jest jak najbardziej dozwolone - w zasadzie WP:OR chodzi o to, by Wikipedia nie była pierwszym miejscem publikacji. Pozdrawiam. Gytha (dyskusja) 09:28, 7 cze 2009 (CEST)
+Nie podano źródła [edytuj]
+Witam, chciałbym zadać pytanie. Otóż, co powinienem zrobić, jeśli zauważyłem czerpanie korzyści majątkowych przy pomocy fragmentów tekstów Wikipedii, nie podając nawet źródła? janek2012 (dyskusja) 20:55, 27 lip 2009 (CEST)
+Czerpanie korzyści majątkowych z tekstów pochodzących z Wikipedii nie jest zabronione, ale należy zachować warunki licencji GNU FDL, tzn. podać źródło, wymienić min. 5 autorów i podać treść licencji. Najlepiej zajrzyj do historii odpowiedniego hasła i powiadom o sprawie głównych autorów. --Fizykaa (dyskusja • E-mail ) 18:08, 2 wrz 2009 (CEST)
+Źródła [edytuj]
+Jak wygląda kwestia podawania źródła i praw autorskich w przypadku wpisu na temat znanej osoby a wpis ten jest skonsultowany bezpośrednio z nią, czyli pochodzi od samego zainteresowanego? Czy źródłem może być na przykład oficjalna strona na temat tej osoby lub jej twórczości lub mail ze strony zainteresowanego potwierdzający zatwierdzoną przez nią treść?
+Zasady podawania źródła i przestrzegania praw autorskich obowiązują zawsze. Wymienione źródła są jak najbardziej odpowiednie, ale należy zwrócić szczególną uwagę na to, czy artykuł jest napisany neutralnie. --Fizykaa (dyskusja • E-mail ) 18:08, 2 wrz 2009 (CEST)
+Zapytanie [edytuj]
+Dzień dobry
+Tworzę na zlecenie za odpłatnością od czasu do czasu materiały szkoleniowe, różne opracowania w formie prezentacji. Bywa tak, że nie jestem w stanie oddać swoim rysunkiem, czy zdjęciem danego zjawiska, czy innej przedstawianej rzeczy. Czy można zaczerpnąć takiej grafiki, czy treści z internetu, np.: Wikipedii? Proszę o pokierowanie tym problemem i odpis na adres: aviator_eple@o2.pl Dziękuję
+Odpowiedziano.Fizykaa (dyskusja • E-mail ) 16:12, 20 paź 2009 (CEST)
+Kilka pytań [edytuj]
+Witam, chciałbym spytać o kilka rzeczy związanych z prawami autorskimi, a także ze źródłami.
+Pierwsza sprawa: chciałbym napisać artykuł na temat świeżo przyjętego herbu gminy Łaziska. Jedynym dostępnym mi źródłem na temat symboliki jest e-mail otrzymany z Urzędu Gminy. Jak w takim przypadku powinna wyglądać sekcja źródeł w takim artykule? A może trzeba ten mail jakoś opublikować? Jeśli tak, to gdzie i jak?:)
+Druga sprawa: czy tworzenie grafik wektorowych na podstawie rysunków objętych prawami autorskimi narusza te prawa?
+Pozdrawiam Avalokitesvara (dyskusja) 17:29, 30 paź 2009 (CET)
+Ja się na przepisach nie znam, ale herb gminy musi być chyba przyjęty jakąś uchwałą, która musi być gdzieś opublikowana? Sprawa druga - zależy. Jeśli odrysowujesz, to z całą pewnością narusza. Tzw. fanarty (czyli np. Muminek w innej pozycji, niż go narysowała Jansson, ale podobny do jej innych rysunków) też naruszają. Jeśli natomiast czerpiesz informacje np. z rysunku przekroju oka, ale go nie odwzorowujesz, tylko rysujesz na nowo, to nie narusza. Gytha (dyskusja) 19:05, 30 paź 2009 (CET)
+* W kwestii herbu gminy, to uchwała owszem, jest, ale brak do niej załączników z wizerunkami oraz wyjaśnienia symboliki. Jak już wspomniałem, rzeczony mail jest jedynym obecnie źródłem Avalokitesvara (dyskusja) 20:15, 30 paź 2009 (CET)
+o Proszę zignorować powyższe, pokierowano mnie do ogólnodostępnego źródła :) Avalokitesvara (dyskusja) 19:59, 31 paź 2009 (CET)
+Czas oczekiwania na decyzję po wysłaniu potwierdzenia praw autorskich [edytuj]
+Jestem autorem hasła "Grasz o staż" i w piątek zostało wysłane potwierdzenie posiadania praw autorskich do strony internetowej, z której tekst został tylko w części skopiowany. W związku z tym mam pytanie, jak długo należy czekać na jakąś decyzję? Kto będzie się ze mną w tej sprawie komunikować? Pytam ze wzglęgu na pojawiający się komunikat nt. naruszenia praw autorskich podczas wyświetlania hasła "Grasz o staż".
+Zgoda zarchiwizowana została w systemie OTRS pod numerem 2009103010038431. Zdejmuję ostrzeżenie o możliwości naruszenia praw autorskich - operator OTRS, który przyjął zgłoszenie tego nie uczynił. Wojciech Pędzich Dyskusja 12:12, 3 lis 2009 (CET)
+ISBN [edytuj]
+Witam. Jak udokumentować "wiarygodność " istnienia danej pozycji książkowej, skoro niektóre z nich są starsze aniżeli bytowanie ISBN w Polsce ? Jeden z "dyskutantów" polecił mi to zadanie w celu umożliwienia identyfikacji. Gdzie zatem mam zamieścić (komu podać ?) n-ry ISBN wymienionych w artykule książek ? (bo chyba nie w artykule ?). Pozdrawiam, "Web"
+Chodzi o hasło Anna Beata Chodorowska? Oczywiste jest, że dla pozycji z 1964 roku ISBN-u nie będzie, do indentyfikacji musi wystarczyć tytuł, autor (możesz podać autora opracowania, może jest coś w rodzaju "wyboru dokonał i wstępem opatrzył"?), wydawnictwo i rok, niemniej mógłbyś dodać numer strony. No i zbiór materiałów Klubu Literackiego NA WYSPIE, o ile nie został opublikowany, nie może być źródłem. A numery ISBN należy, oczywiście, podać w bibliografii (źródłach) - na końcu zapis bibliograficznego danej pozycji (przykład: Barbara Tylicka, Grzegorz Leszczyński: Słownik literatury dziecięcej i młodzieżowej. Wrocław: Zakład Narodowy im. Ossolińskich, 2003, s. 405. ISBN 83-04-04606-7). Gytha (dyskusja) 09:07, 17 lis 2009 (CET)
+Dowody na prawo do własnej grafiki ??? dlaczego chcecie usunąć ? [edytuj]
+Drodzy Wikipedyści ! Dziękuję za wyczerpujące odpowiedzi. Mam kolejne ważne pytanie. Wiem, jak ma wyglądać opis grafiki. Wykonane wszystko jak należy. Obok zdjęcia - opis: autor -to ja, źródło - wiadomo, że także ja (moje zdjęcie zrobione własnoręcznie, więc jest w moim domu w moim albumie ! ), licencja PD-self także wklepana w zakładkę. Pomimo to jeden z Was, Szanowni Koledzy, chce aby udowodnić, że "ja to ja" :):):) . Pomocy ! I z góry wielkie dzięki za zrozumienie. "Web" Plik:Anna Beata Chodorowska_poetka_na_laweczce.jpg
+Podejrzenie padło na Twoje zdjęcie, ponieważ jest ono drastycznie małych rozmiarów (nie mógłbyś załadować większej wersji?). Wystarczy, że zmienisz źródło pliku na "praca własna" i usuniesz szablon informujący o brakach. To rozwiąże Twój problem. Pozdrawiam, Patrol110 dyskusja 23:18, 17 lis 2009 (CET)
+jasne, z tymże zdjęcie jest starawe i większe straci na ostrości, postaram się wydobyć co najlepsze :) dzięki !
+Ja bym polecal zaznaczyc nie "own resources", a "own work", a wlasciwie skoro jestesmy na polskiej Wikipedii, to "praca wlasna". Wlasne zasoby moga tyle znaczyc, ze po prostu ladujacy ma je na swoim dysku, a niekoniecznie jest autorem. Przy okazji tej edycji mozna usunac {{brak źródła|17 listopada 2009|47}}. Herr Kriss ✉ 00:51, 18 lis 2009 (CET)
+BIP, a prawo autorskie [edytuj]
+Spotkałem się z praktyką usuwania haseł opartych na materiałach Biuletynu Informacji Publicznej z powodu "naruszenia praw autorskich". Tymczasem Ustawa z dnia 6 września 2001 r. o dostępie do informacji publicznej (Dz.U. 2001 nr 112 poz. 1198) mówi: Art. 1. 1. Każda informacja o sprawach publicznych stanowi informację publiczną w rozumieniu ustawy i podlega udostępnieniu na zasadach i w trybie określonych w niniejszej ustawie. 2. Przepisy ustawy nie naruszają przepisów innych ustaw określających odmienne zasady i tryb dostępu do informacji będących informacjami publicznymi. W związku z tym od strony prawnej cytowane materiały z BIP nie podlegają ochronie prawa autorskiego i pokrenych. Czy wobec tego mozna usuwać hasła powoiłując się na "narusznie praw autorskich z BIP" ?.
+Nie jestem prawnikiem, ale może moja odpowiedź częściowo rozwiąże Twój problem. Nawet jeśli tworzenie haseł na podstawie BIPów jest dozwolone, to zapewniam Ciebie, że każdy administrator usunie hasło, które jest wierną kalką BIPu ze względu na brak charakteru encyklopedycznego. Wikipedia bowiem nie jest archiwum wiadomości umieszczanych na BIPie jakiegokolwiek urzędu. Natomiast, jeśli hasło tylko w części korzysta z materiałów z BIPu, a w głównej mierze jest wytworem działalności wikipedysty, to nie widzę żadnych przeszkód dla pozostawienia w encyklopedii pod warunkiem spełniania tutejszych zasad i norm. PS na przyszłość proszę również nie zapomnieć o podpisaniu się pod swoją wypowiedzią - wystarczy nacisnąć taki przycisk Button sig.png, który jest nad polem edycji, by wstawić podpis do wypowiedzi. Patrol110 dyskusja 16:35, 29 lis 2009 (CET)
+Uzupełniając jeszcze tę wyżej zamieszczoną wątpliwość, czy jeśli instytucja (szkoła) umieszcza swoje logo w bip to czy na podstawie w/w ustawy mogę je swobodnie wykorzystać tworząc hasło? Grzegorz Artur Górski (dyskusja) 00:14, 7 maj 2010 (CEST)
+ZAPYTANIE [edytuj]
+WITAM. NAUKOWIEC PROSI O POMOC WIKIPEDIĘ.CZĘSTO KORZYSTAM Z WIKIPEDII I PROSZĘ O ODPOWIEDŹ.
+NACZYTAŁEM SIĘ TU O LICENCJACH I PRAWACH AUTORSKICH ALE Z PRZYPŁYWU WIEDZY POBŁĄDZIŁEM I PROSZĘ O POMOC. PISZĘ DLA OŚRODKÓW SZKOLENIOWYCH PRACE OCZYWIŚCIE POBIERAM ZA NIE OPŁATY. TE OPRACOWANIA SĄ ZLECANE MI I OBJĘTE UMOWĄ O DZIEŁO. W 80 PROCENTACH ZAWARTOŚĆ MOICH PRAC TO MOJA WŁASNA GRAFIKA I TEKSTY, JEDNAK CZASEM MUSZĘ PODEPRZEĆ SIĘ ZDJĘCIEM CZY INNĄ GRAFIKĄ Z WIKIPEDII. CO MAM WTEDY ZROBIĆ? CZY WYSTARCZY PODAĆ POD ZDJĘCIEM INFORMACJE, NP. ,,WWW.WIKIPEDIA.PL, LICENCJA GNU FDL, I AUTOR ...."? CHCIAŁBYM ZARABIAĆ ZGODNIE Z PRAWEM NIE NARUSZAJĄC PRAW. POMÓŻCIE, PODAJCIE MI JASNY PRZYKŁAD PROSZĘ. DZIĘKUJĘ SERDECZNIE. ODPISZCIE NA ADRES - aviator_eple@o2.pl serdecznie dziękuję.
+Odpowiedziano. Fizykaa (dyskusja • E-mail ) 15:52, 12 gru 2009 (CET)
+robert schumann [edytuj]
+Witam, Hasło o Robercie Schumannie - pracowicie zrobione, ale zawiera obszerne fragmenty przepisane bezpośrednio z książki "przewodnik koncertowy" autorstwa. T.Chylińskiej, S.Haraschin i B.Schaeffera (polskie wydawnictwo muzyczne 1991). Bez wskazania źródła. Czy to jest plagiat?
+rekin przestworzy
+Witaj! Najprawdopodobniej tak. Hasło zostanie stosownie oznaczone jako podejrzane o naruszenie praw autorskich. Dziękujemy za zgłoszenie, Patrol110 dyskusja 23:56, 23 gru 2009 (CET)
+Inne serwisy używające nazwy "Wikipedia" - co robić? [edytuj]
+Np istniejąca kiedyś strona pod tytułem "Wikipedia humanistyczna", czy naturyzm.net.pl mieniący się "Naturystyczną Wikipedią". Ewidentnie nie miały praw do znaku towarowego od Wikimedia Foundation i pozostają poza jej kontrolą, a rzutują na opinię prawdziwej Wikipedii.
+Moim zdaniem mozna zglaszac takie przypadki do SWMPL, ale mogę się mylić. Herr Kriss ✉ 18:26, 17 sty 2010 (CET)
+Albo od razu do Wikimedia Foundation. Fizykaa (dyskusja • e-mail ) 18:29, 17 sty 2010 (CET)
+Dzięki. Mają na to konkretną stronę, albo wyznaczony do tego celu adres mail? Bo jakoś nie mogę znaleźć.
+Szczerze mowiac nie wiem, ale trzeba by poszukac. Jak sie wysle na zly adres, to najwyzej przekieruja sprawe, albo powiedza gdzie mozna to zglaszac. Herr Kriss ✉ 17:42, 19 sty 2010 (CET)
+Youtube [edytuj]
+Jak rozróżnić, czy materiał zamieszczony na youtube jest tam legalnie i czy może zostać podany w wikipedii? Np, filmik z przyczyną zamieszek jako odnośnik dla informacji o ich przyczynie. Niby na yt jest podane źródło tego filmiku, ale czy zamieszczenie go jest legalne i czy jednocześnie może być to źródło dla wiki?
+--87.205.207.243 (dyskusja) 22:22, 20 sty 2010 (CET)Megarion
+Jeżeli np. w serwisie TVP jest link do yt z informacją, ze to ich materiał, wtedy wiadomo, że to nie jest nielegalna kopia. Przykuta (dyskusja) 22:48, 20 sty 2010 (CET)
+dlaczego udajemy się do Niemiec ale na Węgry, Słowację, Ukrainę itp [edytuj]
+Dlaczego udajemy się do Niemiec, Austri, Francji, Kanady, Australi, Chin itp,
+ale udajemy się na : Słowację, Węgry,Ukrainę, Litwę,Łotwę, Ruś?
+Wikipedia nie jest poradnią językową - polecam jakiś dobry słownik, albo choć leksykon prof. Markowskiego. Wojciech Pędzich Dyskusja 17:57, 21 sty 2010 (CET)
+Kopiowanie treści z innych stron na licencji CC [edytuj]
+1. Znalazłem wartościowy opis filmu w serwisie filmaster.pl. Wszystkie teksty na stronie Filmaster podlegają licencji Creative Commons 2.5 Uznanie Autorstwa. Jak prawidłowo oznaczyć na Wikipedii skąd pochodzi skopiowana treść, aby uczynić zadość licencji Filmastera?
+2. Znalazłem bardzo ciekawe informacje na stronie, której autorem jest pracownik jednej z polskich szkół wyższych. Ta strona jest na licencji Creative Commons Uznanie autorstwa-Użycie niekomercyjne-Bez utworów zależnych 2.5. Czy taka licencja jest kompatybilna z Wikipedią? Jeżeli tak, to jak prawidłowo oznaczyć itd.? --WTM (dyskusja) 17:20, 14 mar 2010 (CET)
+Kiedyś tutaj była fajna tabelka, która tłumaczyła jak można publikować na różnych licencjach. Generalnie, jeśli utwór jest tylko na cc-by (jak w pierwszym przypadku), to możesz go włączyć w utwór na cc-by-sa, czy w tekst Wikipedii - przydałby się oczywiście link do oryginału (dla potwierdzenia) z zaznaczeniem autora i licencji (tu link do licencji). W przypadku drugim cc-by-nc-nd (ani cc-by-nc ani cc-by-nd) nie można połączyć z cc-by-sa. CC-by-sa 2.0 z cc-by-sa 3.0 też nie, bo to już nie jest "na tych samych warunkach". Filmaster jest tworzony społecznościowo, a w przypadku filmów opis nie powinien być tylko streszczeniem, aczkolwiek niestety w Wikipedii się tego nie przestrzega. Jeśli to jest analiza filmu z powołaniem się na źródła, to już pewna wartość w tym jest. Chodzi tu oczywiście o kwestię eliminacji POV, który ze względu na inny charakter serwisu w filmasterze może być dopuszczalny. Przykuta (dyskusja) 21:55, 14 mar 2010 (CET)
+Zamieszczenie starego zdjęcia [edytuj]
+Ostatnio, przeszukując rodzinne archiwa, natrafiłem na dosyć ciekawe zdjęcie obozu w Berezie Kartuskiej z 1934 roku (wiadomo to dzięki napisowi na wykadrowanej części zdjęcia).
+http://img19.imageshack.us/i/berezakartuska2.jpg/
+Byłaby to bardzo wartościowa historycznie ilustracja, jednak nie wiem czy możną ją załadować na Commons, a to z tego powodu, że nie wiem kto był autorem zdjęcia. Nie wiem co robi się w takim wypadku. Od zrobienia zdjęcia minęło już 74-75 lat.
+Co można z tym zrobić? --Grzanka - Chrup! 21:03, 17 mar 2010 (CET)
+* klasyczny przyklad dzieła osieroconego. Jakby zdjecie bylo juz gdzies publikowane, to sprawa bylaby jasna. A tak, ani w jedna, ani w druga strone. A przy wolnych licencjach panuje zasada pelnej weryfikowalnosci, stad dziela osierocone ladowane byc nie moga. Pomijajac juz zupelnie dwa aspekty dotyczace pisania encyklopedii, a na ktore przy grafikach zdaje sie nikt, doslownie nikt, nie zwracac uwagi. 1. weryfikowalnosc. 2. original research. Czyli ad. 1. jaka pewnosc ma czytajacy haslo, ze zdjecie przedstawia to co przedstawia i to jeszcze z danego roku (poza zapewnieniami ladujacego?). A nie chodzi o obiekt trywialny i fakt latwy do sprawdzenia. 2. czym sytuacja wlasnorecznego skanowania zdjec historycznych-zrodlowych (czyli niepublikowanych) rozni sie od pisania hasel na podstawie takich takich tekstow zrodlowych? I jedno i drugie to praca raczej dla historyka, a nie wikipedysty. No, ale to naprawde nawiasem mowiac, bo ani to miejscie, ani czas :) Co do dziel osieroconych to napisalem wyzej. Masur juhu? 21:09, 17 mar 2010 (CET)
+o No, ale skoro od wykonanoa tego zdjęcia minęło 76 lat i autor nie jest oznaczony, to chyba można je opublikować w Wikipedii? Happa (dyskusja) 09:45, 4 kwi 2010 (CEST)
+Wykorzystanie informacji zawartych w wikipedii w celach komercyjnych [edytuj]
+Witam,
+Bardzo proszę o informację czy dozwolone jest wykorzystanie treści zawartych w wikipedii w celu budowy lub rozszerzenia baz danych, które następnie wykorzystywane będą jako składniki komercyjnych stron, aplikacji webowych.
+Pozdrawiam, M
+WP:KOP - zobacz na tę stronę. Generalnie jak najbardziej, ale pod pewnymi warunkami - podać należy autorów, warunki licencji - i dzieło pochodne musi być na tej samej licencji, czyli można je będzie wykorzystać komercyjnie, ale i rozpowszechniać bezpłatnie. oczywiście, jeśli się wyraźnie da oddzielić treści wolne (z Wikipedii) od innych, to całość nie musi być na tej samej licencji. W tej sposób są eksponowane grafiki w Wikipedii, ponieważ pliki posiadają własne strony z opisami licencji (zawsze wolnych w tym przypadku), na których zostały załadowane. Inaczej mówiąc, jeśli tekst z Wikipedii zamieścisz w ramce i podasz autorów (link do historii strony, jeśli to strona internetowa) oraz licencję (też wystarczy link w przypadku internetu - zobacz stopkę tej strony), to całość nie będzie musiała być na wolnej licencji. jeżeli takie wyodrębnienie nie będzie możliwe/ nie będzie możliwe jego zachowanie, to wtedy całość powinna iść na licencji, na której tworzona jest Wikipedia. Przykuta (dyskusja) 21:58, 3 kwi 2010 (CEST)
+własność prawa autorskiego - spadkobierca [edytuj]
+Piszę artykuł do Wikipedii o człowieku, z którym się skontaktowałem w celu uzyskania ilustracji do tego artykułu. Jedno z udostępnionych mi zdjęć wykonał ojciec tej osoby, który zmarł 20 lat temu. Jest on jedynym spadkobiercą swojego ojca. Czy jest również spadkobiercą praw autorskich do zdjęć przez niego wykonanych? On chce udzielić pełnej licencji Creative Commons, ale czy może w zgodzie z prawem? Happa (dyskusja) 09:48, 4 kwi 2010 (CEST)
+Jeśli rzeczywiście jest on jedynym spadkobiercą swego ojca i tym samym posiada prawa majątkowe do wykonanych przez niego zdjęć, to może on udostępnić je na wolnej licencji. W kwestii praw autorskich są one w polskim prawie niezbywalne i przypisane są do osoby twórcy do końca jego życia + 70 lat po jego śmierci. Jako spadkobierca wspomniana osoba dziedziczy jedynie prawa majątkowe do danego utworu i tylko nimi może dysponować. Zatem autorem zdjęć nadal pozostaje zmarły ojciec, jednak syn jako jedyny spadkobierca może nimi dysponować i postępować z nimi wedle własnego uznania. Moja opinia nie jest wiążąca (nie posiadam wykształcenia prawniczego), jednak jest zgodna ze stanem mojej wiedzy. Jeśli pomyliłem się, to osoby bardziej kompetentne mnie poprawią :) Patrol110 dyskusja 13:13, 4 kwi 2010 (CEST)
+Sens sie zgadza. Jesli jest jedynym spadkobierca, a ojciec nie przekazal komus innemu praw majatkowych do tego zdjecia (co wydaje sie malo prawdopodobne), to mozna bez problemu wrzucac. Herr Kriss ✉ 16:31, 4 kwi 2010 (CEST)
+Zdjęcie wykonane ponad 70 lat temu [edytuj]
+Jakiej licencji użyć, jeśli zdjęcie zostało wykonane ponad 70 lat temu w Polsce, autor nie jest znany, a zdjęcie znajduje się w albumie rodzinnym? Dzięki za nieskomplikowaną odpowiedź :-) Happa (dyskusja) 16:21, 4 kwi 2010 (CEST)
+Na Wikimedia Commons, tam gdzie ladujemy pliki, mozna dac szablon {{PD-anon-70}}, ale musi minac 70 lat od publikacji zdjecia. Herr Kriss ✉ 16:29, 4 kwi 2010 (CEST)
+*
+o Ale jeśli zdjęcie nigdy nie było opublikowane? Happa (dyskusja) 16:37, 4 kwi 2010 (CEST)
++ No to moze byc z tym problem, moze ktos zna jakies inne przepisy prawa. Herr Kriss ✉ 16:38, 4 kwi 2010 (CEST)
+Art 36 Ustawy o prawach autorskich z 1994 r. mówi, że: "Z zastrzeżeniem wyjątków przewidzianych w ustawie, autorskie prawa majątkowe gasną z upływem lat siedemdziesięciu:
+1. od śmierci twórcy, a do utworów współautorskich – od śmierci współtwórcy, który przeżył pozostałych;
+2. w odniesieniu do utworu, którego twórca nie jest znany – od daty pierwszego rozpowszechnienia, chyba że pseudonim nie pozostawia wątpliwości co do tożsamości autora lub jeżeli autor ujawnił swoją tożsamość;
+3. w odniesieniu do utworu, do którego autorskie prawa majątkowe przysługują z mocy ustawy innej osobie niż twórca – od daty rozpowszechnienia utworu, a gdy utwór nie został rozpowszechniony – od daty jego ustalenia;"
+Jednak ustawa w p. 3 mówi tylko o tych utworach, do których autorskie prawa majątkowe przysługują z mocy ustawy innej osobie niż twórca, więc nie dotyczy to mojego przypadku. A poza tym ustawa nie definiuje pojęcia "daty ustalenia"... Czy jakiś prawnik może mi pomóc? Czy wszystkie przedwojenne zdjęcia w albumach rodzinnych to tzw. dzieła osierocone, których nie będzie można nigdy w Polsce upublicznić w żadnej formie? Happa (dyskusja) 17:07, 4 kwi 2010 (CEST)
+Nie znam się na tym, ale wydaje mi się, że gdy twórca zdjęcia nie żyje (a chyba tak jest), to prawa majątkowe mają jego spadkobiercy, czyli p.3. stosuje się. Fizykaa (dyskusja • e-mail) 18:15, 4 kwi 2010 (CEST)
+Ale przecież w 99% przypadków twórca nie jest znany (jakiś nieznany zakład fotograficzny, ktoś z rodziny - nikt nie pamięta...). Happa (dyskusja) 19:35, 4 kwi 2010 (CEST)
+* wtedy (niestety dla Wiki) mamy do czynienia z dziełem osieroconym, czyli mamy za mało danych, żeby na bank powiedzieć cos o zdjeciu (wazne takze z pktu widzenia weryfikowalnosci). Masur juhu? 16:28, 20 kwi 2010 (CEST)
+Mam własną stronę www mogę użyć tekstów z wikipedii,żeby uatrakcyjnić swoją stronę? [edytuj]
+Jak w temacie,mogę???
+Możesz, jeśli zachowasz warunki licencji, na jakiej działa Wikipedia – opiszesz skopiowany z Wikipedii materiał listą autorów i nie postawisz obok niego własnego znaczka ;bdquo;©;rdquo;, tylko zaznaczysz tę samą licencję. Wojciech Pędzich Dyskusja 19:15, 1 cze 2010 (CEST)
+Wiecej o tym pod Pomoc:Kopiowanie z Wikipedii. Generalnie tak jak wpedzich mowi - musisz podac informacje o licencji i autorach. Nie ma ograniczen dla korzystania komercyjnego czy przerobek. Wlasnie dlatego to "wolna encyklopedia", bo zgromadzone tu materialy sa na wolnej licencji :) Jesli masz jakies problemy, albo chcialbys zweryfikowac czy wszystko jest OK, to pisz tutaj, lub na nasze strony dyskusji - jak Ci wygodniej. Herr Kriss ✉ 22:55, 1 cze 2010 (CEST)
+Skopiowane z "Avatar Wiki" [edytuj]
+Treść artykułu James Cameron's Avatar: The Game i akapit do tego artykułu Avatar (film)#Język Na'vi (tylko tekst z drobnymi poprawkami, bez grafik i infoboxa) skopiowałem z Avatar Wiki ([1], [2]). Artykuły w tamtej Wiki są objęte taką samą licencją CC-BY-SA-3.0 ([3]) jak Wikipedia, to skopiowałem. Ale dopiero teraz sobie uwiadomiłem, że źle zrobiłem. Nie podałem jasno informacji o autorach (tylko link w pierwszym artykule - a to chyba nie wystarczy). Tak więc co zrobić, żeby było zgodnie z licencją? mk321 (dyskusja) 19:16, 8 cze 2010 (CEST)
+Najlepiej jest dawać informację w opisie edycji, ale jeśli tego nie zrobiłeś, wykorzystaj dyskusję hasła, pisząc coś w rodzaju "hasło w tej wersji (tu link) zostało skopiowane z (link do odpowiedniej wersji na Avatar Wikii) zgodnie z licencją (podać licencję). Autorzy (link albo wymienić)". Podobnie z przypadku sekcji (tzn. "sekcja "Język Na'vi" w tej wersji (link)" etc. Gytha (dyskusja) 06:11, 20 cze 2010 (CEST)
+Dziękuję za odpowiedź. Poprawione. Na przyszłość będę wykorzystywał opis edycji. mk321 (dyskusja) 20:30, 20 cze 2010 (CEST)
+Jak konkretnie ma wyglądać odwołanie do źródła [edytuj]
+witam piszę pracę dyplomową, która będzie opublikowana w sieci wstawiam do niej zdjecia zaczerpniete w wikipedii Jak w mojej pracy powienien konkretnie wygladac podpis pod zdjeciem, np z tego linku http://pl.wikipedia.org/w/index.php?title=Plik:Pkin_warszawa.jpg&filetimestamp=20081207150219 Czy w pisywanie tych wszystkich licencji ma sens, sztucznie ziwększa podpis pod rysunkiem? Czy musze podac autora zdjecia, bo malo powaznie wyglada odwolanie sie do np., za przeproszeniem kogos o nicku "XXX" lub "kociak"...? Co jesli nie ma podanego autora? Czy moj opis zdjecia musi byc identyczny z opisemautora zdjecia? Czy dla zdjecia z przykladu wyzejwystarczy opis np. rys.4 Pałac Kultury i Nauki, fot. [9]? gdzie [9] to pozycja literaturowa - wikipedia.pl? Prosze o info jaki jest minimalny opis nie naruszajacy licencji i poprawnie odwolujacy si edo źrodla.
+dziekuje za odpowiedz
+pozdrawiam
+Biuletyn Stowarzyszenia Wikimedia Polska dotyczący licencji powinien Ci pomóc. Viatoro (dyskusja) 02:18, 20 cze 2010 (CEST)
+dzieki za link, wyjasnil mi wszystko (niestety wychodza dluuuugie podpisy :( )
+pytanie o cytowanie stron www [edytuj]
+szanowni państwo czy można w opisie cytatu dodać stronę www np. parku narodowego ? ania_reszka@interia.pl
+Niezbyt rozumiem pytanie. Herr Kriss ✉ 17:34, 21 cze 2010 (CEST)
+Ja również, ale jeśli chodzi o użycie strony PN jako źródła, to jak najbardziej. Fizykaa (dyskusja • e-mail) 21:15, 21 cze 2010 (CEST)
+Plik z "dziwną" licencją [edytuj]
+Chodzi o plik: http://commons.wikimedia.org/wiki/File:Ashampoo_logo.png
+W licencji pisze, że plik ostrzegający o możliwości bycia znakiem towarowym, ale tuż obok piszę, że nie spełnia do tego warunków i jest w domenie publicznej. Nie bardzo rozumiem - można go wykorzystać w artykule w polskiej Wikipedii czy nie? To samo pytanie odnośnie wszystkich grafik opisanych jednocześnie szablonami http://commons.wikimedia.org/wiki/Template:Trademarked/pl oraz http://commons.wikimedia.org/wiki/Template:PD-textlogo/pl
+--MrDark (dyskusja) 20:23, 16 sie 2010 (CEST)
+Używanie takich plików jest dozwolone na Wikipedii, ale należy być ostrożnym, żeby przypadkiem nie narazić się właścicielowi loga. Na pewno wolno takie logo użyć w haśle opisującym produkt czy firmę, do której ono należy. Każde inne wykorzystanie, np. jako nadruki na koszulkach, które później zamierzamy sprzedawać, wymaga konsultacji z prawnikiem i właścicielem praw do loga. Patrol110 (dyskusja) 16:42, 17 sie 2010 (CEST)
+Źródło „http://pl.wikipedia.org/wiki/Wikipedia:Pytania_nowicjuszy/Prawa_autorskie”
+Kategorie: Pytania nowicjuszy i odpowiedzi (FAQ) • Prawa autorskie w Wikipedii
+Osobiste
+* Stary układ stron
+* Nowe funkcje
+* Logowanie i rejestracja
+Przestrzenie nazw
+* Strona projektu
+* Dyskusja
+Warianty
+Widok
+* Czytaj
+* Edytuj
+* Dodaj temat
+* Historia i autorzy
+Działania
+Szukaj
+Szukaj
+Nawigacja
+* Strona główna
+* Kategorie artykułów
+* Bieżące wydarzenia
+* Losuj artykuł
+Dla czytelników
+* Zgłoś/popraw błąd
+* Zgłoś błąd w pliku
+* Częste pytania (FAQ)
+* Kontakt z Wikipedią
+* Wspomóż Wikipedię
+Dla edytorów
+* Ostatnie zmiany
+* Zasady edytowania
+* Pomoc
+* Portal wikipedystów
+* Ogłoszenia
+Drukuj lub eksportuj
+* Utwórz książkę
+* Pobierz jako PDF
+* Wersja do druku
+Narzędzia
+* Linkujące
+* Zmiany w dolinkowanych
+* Strony specjalne
+* Link do tej wersji
+* Tę stronę ostatnio zmodyfikowano 16:42, 17 sie 2010.
+* Tekst udostępniany na licencji Creative Commons: uznanie autorstwa, na tych samych warunkach, z możliwością obowiązywania dodatkowych ograniczeń. Zobacz szczegółowe informacje o warunkach korzystania.
+* Zasady ochrony prywatności
+* O Wikipedii
+* Informacje prawne
+* Powered by MediaWiki
+* Wikimedia Foundation

@@ -1,0 +1,18 @@
+match_rules(
+apply(
+  match(
+    regex( base[0], 'wyżyna' ),
+    is( 'reladj_gaz_based' )
+  ),
+  cond(
+    ann(:1, 'capitalized_noun' ),
+    equal( nmb[first(:1)], nmb[first(:2)] ),
+    equal( cas[first(:1)], cas[first(:2)] ),
+    equal( gnd[first(:1)], gnd[first(:2)] )
+  ),
+  actions(
+    mark(M, 'HIGHLAND_NAM')
+  )
+)
+
+)

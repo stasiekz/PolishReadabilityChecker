@@ -1,0 +1,15 @@
+match_rules(
+apply
+(
+  match
+  (
+    optional(repeat(equal(class[0], {adj}))),
+    equal(class[0], {noun}),
+    optional(repeat(equal(class[0], {adj})))
+  ),
+  actions
+  (
+    mark(M, M, :2, "NP")
+  )
+)
+)

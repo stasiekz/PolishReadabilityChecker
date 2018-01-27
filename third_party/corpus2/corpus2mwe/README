@@ -1,0 +1,138 @@
+Czytnik do MWE w Corpus2 (moduł corpus2mwe w corpus2) 
+
+ZALEŻNOŚCI
+- Corpus2 (gałąź corpus2_mwe)
+- libmwereader z WCCLa (gałąź mwe_fix zawiera poprawkę do MWEReadera*)
+    najlepiej zainstalować całego WCCLa, ponieważ moduł libmwereadera nie zawiera
+    wszystkich zależności
+
+INSTALACJA
+1) Instalacja Corpus2 z gałęzi corpus2_mwe
+    git clone git@nlp.pwr.edu.pl:corpus2
+    cd corpus2
+    git checkout corpus2_mwe
+    mkdir build
+    cd build
+    cmake ..
+    make -j
+    sudo make install
+    sudo ldconfig
+    cd ../
+    
+2) Instalacja WCCLa z gałęzi mwe_fix
+    sudo apt-get install -y libantlr-dev
+    git clone git@nlp.pwr.edu.pl:wccl
+    cd wccl
+    git checkout mwe_fix
+    mkdir build
+    cd build
+    cmake ..
+    make -j
+    sudo make install
+    sudo ldconfig
+    cd ../..
+
+
+3) Instalacja modułu corpus2mwe w Corpus2 (gałąź corpus2_mwe)
+    cd corpus2mwe
+    mkdir build
+    cd build
+    cmake ..
+    make -j
+    sudo make install
+    sudo ldconfig
+
+UŻYCIE
+Czytnik opakowano z użyciem SWIGa. Zawiera jedną klasę o nazwie CclMWEReader, 
+będącą odpowiednikiem CclRelReadera z Corpus2. 
+
+    import corpus2mwe
+    import corpus2
+    
+    tagset = corpus2.get_named_tagset('nkjp')
+    ccl_f = "ccl.xml"
+    rel_f = "ccl.rel.xml"
+    reader = corpus2mwe.CclMWEReader(ccl_f, rel_f, tagset)
+    document = reader.read()
+
+Tak załadowany dokument powinien zawierać rozpoznane wielowyrazowce (MWE),
+ściągnięte do pojedynczych tokenów lub oznaczone odpowiednim kanałem anotacji.
+Wyboru pomiędzy ściąganiem do pojedynczych tokenów a użyciem anotacji można 
+dokonać wykorzystując metodę `use_annotations`. Domyślnie czytnik oznacza
+jednostki MWE z użyciem anotacji.
+
+    import corpus2mwe
+    import corpus2
+
+    tagset = corpus2.get_named_tagset('nkjp')
+    ccl_f = "ccl.xml"
+    rel_f = "ccl.rel.xml"
+    # domyślnie używa kanałów anotacji
+    reader = corpus2mwe.CclMWEReader(ccl_f, rel_f, tagset)
+    document = reader.read()
+
+    reader.set_files(ccl_f, rel_f)
+    # teraz ściągnie do pojedynczych tokenów
+    reader.use_annotations(False)
+    document = reader.read()
+
+Użycie czytnika nie powoduje zachowania
+istniejących kanałów anotacji, ale dotyczy to tylko opcji ze ściąganiem tokenów
+- załadowany dokument należałoby ponownie zaanotować korzystając z dostępnych 
+narzędzi. W przypadku zastosowania anotacji do oznaczania MWE, istniejące
+anotacje powinny zostać zachowane.
+
+Utworzenie obiektu czytnika powoduje załadowanie słownika, co wydłuża czas 
+działania narzędzi korzystających z tego czytnika. Dlatego nie jest zalecane
+wielokrotne tworzenie obiektu CclMWEReadera do ładowania wielu dokumentów 
+(np. w trybie batch). Wystarczy utworzyć jeden obiekt i wymieniać czytane
+pliki za pomocą metody `set_files`:
+
+    import corpus2mwe
+    import corpus2
+
+    tagset = corpus2.get_named_tagset('nkjp')
+    reader = corpus2mwe.CclMWEReader('ccl1.xml', tagset)
+
+    ccls = ['ccl2.xml', 'ccl3.xml', ccl4.xml, ...]
+    for ccl in ccls:
+    	reader.set_files(ccl)
+	doc = reader.read()
+	...
+
+Metoda `set_files` pozwala na podmianę pliku ccl oraz związanego z nim
+pliku rel_ccl (drugi, opcjonalny parametr metody). 
+
+Klasa posiada następujący interfejs:
+
+1) CclMWEReader(ścieżka_do_ccl, tagset)
+    - tworzy czytnik i ładuje domyślnie zainstalowany słownik z operatorami MWE
+    - czyta dokument bez relacji (tylko plik ccl)
+
+2) CclMWEReader(ścieżka_do_ccl, ścieżka_do_rel_ccl, tagset)
+    - tworzy czytnik i ładuje domyślnie zainstalowany słownik z operatorami MWE
+    - czyta dokument wraz z relacjami (plik ccl i rel_ccl)
+
+3) CclMWEReader(ścieżka_do_ccl, ścieżka_do_rel_ccl, tagset, ścieżka_do_słownika_mwe)
+    - tworzy czytnik i ładuje wybrany przez nas słownik operatorów MWE
+    - czyta dokument
+    - parametr słownika z operatorami jest opcjonalny
+
+4) CclMWEReader.set_files()
+    - istniejący czytnik można użyć wielokrotnie, podmieniając jedynie
+        plik do przeczytania
+    - zaleta: nie ładuje ponownie słownika, który jest "ciężki"
+
+5) CclMWEReader.read()
+    - czyta dokument i zwraca obiekt Corpus2.Document
+
+6) CclMWEReader.use_annotations(bool)
+    - użyj anotacji do oznaczenia MWE lub ściągnij elementy MWE do pojedynczego
+        tokenu
+
+*) MWEReader zawierał kilka błędów wynikających z błędnych założeń:
+- założenie, że głowa wielowyrazowca to zawsze pierwszy wyraz
+    (w poprawce głowa ustalana jest na podstawie znacznika $Head, dopiero
+    gdy znacznika nie podano głowa ustalana jest jako pierwszy wyraz)
+- wadliwe przypisywanie części mowy do wielowyrazowca na podstawie
+    błędnej głowy

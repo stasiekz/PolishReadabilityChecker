@@ -1,0 +1,42 @@
+tagset=kipi
+---
+lower(["pałąk", "Pałąk", "PAŁĄK", "pałĄK"])
+
+["pałąk"]
+---
+upper(["żółć", "ŻÓŁĆ", "Żółć", "żÓłĆ"])
+
+["ŻÓŁĆ"]
+---
+upper(["Schlüssel", "ěêĕ"])
+
+["SCHLÜSSEL", "ĚÊĔ"]
+---
+affix(["pijący", "jedzący", "jedząca", "ca"], -3)
+
+["ca", "ąca", "ący"]
+---
+affix(["ökonomisch", "ökologisch", "oko", "okoń", "ok"], 3)
+
+["ok", "oko", "öko"]
+---
+affix(["psi", "pies"], 0)
+
+["pies", "psi"]
+---
+regex(["ökonomisch", "ökologisch", "oko", "okoń", "ok"], "\\p{Ll}+")
+
+True
+---
+regex(["ökonomisch", "ökologisch", "okoŃ", "okoń", "ok"], "\\p{Ll}+")
+
+False
+---
+regex(["SCHLÜSSEL.", "OKOŃ;", "ŹDŹBŁO:"], "\\p{Lu}+\\p{P}")
+
+True
+---
+regex(["SCHLÜSSEL.", "OKOń;", "ŹDŹBŁO:"], "\\p{Lu}+\\p{P}")
+
+False
+---

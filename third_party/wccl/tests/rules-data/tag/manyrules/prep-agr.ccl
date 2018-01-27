@@ -1,0 +1,31 @@
+tag_rules(
+	rule("prep-case", // prep [with-case]
+		and(
+			equal(class[-1], prep),
+			not(equal(cas[0], {}))
+		),
+		select(
+			in(cas[0], cas[-1])
+		)
+	);
+	rule("prep-subst-case", // [prep] with-case
+		and(
+			equal(class[0], prep),
+			not(equal(cas[1], {}))
+		),
+		select(
+			in(cas[0], cas[1])
+		)
+	);
+	rule("agr-right", // [here] next
+		select(
+			agr(0,1,{nmb,gnd,cas})
+		)
+	);
+	rule("agr-left", // prev [here]
+		select(
+			agr(-1,0,{nmb,gnd,cas})
+		)
+	)
+)
+

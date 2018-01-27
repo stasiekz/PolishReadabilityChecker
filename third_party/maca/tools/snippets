@@ -1,0 +1,1 @@
+time cat MMMsort|cut -f 1|uniq|./maca-app |sed -s s/\\\\//g|sed -s 's/</\t/'|sed -s 's/>//'> maca-outsort

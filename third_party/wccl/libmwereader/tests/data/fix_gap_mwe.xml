@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<units_description tagset='kipi'>
+	<mwegroup name="SubstAdjFix" type="fix" class="subst">
+		<condition>
+			and(
+				inter(base[0],$s:Subst),
+				rlook(1, 10, $Pos, inter(base[$Pos],$s:Adj)),
+				setvar($Pos1, 0),
+				setvar($Pos2, $Pos),
+				inter(class[0],{subst,ger,depr}),
+				inter(class[$Pos],{adj}),
+				agrpp(0,$Pos,{nmb,gnd,cas})
+			)
+		</condition>
+		<instances>
+			<MWE base="instrument muzyczny">
+				<var name="Subst">instrument</var>
+				<var name="Adj">muzyczny</var>
+				<head>inter(class[0],{subst,ger,depr})</head>
+			</MWE>
+		</instances>
+	</mwegroup>
+
+</units_description>

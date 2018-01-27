@@ -1,0 +1,46 @@
+Toki — a configurable tokeniser.
+© 2010, Tomasz Śniatowski and Adam Radziszewski
+Wrocław University of Technology
+
+This is free software, see LICENSE.LESSER and LICENSE.
+
+
+Toki is a software package performing segmentation of running text into tokens and (optionally) sentences. The tokeniser is targeted at European languages, especially at Polish (the default configuration is for Polish).
+
+Most important features:
+1. Configurability. The behaviour of a working tokeniser is defined by a configuration file. The file specifies the rules of tokenisation (as defined by processing layers) and labelling of tokens as well as may point to a file with sentence splitting rules.
+2. The output tokens are labelled. It allows to re-use some of the information that was needed to make decisions on segmentation. For instance, knowing that a token is punctuation may be useful for next stages of processing (e.g. morphological analysis). The labels are also useful internally — they allow to define more sophisticated processing rules.
+3. Support for SRX standard for sentence splitting. The advantage is working segmentation rules are available for many languages. To the best of our knowledge, this is the first open source C++ implementation of SRX. 
+4. Unicode support. ICU library is used for this purpose.
+5. Library with simple interface. Toki has been implemented as a C++ library which facilitates linking with different languages. The API has been kept simple to allow for easy linkage.
+6. Simple command-line util to tokenise text and debug configs (toki-app).
+
+
+Using toki as a standalone utility
+
+After installation (see INSTALL), a util called toki-app will be available. It is able to read input stream and generate tokenised output.
+
+The desired output format can be selected by providing format string. The format string may be defined in configuration files ([debug] section, format=…). If it is not provided there, default one will be used. In either case, you can override this setting by explicitly providing your format string with -f. Format string may contain escape sequences such as backslash-n for newline or backslash-t for tab. Besides, these substitutions will be done:
+• $orth   → the token's orth
+• $type   → the token's type
+• $bs_01  → 1 if the token has the begins_senctence flag set, else 0
+• $bs|    → ‘|’ if token begins sentence, empty string otherwise
+• $bs     → ‘bs’ if token begins sentence, empty string otherwise
+• $ws     → the preceeding whitespace amount string name, e.g. ‘none’, ‘space’ or ‘newline‘.
+• $ws_id  → the preceeding whitespace numeric code, 0 for no whitespace
+• $ws_any → 0 if there was any whitespace preceeding the token, else 1
+• $ws_ws  → the qualitative description of whitespace characters that came before the token (actual spaces / newlines)
+
+
+For example calls and some more information, please consult the project wiki site:
+http://nlp.pwr.wroc.pl/redmine/projects/toki/wiki
+
+
+Using toki as a shared library (libtoki)
+
+The library defines a simple API, whose full documentation may be found in the Doxygen format. Below the typical usage scenarios are outlined.
+1. To create a working tokeniser, instantiate Toki::LayerTokenizer. There are several constructors available; the simplest one assumes using the default configuration (for Polish). To access a named configuration, use Toki::get_named_config(config_name) and pass the acquired object to Toki::LayerTokenizer constructor.
+2. To create a working tokeniser with sentence-splitter, first instantiate a Toki::LayerTokenizer object and then wrap a Toki::SentenceSplitter around it. The sentencer object contains a convenient has_more-get_next_sentence interface. The default config loads sentence-splitting rules so is suitable for this purpose.
+NOTE: when using a custom config, check whether it contains working sentence-splitting rules. If it doesn't, Toki::SentenceSplitter will buffer all the input and finally produce an enormous sentence containing all the tokens.
+
+The available configs are in the ‘config’ subdir. For reference, see Writing_configs.txt.

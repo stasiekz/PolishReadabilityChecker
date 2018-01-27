@@ -1,0 +1,9 @@
+#ifndef LIBWCRFT_CONFIG_D_H
+#define LIBWCRFT_CONFIG_D_H
+
+#define LIBWCRFT_VERSION_MAJOR @libwcrft_VER_MAJOR@
+#define LIBWCRFT_VERSION_MINOR @libwcrft_VER_MINOR@
+#define LIBWCRFT_VERSION_PATCH @libwcrft_VER_PATCH@
+#define LIBWCRFT_VERSION "@libwcrft_VERSION@"
+
+#endif

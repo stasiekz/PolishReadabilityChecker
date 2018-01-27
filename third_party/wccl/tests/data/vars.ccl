@@ -1,0 +1,48 @@
+tagset=kipi
+sentence=t01.xml
+---
+position=0
+and(
+	setvar($s:O, ["leśny","czy"]),
+	setvar($P1, end-1),
+	setvar($P2, end-2),
+	in(orth[$P1], $s:O),
+	in(orth[$P2], $s:O)
+)
+
+True
+---
+position=0
+and(
+	setvar($t:Empty, $t:Uninitialised),
+	setvar($t:Subst, subst),
+	setvar($t:Fin, fin),
+	setvar($t:SubstOnly, $t:Subst),
+	setvar($t:Subst, {subst,ger,depr}),
+	not(equal($t:Subst,$t:SubstOnly)),
+	in($t:SubstOnly, $t:Subst),
+	equal({fin}, $t:Fin),
+	equal({}, $t:Empty)
+)
+
+True
+---
+position=0
+$t:Uninitialised
+
+{}
+---
+position=0
+$b:Uninitialised
+
+False
+---
+position=0
+$s:Uninitialised
+
+[]
+---
+$Uninitialised
+
+nowhere
+---

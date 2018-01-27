@@ -1,0 +1,30 @@
+tagset=kipi
+sentence=t01.xml
+---
+position=0
+range(class,7,8)
+
+{adj,conj,impt}
+---
+position=0
+range(per,0,2)
+
+{pri}
+---
+position=0
+range(m1,6,8)
+
+{m1}
+---
+catflt(0, {nmb,gnd},{cas}) // Uważam
+
+{}
+---
+catflt(18, {nmb,gnd},{cas}) // nie
+
+{acc}
+---
+catflt(11, cas[8], gnd) // cas[8] == {nom,acc}, cas[11] == {gen,acc,loc}, gnd[11] where cas[11] in cas[8] == m1
+
+{m1}
+---

@@ -1,0 +1,8 @@
+tag_rules(
+	rule("rule1",
+	in(class[0], {conj, qub}),
+	delete(
+		equal(class[0], {qub})
+	)
+	)
+)

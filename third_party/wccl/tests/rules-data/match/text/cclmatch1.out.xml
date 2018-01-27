@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cesAna SYSTEM "xcesAnaIPI.dtd">
+<cesAna xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" type="lex disamb">
+<chunkList>
+ <chunk>
+  <sentence>
+   <tok>
+    <orth>Sp.</orth>
+    <lex><base>sp.</base><ctag>subst:sg:nom:f</ctag></lex>
+    <lex><base>sp.</base><ctag>subst:sg:gen:f</ctag></lex>
+    <lex><base>sp.</base><ctag>subst:sg:dat:f</ctag></lex>
+    <lex><base>sp.</base><ctag>subst:sg:acc:f</ctag></lex>
+    <lex><base>sp.</base><ctag>subst:sg:inst:f</ctag></lex>
+    <lex><base>sp.</base><ctag>subst:sg:loc:f</ctag></lex>
+    <lex><base>sp.</base><ctag>subst:sg:voc:f</ctag></lex>
+    <lex><base>sp.</base><ctag>subst:pl:nom:f</ctag></lex>
+    <lex><base>sp.</base><ctag>subst:pl:gen:f</ctag></lex>
+    <lex><base>sp.</base><ctag>subst:pl:dat:f</ctag></lex>
+    <lex><base>sp.</base><ctag>subst:pl:acc:f</ctag></lex>
+    <lex><base>sp.</base><ctag>subst:pl:inst:f</ctag></lex>
+    <lex><base>sp.</base><ctag>subst:pl:loc:f</ctag></lex>
+    <lex><base>sp.</base><ctag>subst:pl:voc:f</ctag></lex>
+    <ann chan="Co" head="1">1</ann>
+   </tok>
+   <tok>
+    <orth>z</orth>
+    <lex><base>z</base><ctag>prep:gen:nwok</ctag></lex>
+    <lex><base>z</base><ctag>prep:inst:nwok</ctag></lex>
+    <lex><base>z</base><ctag>qub</ctag></lex>
+    <ann chan="Co">1</ann>
+   </tok>
+   <tok>
+    <orth>o</orth>
+    <lex><base>o</base><ctag>prep:acc</ctag></lex>
+    <lex><base>o</base><ctag>prep:loc</ctag></lex>
+    <ann chan="Co">1</ann>
+   </tok>
+   <ns/>
+   <tok>
+    <orth>.</orth>
+    <lex><base>.</base><ctag>interp</ctag></lex>
+    <ann chan="Co">1</ann>
+   </tok>
+   <ns/>
+   <tok>
+    <orth>o</orth>
+    <lex><base>o</base><ctag>prep:acc</ctag></lex>
+    <lex><base>o</base><ctag>prep:loc</ctag></lex>
+    <ann chan="Co">1</ann>
+   </tok>
+   <ns/>
+   <tok>
+    <orth>.</orth>
+    <lex><base>.</base><ctag>interp</ctag></lex>
+    <ann chan="Co">1</ann>
+   </tok>
+   <tok>
+    <orth>Sp.</orth>
+    <lex><base>sp.</base><ctag>subst:sg:nom:f</ctag></lex>
+    <lex><base>sp.</base><ctag>subst:sg:gen:f</ctag></lex>
+    <lex><base>sp.</base><ctag>subst:sg:dat:f</ctag></lex>
+    <lex><base>sp.</base><ctag>subst:sg:acc:f</ctag></lex>
+    <lex><base>sp.</base><ctag>subst:sg:inst:f</ctag></lex>
+    <lex><base>sp.</base><ctag>subst:sg:loc:f</ctag></lex>
+    <lex><base>sp.</base><ctag>subst:sg:voc:f</ctag></lex>
+    <lex><base>sp.</base><ctag>subst:pl:nom:f</ctag></lex>
+    <lex><base>sp.</base><ctag>subst:pl:gen:f</ctag></lex>
+    <lex><base>sp.</base><ctag>subst:pl:dat:f</ctag></lex>
+    <lex><base>sp.</base><ctag>subst:pl:acc:f</ctag></lex>
+    <lex><base>sp.</base><ctag>subst:pl:inst:f</ctag></lex>
+    <lex><base>sp.</base><ctag>subst:pl:loc:f</ctag></lex>
+    <lex><base>sp.</base><ctag>subst:pl:voc:f</ctag></lex>
+    <ann chan="Co">0</ann>
+   </tok>
+   <tok>
+    <orth>z</orth>
+    <lex><base>z</base><ctag>prep:gen:nwok</ctag></lex>
+    <lex><base>z</base><ctag>prep:inst:nwok</ctag></lex>
+    <lex><base>z</base><ctag>qub</ctag></lex>
+    <ann chan="Co">0</ann>
+   </tok>
+   <tok>
+    <orth>o</orth>
+    <lex><base>o</base><ctag>prep:acc</ctag></lex>
+    <lex><base>o</base><ctag>prep:loc</ctag></lex>
+    <ann chan="Co">0</ann>
+   </tok>
+   <ns/>
+   <tok>
+    <orth>.</orth>
+    <lex><base>.</base><ctag>interp</ctag></lex>
+    <ann chan="Co">0</ann>
+   </tok>
+   <ns/>
+   <tok>
+    <orth>ooo</orth>
+    <lex><base>ooo</base><ctag>qub</ctag></lex>
+    <ann chan="Co">0</ann>
+   </tok>
+  </sentence>
+ </chunk>
+</chunkList>
+</cesAna>

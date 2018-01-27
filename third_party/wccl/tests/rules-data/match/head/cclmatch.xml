@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cesAna SYSTEM "xcesAnaIPI.dtd">
+<cesAna xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" type="lex disamb">
+<chunkList>
+ <chunk>
+  <sentence>
+   <tok>
+    <orth>Tu</orth>
+    <lex><base>tu</base><ctag>qub</ctag></lex>
+   </tok>
+   <tok>
+    <orth>jest</orth>
+    <lex><base>być</base><ctag>verb</ctag></lex>
+   </tok>
+   <tok>
+    <orth>czarny</orth>
+    <lex><base>czarny</base><ctag>adj</ctag></lex>
+   </tok>
+   <tok>
+    <orth>błyszczący</orth>
+    <lex><base>błyszczeć</base><ctag>adj</ctag></lex>
+   </tok>
+   <tok>
+    <orth>głośnik</orth>
+    <lex><base>głośnik</base><ctag>noun</ctag></lex>
+   </tok>
+   <ns/>
+   <tok>
+    <orth>.</orth>
+    <lex><base>.</base><ctag>interp</ctag></lex>
+   </tok>
+  </sentence>
+  <sentence>
+   <tok>
+    <orth>Tam</orth>
+    <lex><base>tam</base><ctag>qub</ctag></lex>
+   </tok>
+   <tok>
+    <orth>jest</orth>
+    <lex><base>być</base><ctag>verb</ctag></lex>
+   </tok>
+   <tok>
+    <orth>nowa</orth>
+    <lex><base>nowy</base><ctag>adj</ctag></lex>
+   </tok>
+   <tok>
+    <orth>pompa</orth>
+    <lex><base>pompa</base><ctag>noun</ctag></lex>
+   </tok>
+   <tok>
+    <orth>próżniowa</orth>
+    <lex><base>próżniowy</base><ctag>adj</ctag></lex>
+   </tok>
+   <ns/>
+   <tok>
+    <orth>.</orth>
+    <lex><base>.</base><ctag>interp</ctag></lex>
+   </tok>
+  </sentence>
+ </chunk>
+</chunkList>
+</cesAna>

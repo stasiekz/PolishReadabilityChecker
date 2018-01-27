@@ -1,0 +1,43 @@
+This directory contains a few significant configuration and data files as well as some tests, experimental data and other rubbish. The most important files are listed below.
+
+Tagsets:
+• kipi — KIPI (IPI PAN Corpus) tagset enhanced with several classes as output by TaKIPI tagger,
+• morfeusz — variation of KIPI tagset, the difference being the division of neuter genders (n1...) and the presence of pluralia tantum genders (p1...),
+• ikipi — Intermediate tagset applied to KIPI, allowing for joining some of the split verb forms (praet+aglt, conjunctives) and thus reduce segmentation ambiguity
+• nkjp — NKJP (Narodowy Korpus Języka Polskiego) tagset,
+• sgjp — variation of NKJP tagset as output by Morfeusz SGJP, the same gender differences as morfeusz v. kipi.
+
+Configurations:
+• morfo1104-ikipi.ini — uses free data (most obtained from Morfologik, the rest gathered by Maziarz&Radziszewski, see below), outputs in ikipi tagset,
+• morfeusz.ini — uses Morfeusz SIAT, outputs in morfeusz SIAT tagset,
+• morfeusz-kipi.ini — uses morfpatch, Morfeusz SIAT and acro-infl+acro-uninfl, outputs in kipi tagset (simplified genders),
+• morfeusz-ikipi.ini — as above but outputs in ikipi tagset,
+• morfeusz-kipi-ext.ini — as morfeusz-kipi but uses the extended tagset of TaKIPI (tsym, tnum etc.),
+• morfeusz-ikipi-ext.ini — as morfeusz-ikipi but uses the extended tagset of TaKIPI,
+• sgjp.ini – assumes Morfeusz SGJP has been installed, outputs in its tagset,
+• morfeusz-nkjp.ini — assumes Morfeusz SGJP has been installed, outputs in NKJP format (simplified genders),
+• morfsgjp-kipi.ini — employs Morfeusz SGJP and outputs in KIPI tagset (rough conversion).
+
+Note about Morfeusz SGJP:
+Morfeusz SIAT and Morfeusz DGJP behave differently (they use different tagsets). Unfortunately, it is normally impossible to have the two Morfeusz libraries installed side-by-side, as they have the same internal name and version. 
+Maca configurations that use Morfeusz check which one is actually available and will issue an error if it is not the expected one. This version check is a simple string search in Morfeusz's "about" info.
+Maca allows specyfying the exact library name to load instead of just libmorfeusz.so.0, as it is technically possible to change the soname within the binary library. In case of trouble make sure that the appropriate Morfuesz library is installed normally and remove any custom morfeusz library name from the configuration file.
+
+TODO: intermediate tagset for nkjp.
+
+All these configuration use default Toki config (suited for processing Polish).
+
+Data sets:
+• morfo-1104-lower.fst — data from Morfologik 1.7 RC2 converted to IKIPI tagset by Radziszewski and Maziarz; licensed under LGPL or CC Share Alike (you are free to choose, the same applies to original Morfologik data); “sources” (tab-delimited text file) should be available within this package or on the project website; if they are not, contact the authors and we will send it
+• acro-infl.fst, acro-infl.txt — semi-automatically gathered inflected acronyms and expression with apostrophes; contain only subst and adj tags, hence suitable for all the three tagsets (even should be fine for NKJP); credit: Marek Maziarz, Adam Radziszewski, licensed on the terms of LGPL or Creative Commons Share Alike (you are free to chose)
+• acro-uninfl.fst, acro-uninfl.txt — the stems of the above expressions assigned guessed tags (pretty many of possible tags); only subst and adj tags
+• morfpatch-kipi.txt — a couple of corrections of Morfeusz SIAT errors; currently using subst and pred tags only (this may have changed)
+
+Note: acro-infl, acro-uninfl and morfpatch-kipi have been created by Marek Maziarz, Adam Radziszewski (2010), licensed on the terms of LGPL or Creative Commons Share Alike (you are free to choose).
+
+Tagset conversion configs (used by the above configs):
+• mm.conv — just morfeusz tagset, no conversion
+• morfkipi2kipi.conv — morfeusz to kipi
+• morfkipi2ikipi.conv — morfeusz to ikipi
+• morfsgjp2kipi.conv — sgjp (Morfeusz SGJP) to kipi
+• nkjp2kipi.conv — nkjp to kipi

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cesAna SYSTEM "xcesAnaIPI.dtd">
+<cesAna xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" type="lex disamb">
+<chunkList>
+ <chunk id="ch1">
+  <chunk type="s">
+   <tok>
+    <orth>By</orth>
+    <lex disamb="1"><base>by</base><ctag>qub</ctag></lex>
+    <lex><base>by</base><ctag>conj</ctag></lex>
+   </tok>
+   <ns/>
+   <tok>
+    <orth>śmy</orth>
+    <lex disamb="1"><base>być</base><ctag>aglt:pl:pri:imperf:nwok</ctag></lex>
+   </tok>
+   <tok>
+    <orth>mogły</orth>
+    <lex disamb="1"><base>móc</base><ctag>praet:pl:f:imperf</ctag></lex>
+    <lex><base>móc</base><ctag>praet:pl:m2:imperf</ctag></lex>
+    <lex><base>móc</base><ctag>praet:pl:m3:imperf</ctag></lex>
+    <lex><base>móc</base><ctag>praet:pl:n:imperf</ctag></lex>
+   </tok>
+   <ns/>
+   <tok>
+    <orth>by</orth>
+    <lex disamb="1"><base>by</base><ctag>qub</ctag></lex>
+   </tok>
+   <tok>
+    <orth>mogły</orth>
+    <lex disamb="1"><base>móc</base><ctag>praet:pl:f:imperf</ctag></lex>
+    <lex><base>móc</base><ctag>praet:pl:m2:imperf</ctag></lex>
+    <lex><base>móc</base><ctag>praet:pl:m3:imperf</ctag></lex>
+    <lex><base>móc</base><ctag>praet:pl:n:imperf</ctag></lex>
+   </tok>
+   <ns/>
+   <tok>
+    <orth>by</orth>
+    <lex disamb="1"><base>by</base><ctag>qub</ctag></lex>
+   </tok>
+   <ns/>
+   <tok>
+    <orth>śmy</orth>
+    <lex disamb="1"><base>być</base><ctag>aglt:pl:pri:imperf:nwok</ctag></lex>
+   </tok>
+  </chunk>
+ </chunk>
+</chunkList>
+</cesAna>

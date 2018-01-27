@@ -1,0 +1,9 @@
+tag_rules(
+	rule("sel-n",
+		and(equal(base[0], "i")),
+		select(
+			1,
+			equal(gnd[1], {n})
+		)
+	)
+)

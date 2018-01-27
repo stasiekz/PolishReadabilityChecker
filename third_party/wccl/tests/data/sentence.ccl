@@ -1,0 +1,53 @@
+sentence=t01.xml
+---
+orth[0] // to tylko[0] komentarz orth[1]
+
+["Uważam"]
+---
+position=2
+ /* a to też komentarz
+orhth[3]
+*/
+orth[0]
+/* i tu
+orth[4]
+*/
+
+["że"]
+---
+position=0
+base[0]
+
+["uważać"]
+---
+position=0
+base[7]
+
+["lub", "lubić"]
+---
+position=0
+base[end]
+
+["."]
+---
+position=0
+base[end+1]
+
+[]
+---
+inside(-1)
+
+False
+---
+outside(4)
+
+False
+---
+outside(end+1)
+
+True
+---
+inside(begin+1)
+
+True
+---

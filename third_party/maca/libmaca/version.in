@@ -1,0 +1,9 @@
+#ifndef LIBMACA_CONFIG_D_H
+#define LIBMACA_CONFIG_D_H
+
+#define LIBMACA_VERSION_MAJOR @maca_ver_major@
+#define LIBMACA_VERSION_MINOR @maca_ver_minor@
+#define LIBMACA_VERSION_PATCH @maca_ver_patch@
+#define LIBMACA_VERSION "@LIBMACA_VERSION@"
+
+#endif

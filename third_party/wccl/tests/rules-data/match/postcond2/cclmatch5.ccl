@@ -1,0 +1,16 @@
+match_rules(
+apply(
+  match(
+    repeat(
+      optional(equal(orth[0], "not:here")),
+      equal(class[0], adj),
+      optional(equal(orth[0], "not:there"))
+    )
+  ),
+  // first(M) -> position
+  // regex… -> starting with w
+  cond(regex(orth[first(M)], "w.*")),
+  //cond(debug(orth[first(M)])),
+  actions(mark(M,"C"))
+)
+)

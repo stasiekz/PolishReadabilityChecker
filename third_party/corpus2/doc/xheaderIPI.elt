@@ -1,0 +1,574 @@
+<!--                                                          -->
+<!--                      THE CES HEADER                      -->
+<!--                                                          -->
+<!--        This is the entity ces.header used in the         -->
+<!--            Corpus Encoding Standard DTDs.                -->
+<!--                                                          -->
+<!--    It is referred to in those DTDs as xheaderIPI.elt.    -->
+<!--                                                          -->
+<!--                                                          -->
+<!--  
+      Original Date: 1996/04/09 02:33:47
+      Original Revision: 2.1
+      Author of 2.1: Patrice Bonhomme
+
+      Current Revision id: 2.1.IPI.16
+
+      Modified for the second edition of the IPI PAN Corpus by Rafał
+      Górski.
+
+      Modified for the IPI PAN Corpus by Adam Przepiórkowski,
+      partially on the basis of earlier modifications by Piotr
+      Bański, cf. PB.
+
+      It differs from the standard CES as described in version 1.5 of
+      Corpus Encoding Standard, http://www.cs.vassar.edu/CES/, in the
+      following ways:
+      - addition of xcesHeader (PB),
+      - origDate added to imprint (AP),
+      - as well as to analytic (AP),
+      - various subsequent changes by RG.
+
+      Also, the followin recommendations override the recommendations
+      of the version 1.5 of CES:
+      - names should be given as they occur on the title page (cf. the
+        example at the end of section 3), and not "in a canonical
+        form, with surnames preceding forenames" (cf. section 3.3.5 of
+        CES);
+      - the 'vol' value of the 'type' attribute of biblScope
+        represents the continuous number of a periodical publication,
+        e.g., volume of a journal or the year of publication of a
+        newspaper, while 'issue' represents the cyclic number, e.g.,
+        the month number of a monthly, or the number of the issue of a
+        newspaper within a give year;
+      - UTF-8 should be used instead of ISO-8859-X;
+      - the values of the attribute 'value' of various Date elements
+        (pubDate, createDate, etc.) should adhere to the smallest
+        subset of the ISO 8061 standard corresponding to the following
+        examples:
+        - '19' = 20th century
+        - '1985' = the year 1985
+        - '1985-12' = December 1985
+        - '1985-12-24' = 24th December 1985
+        Values involving local (Warsaw) time:
+        - '1985-12-24T10' = 10m on 24th December 1985
+        - '1985-12-24T14' = 2pm on 24th December 1985
+        - '1985-12-24T14:15' = 2:15pm on 24th December 1985
+        - '1985-12-24T14:15:30' = 15 minutes and 30 seconds after 2pm
+                                   on 24th December 1985 
+
+      $Id: xheaderIPI.elt,v 1.1.1.1 2007/11/08 15:26:49 adamp Exp $
+*     $Log: xheaderIPI.elt,v $
+*     Revision 1.1.1.1  2007/11/08 15:26:49  adamp
+*     Spejd
+*
+*     Revision 1.1  2007/10/20 13:11:39  adamp
+*     *** empty log message ***
+*
+*     Revision 1.16  2006/05/14 12:36:02  adamp
+*     A comment problem again.
+*
+*     Revision 1.15  2006/05/14 11:38:58  adamp
+*     No changes apart from the correction of log for Revision 1.14.
+*
+*     Revision 1.14  2006/05/14 11:36:34  adamp
+*     Wyrzucenie nieistniejacych odwolan do "extent" i "editionStmt" -
+*     zauwazone przez Wojciecha Rygielskiego, informacja przekazana przez
+*     Aleksandra Buczynskiego.
+*
+*     Revision 1.13  2006/03/13 19:45:59  adamp
+*     *** empty log message ***
+*
+*     Revision 1.12  2005/11/23 16:00:29  adamp
+*     Minor syntactic problem (result of merge) corrected; the previous
+*     version was ill-formed.
+*
+*     Revision 1.11  2005/11/23 15:57:15  adamp
+*     Optional <domain> added.  Revision number changed to 2.1.IPI.12.
+*
+*     Revision 1.10  2005/11/02 13:47:57  adamp
+*     Added respStmt and definitions of elements within respStmt.
+*
+*     Revision 1.9  2005/11/02 13:42:57  adamp
+*     Added respStmt; should be used only in sourceDesc (as in
+*     SienkiewiczH-qv, etc.), not in fileDesc.
+*
+*     Revision 1.8  2005/11/02 11:59:31  adamp
+*     Added idno to monogr; version number changed to ...10.
+*
+*     Revision 1.7  2005/11/02 09:59:03  adamp
+*     *** empty log message ***
+*
+*     Revision 1.6  2005/09/27 10:36:46  adamp
+*     Zmiana wersji na 2.1.IPI.8.
+*
+*     Revision 1.5  2005/09/26 21:28:05  adamp
+*     *** empty log message ***
+*
+*     Revision 1.4  2005/09/26 10:30:10  adamp
+*     Druga propozycja xheaderaIPI.elt od RG
+*
+*     Revision 1.3  2005/09/26 10:28:15  adamp
+*     Druga propozycja xheaderaIPI.elt od RG
+*
+*     Revision 1.2  2005/09/26 09:56:53  adamp
+*     Druga propozycja xheaderaIPI.elt od RG.
+*
+*     Revision 1.3  2004/04/23 14:20:51  adamp
+*     Analytic now has its own origDate (optionally, of course).  This
+*     should not change the validity of previous header.xmls.
+*
+*     Revision 1.2  2004/03/28 23:47:00  adamp
+*     Elements createDate and firstPubDate need the 'value' attribute!
+*
+*     Revision 1.1.1.1  2004/03/10 19:21:29  adamp
+*     x2XCES converters for the IPI PAN corpus
+*
+*     Revision 1.12  2004/03/01 15:59:14  adamp
+*     New version: 2.1.IPI.5.
+*
+*     Revision 1.11  2004/03/01 15:58:05  adamp
+*     Only typos in comments.
+*
+*     Revision 1.10  2004/02/25 16:38:22  adamp
+*     Changes in comments only.
+*
+*     Revision 1.9  2004/02/25 16:16:20  adamp
+*     Only comments changed.
+*
+*     Revision 1.8  2004/02/22 18:39:30  adamp
+*     Only minor changes in comments.
+*
+*     Revision 1.7  2004/02/12 15:52:06  adamp
+*     The attribute 'Default' changed to 'default'.
+*
+*     Revision 1.6  2004/02/12 15:43:47  adamp
+*     *** empty log message ***
+*
+*     Revision 1.5  2004/02/12 14:53:44  adamp
+*     *** empty log message ***
+*
+*     Revision 1.4  2004/02/11 20:04:48  adamp
+*     Added origDate, revision number and comments.
+*
+*     Revision 1.3  2004/02/11 17:55:33  adamp
+*     Log added.
+*
+                                                              -->
+<!ENTITY % a.header	'%a.global;'				>
+
+<!-- PB's modification: -->
+<!-- Changed Default to default. -->
+<!ENTITY % a.declarable '
+	default		(y | n)			"n"	'	>
+	
+
+
+<!-- wszystki elementy obowiązkowe  rg--> 
+
+<!ELEMENT cesHeader	(fileDesc, encodingDesc,
+			 profileDesc, revisionDesc)		>
+<!ATTLIST cesHeader		%a.header;
+	type		CDATA               "text"
+	creator		CDATA               #IMPLIED
+	status		(new | update)      "new"
+	date.created	CDATA               #IMPLIED
+	date.updated	CDATA               #IMPLIED
+	version		CDATA               #REQUIRED      
+	TEIform		CDATA               "teiHeader"		>
+
+<!-- PB's modification: -->
+<!-- Kludged xcesHeader into here. Made it EMPTY, too. -->
+
+<!ELEMENT xcesHeader	EMPTY		                        >
+<!ATTLIST xcesHeader    xlink:href  CDATA    #REQUIRED          >
+
+<!--          File Description                                -->
+<!-- editionStmt i extent usunięte -->
+
+<!ELEMENT fileDesc	(titleStmt, 
+                         publicationStmt,  sourceDesc+ ) >
+<!ATTLIST fileDesc       %a.header;				>
+
+<!ELEMENT titleStmt	(h.title, respStmt*)			>
+<!ATTLIST titleStmt	%a.header;				>
+
+<!ELEMENT h.title	( #PCDATA )				>
+<!ATTLIST h.title	%a.header;				>
+
+<!ELEMENT respStmt	(respType | respName)+			>
+<!ATTLIST respStmt           %a.header;                         >
+
+<!ELEMENT respType      (#PCDATA)                          >
+<!ATTLIST respType           %a.header;                         >
+
+<!ELEMENT respName      (#PCDATA)                          >
+<!ATTLIST respName           %a.header;                         >
+
+
+<!--          Edition Statement                               -->
+<!--                   wylatuje                                    -->
+
+
+<!--          Extent statement                                -->
+<!--               wylatuje                                        -->
+
+
+
+
+<!--          Publication statement                           -->
+<!-- nie zmieniałem elementów opcjonalnych na obligatoryjne, niezależnie od tego, że takimi są w headerach do Adama-->
+
+<!ELEMENT publicationStmt
+                        (distributor, pubAddress,
+                             telephone*, fax*, 
+                             eAddress*, idno*,
+                             availability, pubDate )            >
+<!ATTLIST publicationStmt    %a.header;                         >
+
+<!ELEMENT distributor   (#PCDATA)                         >
+<!ATTLIST distributor        %a.header;                         >
+
+
+<!ELEMENT pubAddress    (#PCDATA)                         >
+<!ATTLIST pubAddress         %a.header;                         >
+
+<!ELEMENT telephone     (#PCDATA)                         >
+<!ATTLIST telephone          %a.header;                         >
+
+<!ELEMENT fax           (#PCDATA)                         >
+<!ATTLIST fax                %a.header;                         >
+
+
+<!ELEMENT eAddress      (#PCDATA)                         >
+<!ATTLIST eAddress           %a.header;
+          type               CDATA               "email"          >
+
+<!ELEMENT idno          (#PCDATA)                         >
+<!ATTLIST idno               %a.header;
+          type               CDATA               "ISBN"           >
+
+<!ELEMENT availability  (#PCDATA )                         >
+<!ATTLIST availability       %a.header;
+          region             CDATA               "world"
+          status             (free | unknown | restricted)
+                                               "unknown"          >
+
+<!ELEMENT pubDate       (#PCDATA )                         >
+<!ATTLIST pubDate            %a.header;
+          value              CDATA               #IMPLIED       >
+
+<!-- Added origDate: the date of creation and/or first publication -->
+<!-- of the work (AP). -->
+
+<!ELEMENT origDate       ((createDate|firstPubDate)+)         >
+<!ATTLIST origDate            %a.header;                      >
+
+<!ELEMENT createDate       (#PCDATA )                         >
+<!ATTLIST createDate       %a.header;
+          value            CDATA               #REQUIRED       >
+
+<!ELEMENT firstPubDate     (#PCDATA )                         >
+<!ATTLIST firstPubDate     %a.header;
+          value            CDATA               #REQUIRED       >
+
+<!--          Source description                              -->
+
+<!ELEMENT sourceDesc    (biblFull | biblStruct)         >
+<!ATTLIST sourceDesc         %a.header;
+                             %a.declarable;                     >
+
+<!--   Bibliographic citation for non-electronic source       -->
+
+<!ELEMENT biblStruct    (analytic?, monogr+)               >
+<!ATTLIST biblStruct         %a.header;
+                             %a.declarable;                     >
+
+<!ELEMENT analytic      (h.author | respStmt |
+                             h.title | origDate)*                          >
+<!ATTLIST analytic           %a.header;                         >
+
+<!-- AP: Added idno, as in the original header.elt. -->
+<!ELEMENT monogr        (h.title+,
+                             (h.author | respStmt)*,
+                             (edition, respStmt?)*, imprint+,
+                             idno*,
+                             (biblNote | biblScope)* )          >
+<!ATTLIST monogr             %a.header;                         >
+
+<!ELEMENT h.author      (#PCDATA)                          >
+<!ATTLIST h.author           %a.header;                         >
+
+<!ELEMENT edition       (#PCDATA )                         >
+<!ATTLIST edition            %a.header;                         >
+
+<!-- Added origDate the date of creation and/or first publication -->
+<!-- of the work (AP). -->
+
+<!ELEMENT imprint       (pubPlace | publisher | pubDate | origDate)* >
+<!ATTLIST imprint            %a.header;                         >
+
+<!ELEMENT pubPlace      (#PCDATA)                          >
+<!ATTLIST pubPlace           %a.header;                         >
+
+<!ELEMENT publisher     (#PCDATA)                          >
+<!ATTLIST publisher          %a.header;
+          type               (place | org | person)
+                                                 #IMPLIED       >
+
+<!ELEMENT biblScope     (#PCDATA)                          >
+<!ATTLIST biblScope          %a.header;
+          type               (pp | vol | issue)  #IMPLIED       >
+
+<!ELEMENT biblNote      (#PCDATA)                          >
+<!ATTLIST biblNote           %a.header;                         >
+
+
+<!--    Bibliographical info for source in electronic form    -->
+
+<!ELEMENT biblFull      (titleStmt, 
+                             publicationStmt,
+                             sourceDesc+ )                      >
+<!ATTLIST biblFull           %a.header;                         >
+
+
+<!--        Encoding description                              -->
+<!--  samplingDecl usunięte, bo "This element is relevant only in the corpus header" http://www.cs.vassar.edu/CES/CES1-3.html#ToCsamp -->
+
+
+<!-- 									tagsDecl, refsDecl, classDecl: usunięte       -->
+
+
+
+<!ELEMENT encodingDesc  (projectDesc, 
+                             editorialDecl*)             >
+<!ATTLIST encodingDesc       %a.header;                         >
+
+<!ELEMENT projectDesc   (#PCDATA)                          >
+<!ATTLIST projectDesc        %a.header;
+                             %a.declarable;                     >
+
+<!-- 									wylatuje					-->
+<!--
+<!ELEMENT samplingDecl  (#PCDATA)                          >
+<!ATTLIST samplingDecl       %a.header;
+                             %a.declarable;                     >
+-->
+
+<!--          Editorial declaration                           -->
+
+<!ELEMENT editorialDecl (correction | quotation
+                             | hyphenation | segmentation |
+                             transduction | normalization |
+                             conformance)+                      >
+<!ATTLIST editorialDecl      %a.header;
+                             %a.declarable;                     >
+
+<!ELEMENT correction    (#PCDATA)                          >
+<!ATTLIST correction         %a.header;
+                             %a.declarable;
+          status             (high | medium | low | unknown)
+                                                 "unknown"
+          method             (silent | tags)     "silent"         >
+
+<!ELEMENT quotation     (#PCDATA)                          >
+<!ATTLIST quotation          %a.header;
+                             %a.declarable;
+          marks              (none | some | all) "all"
+          form               (data | rend | std | 
+                              nonstd | unknown)  "unknown"        >
+
+<!ELEMENT hyphenation   (#PCDATA)                          >
+<!ATTLIST hyphenation        %a.header;
+                             %a.declarable;                     >
+
+<!ELEMENT segmentation  (#PCDATA)                          >
+<!ATTLIST segmentation       %a.header;
+                             %a.declarable;                     >
+
+<!ELEMENT transduction  (#PCDATA)                          >
+<!ATTLIST transduction       %a.header;
+                             %a.declarable;                     >
+
+<!ELEMENT normalization (#PCDATA)                          >
+<!ATTLIST normalization      %a.header;
+                             %a.declarable;
+          source             CDATA               #IMPLIED
+          method             (silent | tags)     "silent"         >
+
+<!ELEMENT conformance   (#PCDATA)                          >
+<!ATTLIST conformance        %a.header;
+          level              (0 | 1 | 2 | 3)     "1"              >
+
+
+<!-- odtąd wylatują elementy usunięte z definicji  encodingDesc 
+
+          Tag declaration                                
+
+<!ELEMENT tagsDecl      (tagUsage+)                        >
+<!ATTLIST tagsDecl           %a.header;                         
+
+>
+
+<!ELEMENT tagUsage      (#PCDATA)                          >
+<!ATTLIST tagUsage           %a.header;
+          gi                 NMTOKEN             #REQUIRED
+          occurs             NMTOKEN             #IMPLIED       
+          wsd                CDATA               #IMPLIED  >
+
+        References declaration                          
+
+<!ELEMENT refsDecl      (#PCDATA)                          >
+<!ATTLIST refsDecl           %a.header;
+          doctype            NMTOKEN                #IMPLIED  >
+
+          Classify texts declaration                      
+
+<!ELEMENT classDecl     (taxonomy+)                        >
+<!ATTLIST classDecl            %a.header;                  >
+
+<!ELEMENT taxonomy      (category+)                        >
+<!ATTLIST taxonomy            %a.header;                   >
+
+<!ELEMENT category      (catDesc, category*)               >
+<!ATTLIST category            
+           id                 ID                  #REQUIRED
+           n                  CDATA               #IMPLIED
+           lang               IDREF               #IMPLIED >
+
+<!ELEMENT catDesc       (#PCDATA)                          >
+<!ATTLIST catDesc            %a.header;                    >
+
+--> 
+
+<!--        Profile description                               -->
+<!-- creation, langUsage, wsdUsage, annotations: usunięte, dodaję textDesc -->
+<!-- profileDesc nie uwzględnione w x2XCES -->
+
+<!ELEMENT profileDesc   ( textClass?, translations?,
+                             textDesc)                 >
+<!ATTLIST profileDesc        %a.header;                    >
+
+<!--          Creation element                                -->
+<!-- jak to rozumieć?
+3.5.1. The <creation> element 
+This element is used to record details concerning the origination of the text, whether or not covered elsewhere. 
+http://www.cs.vassar.edu/CES/CES1-3.html#ToC14 -->
+<!-- 
+<!ELEMENT creation      (#PCDATA )                         >
+<!ATTLIST creation           %a.header;
+          date               CDATA               #REQUIRED >
+																				  -->
+
+<!--                     wylatuje
+
+<!ELEMENT langUsage     (language+ )                       >
+<!ATTLIST langUsage          %a.header;                    >
+
+<!ELEMENT language      (#PCDATA)                          >
+<!ATTLIST language            
+          id                 ID                  #IMPLIED
+          wsd                CDATA               #IMPLIED
+          n                  CDATA               #IMPLIED     
+          type               CDATA               #IMPLIED
+          iso639             CDATA               #REQUIRED >
+--> 
+
+
+<!--                           wylatuje
+
+
+<!ELEMENT wsdUsage      (writingSystem+)                   >
+<!ATTLIST wsdUsage           %a.header;                    >
+
+<!ELEMENT writingSystem (#PCDATA)                          >
+<!ATTLIST writingSystem      
+          id                 ID                  #IMPLIED
+          lang               CDATA               #IMPLIED
+          wsd                ENTITY              #IMPLIED
+          n                  CDATA               #IMPLIED  >
+																						-->
+<!--          Text Class                                      -->
+<!--  				catRef: usunięte 					-->
+
+<!ELEMENT textClass     (h.keywords)              >
+<!ATTLIST textClass          %a.header;
+                             %a.declarable;                >
+<!-- usunięte
+<!ELEMENT catRef        EMPTY                              >
+<!ATTLIST catRef             %a.header;
+          target             IDREFS              #REQUIRED      
+          scheme             CDATA               #IMPLIED  >
+-->
+
+<!ELEMENT h.keywords    (keyTerm+)                         >
+<!ATTLIST h.keywords         %a.header;                    >
+
+<!ELEMENT keyTerm       (#PCDATA)                          >
+<!ATTLIST keyTerm            %a.header;                    >
+
+<!--          Translations                                    -->
+<!-- ulega gruntownej przeróbce, dodany nieistniejąca w TEI i CES  atrybut _translated_-->
+
+<!ELEMENT translations  (translation, translator+)?          >
+<!ATTLIST translations       
+								%a.header;                    
+			translated 	(y | n) 	"n"									>
+
+<!-- zmienione wsd na #IMPLIED -->
+
+<!ELEMENT translation   (#PCDATA)                          >
+<!ATTLIST translation        
+          id                 ID                  #IMPLIED
+          lang               CDATA               #REQUIRED
+          wsd                CDATA               #IMPLIED
+          n                  CDATA               #IMPLIED
+          trans.loc          ENTITY              #IMPLIED  >
+
+<!ELEMENT translator    (#PCDATA)                          >
+<!ATTLIST translator         %a.header;                    >
+
+<!--          Annotations                                     -->
+<!-- usunięte
+
+<!ELEMENT annotations   (annotation+)                      >
+<!ATTLIST annotations        %a.header;                    >
+
+<!ELEMENT annotation    (#PCDATA)                          >
+<!ATTLIST annotation         %a.header; 
+          type               CDATA               #IMPLIED             
+          ann.loc            ENTITY              #IMPLIED     
+          trans.loc          ENTITY              #IMPLIED  >
+-->
+<!-- domain and channel added by rg. Domain shall be used to place the name of the colunm in the newspaper, although it is  not exactly what it is intended for in TEI--> 
+<!ELEMENT textDesc  (channel, domain?) >
+
+<!ATTLIST textDesc 
+							%a.global;
+							%a.declarable; >
+
+<!-- dodaję channel -->
+
+<!ELEMENT channel 				 (#PCDATA) >
+<!ATTLIST channel 
+							  %a.global;  >
+<!-- dodaję domain -->
+<!ELEMENT domain (#PCDATA) >
+							  
+							  
+<!--       Revision description                               -->
+
+<!ELEMENT revisionDesc  (change+)                          >
+<!ATTLIST revisionDesc       %a.header;                    >
+
+<!ELEMENT change        (changeDate, respName, h.item+)     >
+<!ATTLIST change             %a.header;                    >
+
+<!ELEMENT changeDate    (#PCDATA)                          >
+<!ATTLIST changeDate         %a.header;
+          value               CDATA              #IMPLIED  >
+
+<!ELEMENT h.item        (#PCDATA)                          >
+<!ATTLIST h.item             %a.header;                    >
+
+

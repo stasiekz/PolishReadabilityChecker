@@ -1,0 +1,33 @@
+match_rules(
+	apply(
+		match(
+			optional(equal(base[0], "nie")),
+			repeat(
+				inter(class[0], {adj, ppas, pact})
+			)
+		),
+		cond(
+			agr(first(:2), last(M), {nmb,gnd,cas})
+		),
+		actions(
+			mark(M, "AdjP")
+		)
+	);
+ 
+	apply(
+		match(
+			optional(is("AdjP")),
+			inter(class[0], {subst, ger, depr})
+		),
+		cond(
+			or(
+				empty(:1),
+				agrpp(last(:1), first(:2), {nmb,gnd,cas})
+			)
+		),
+		actions(
+			mark(M, M, :2, "NP")
+		)
+	)
+)
+

@@ -1,0 +1,12 @@
+import("indecl.lex", "indecl") // import file as "indecl" 
+
+@"indecl" ( // gets the label from the lexicon
+   lex(base[0], "indecl");
+   lex("dziś", "indecl");
+   lex("by", "indecl");
+   lex("marchewka", "indecl");
+   lex(["by", "kot", "marchewka"], "indecl");
+   lex(["by", "dla"], "indecl");
+   lex(["by", "kot", "marchewka", "wczoraj"], "indecl")
+)
+

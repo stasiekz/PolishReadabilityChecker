@@ -1,0 +1,10 @@
+match_rules(
+apply(
+  match(
+    and( inter(class[0], {subst, ger, depr}), inter(cas[0], {nom}) )
+  ),
+  actions(
+    mark($m:_M, 'N_NOM')
+  )
+)
+)

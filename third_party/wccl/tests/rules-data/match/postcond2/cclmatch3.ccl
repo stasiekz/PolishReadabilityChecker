@@ -1,0 +1,7 @@
+match_rules(
+apply(
+  match(repeat(equal(class[0], adj))),
+  cond(ann(M, "B")),
+  actions(mark(M,"C"))
+)
+)

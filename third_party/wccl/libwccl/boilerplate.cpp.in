@@ -1,0 +1,5 @@
+#include <libwccl/$LN.h>
+
+namespace Wccl {
+
+} /* end ns Wccl */

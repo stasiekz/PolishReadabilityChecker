@@ -1,0 +1,26 @@
+if (MWEReader_INCLUDE_DIR AND MWEReader_LIBRARY)
+	set(MWEReader_FOUND TRUE)
+else (MWEReader_INCLUDE_DIR AND MWEReader_LIBRARY)
+	find_path(MWEReader_INCLUDE_DIR libmwereader/mwe.h /usr/include /usr/local/include)
+	find_library(MWEReader_LIBRARY NAMES corpus2_mwereader PATHS /usr/lib /usr/local/lib)
+
+   mark_as_advanced(MWEReader_LIBRARY)
+   mark_as_advanced(MWEReader_INCLUDE_DIR)
+
+   if (MWEReader_INCLUDE_DIR AND MWEReader_LIBRARY)
+	   set(MWEReader_FOUND TRUE)
+   endif (MWEReader_INCLUDE_DIR AND MWEReader_LIBRARY)
+
+endif (MWEReader_INCLUDE_DIR AND MWEReader_LIBRARY)
+
+if (MWEReader_FOUND)
+	if (NOT MWEReader_FIND_QUIETLY)
+		message(STATUS "Found MWEReader: ${MWEReader_LIBRARY}")
+	endif(NOT MWEReader_FIND_QUIETLY)
+else (MWEReader_FOUND)
+	if (MWEReader_FIND_REQUIRED)
+		message(FATAL ERROR " Could not find MWEReader library")
+	else (MWEReader_FIND_REQUIRED)
+		message(STATUS " MWEReader not found")
+	endif (MWEReader_FIND_REQUIRED)
+endif (MWEReader_FOUND)

@@ -1,0 +1,25 @@
+#ifndef SWIG_LIBWCCL_TEMPLATE_I
+#define SWIG_LIBWCCL_TEMPLATE_I
+
+%module libccltemplate
+%{
+  // Add includes here...
+  // #include <...>
+%}
+
+// %include "...i"
+
+namespace Wccl {
+  class Template {
+  public:
+    Template();
+    ~Template();
+
+    /* --------------------------------------------------------------------- */
+  };
+}
+
+using namespace std;
+using namespace Wccl;
+
+#endif /* SWIG_LIBWCCL_TEMPLATE_I */

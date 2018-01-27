@@ -1,0 +1,8 @@
+#ifndef LIBWCCL_$UN_H
+#define LIBWCCL_$UN_H
+
+namespace Wccl {
+
+} /* end ns Wccl */
+
+#endif // LIBWCCL_$UN_H

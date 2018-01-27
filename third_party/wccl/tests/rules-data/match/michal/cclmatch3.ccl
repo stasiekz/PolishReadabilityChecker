@@ -1,0 +1,14 @@
+match_rules(
+apply(
+  match(
+    is( 'city_trigger' ),
+    is( 'first_capital_word' )
+  ),
+  cond(
+    not( annsub(:2, 'city_nam_gaz') )
+  ),
+  actions(
+    mark(:2, 'CITY_NAM')
+  )
+)
+)

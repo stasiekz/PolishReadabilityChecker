@@ -1,0 +1,150 @@
+#!bash
+# Copy as /etc/bash_completion.d/maca
+
+_maca_gen_perm()
+{
+    python -c "import sys; from itertools import permutations as p; \
+        ls = [l[:-1] for l in sys.stdin.readlines()]; \
+        print('\n'.join([''.join(item) for i in xrange(0,len(ls)+1) for item in p(ls, i)]))"
+}
+
+_maca_output()
+{
+    local outputfmts="$(maca-analyse --script-help|grep OUTPUT|sed -e 's/OUTPUT//')"
+    if echo $1| grep ,>/dev/null; then
+	local w=$(echo $cur|sed -e 's/\([^,]*\).*/\1/')
+	local wcur=$(echo $cur|sed -e 's/\(.*\),.*/\1/')
+	local op="$(maca-analyse --script-help|grep "$w\["|sed -e 's/.*\[\(.*\)\]/\1/' -e 's/,/\n,/g' -e 's/^/,/')"
+	local ooo=
+	for i in $op; do
+	    ooo="$ooo $wcur$i"
+	done
+	COMPREPLY=( $(compgen -W "${ooo}" -- ${cur}) )
+    else
+	local ooo="$outputfmts"
+    fi
+    local ooo=$(echo $ooo|sed -e 's/[^ ]\+/& &,/g')
+    COMPREPLY=( $(compgen -W "${ooo}" -- ${cur}) )
+}
+
+_maca-analyse() 
+{
+    local cur prev opts base
+    COMPREPLY=()
+    cur="${COMP_WORDS[COMP_CWORD]}"
+    prev="${COMP_WORDS[COMP_CWORD-1]}"
+
+    #
+    #  The basic options we'll complete.
+    #
+    opts="-h --help -i --input-format -o --output-format -q --quiet -c --config"
+
+    local configs=$(maca-analyse --help|grep "Available configurations"|sed 's/\w\+ \w\+://'|sed 's/ /\t/g')
+
+    #
+    #  Complete the arguments to some of the basic commands.
+    #
+    case "${prev}" in
+	    -i|--input-format)
+            local inputfmts="$(maca-analyse --script-help|grep INPUT)"
+            local inputfmts="${inputfmts#INPUT}"
+            local iii="$inputfmts"
+            COMPREPLY=($(compgen -W "${iii}" -- ${cur}))
+            COMPREPLY="$COMPREPLY "
+            return 0
+            ;;
+        -o|--output-format)
+            _maca_output $cur
+            return 0
+            ;;
+        -c|--config)
+            COMPREPLY=( $(compgen -W "${configs}" -- ${cur}) )
+            return 0
+            ;;
+        *)
+        ;;
+    esac
+
+   COMPREPLY=($(compgen -W "${opts} ${configs}" -- ${cur}))
+   COMPREPLY="$COMPREPLY"
+
+   return 0
+}
+complete $nospace -F _maca-analyse maca-analyse
+
+_maca-convert()
+{
+    local cur prev opts base
+    COMPREPLY=()
+    cur="${COMP_WORDS[COMP_CWORD]}"
+    prev="${COMP_WORDS[COMP_CWORD-1]}"
+
+    #
+    #  The basic options we'll complete.
+    #
+    opts="-h --help -i --input-format -o --output-format -q --quiet -c --converter -d --disamb-only -t --tagset -v --verify"
+
+    local convs=$(maca-convert --help|grep "Available converters"|sed 's/\w\+ \w\+://'|sed 's/ /\t/g')
+
+    #
+    #  Complete the arguments to some of the basic commands.
+    #
+    case "${prev}" in
+        -i|--input-format)
+            local inputfmts="$(maca-convert --script-help|grep INPUT)"
+            local inputfmts="${inputfmts#INPUT}"
+            local iii="$inputfmts"
+            COMPREPLY=($(compgen -W "${iii}" -- ${cur}))
+            COMPREPLY="$COMPREPLY "
+            return 0
+            ;;
+        -o|--output-format)
+            _maca_output $cur
+            return 0
+            ;;
+        -c|--config)
+            COMPREPLY=( $(compgen -W "${convs}" -- ${cur}) )
+            return 0
+            ;;
+        -t|--tagset|-v|--verify)
+            local tagsets=$(maca-convert --help|grep "Available tagsets"|sed 's/\w\+ \w\+://'|sed 's/ /\t/g')
+            COMPREPLY=( $(compgen -W "${tagsets}" -- ${cur}) )
+            return 0
+            ;;
+        *)
+        ;;
+    esac
+
+   COMPREPLY=($(compgen -W "${opts} ${convs}" -- ${cur}))
+   COMPREPLY="$COMPREPLY"
+
+   return 0
+}
+complete $nospace -F _maca-convert maca-convert
+
+
+_tagset-tool()
+{
+    local cur prev opts base
+    COMPREPLY=()
+    cur="${COMP_WORDS[COMP_CWORD]}"
+    prev="${COMP_WORDS[COMP_CWORD-1]}"
+    opts="-h --help -t --tagset -s --sort -i --internals -p --parse"
+
+    local tagsets=$(maca-convert --help|grep "Available tagsets"|sed 's/\w\+ \w\+://'|sed 's/ /\t/g')
+    case "${prev}" in
+        -t|--tagset|-v|--verify)
+            COMPREPLY=( $(compgen -W "${tagsets}" -- ${cur}) )
+            return 0
+            ;;
+        *)
+        ;;
+    esac
+
+   COMPREPLY=($(compgen -W "${opts} ${tagsets}" -- ${cur}))
+   COMPREPLY="$COMPREPLY"
+   return 0
+}
+complete $nospace -F _tagset-tool tagset-tool
+
+

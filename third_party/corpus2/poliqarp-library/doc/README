@@ -1,0 +1,178 @@
+Poliqarp 1.3.11
+===============
+
+1. What is Poliqarp?
+
+2. Installation from the sources
+
+    2.1. Prerequisities
+
+    2.2. Installation
+
+    2.3. After installation
+
+3. Basic usage
+
+    3.1. The concordancer
+
+    3.2. The corpus builder
+
+    3.3. The corpus indexer
+
+4. For developers
+
+1. What is Poliqarp?
+--------------------
+
+Poliqarp is a universal suite of tools for large corpora processing, consisting
+of a concordancer and some useful tools.  The concordancer supports corpora 
+morphosyntactically tagged with positional tagsets, deals with ambiguities in 
+annotation, has a rich query language, is independent of the tagset and can
+process corpora of several hundred million words.  It has mostly been used
+within the IPI PAN Corpus project (see http://korpus.pl), but can be used with
+other corpora.
+
+2. Installation from the sources
+--------------------------------
+
+2.1. Prerequisities
+~~~~~~~~~~~~~~~~~~~
+
+
+To compile and run Poliqarp, you will need:
+
+* A Unix system running on a little-endian architecture.  GNU/Linux works
+  fine, but Poliqarp should also compile on {Free|Net|Open}BSD and most
+  Solarises.
+* GNU make, preferably version 3.80.  Other versions of make will most likely
+  *not* work.
+* A decent C compiler.  GCC is fine (versions 2.95.x, 3.x and 4.x 
+  have been tested).
+* GNU flex (at least 2.5.31) and GNU bison.
+* The GNOME XML library to build the corpus builder.
+* To build the GUI:
+
+  * Sun's Java JDK 5.0 or newer;
+  * JGoodies Looks library;
+  * JGoodies Forms library.
+
+It is also possible to build the suite on Windows, using the MinGW toolchain
+that can be found at http://www.mingw.org.
+
+2.2. Installation
+~~~~~~~~~~~~~~~~~
+
+The installation is standard.  Just extract the sources somewhere and do::
+
+   $ ./configure
+   $ make         # or gmake, if that's what GNU make is called on your system
+   $ make install # ditto
+
+This will figure out which tools can be compiled, then build and install them in
+``/usr/local``.  To select the installation directory, pass the ``--prefix``
+option to ``configure``.  See configure ``--help`` for details.
+
+Another option to consider for configure is ``--with-tcl-regex``. This makes 
+Poliqarp use the bundled regex library, which always supports UTF-8 regardless
+of the ``LC_COLLATE`` environment setting.  In addition, passing the option
+``CFLAGS='-O2 -DNDEBUG'`` to configure will cause the resulting Poliqarp to run
+a little bit faster.
+
+2.3. After installation
+~~~~~~~~~~~~~~~~~~~~~~~
+
+The concordancer is split into two programs (client and server) that communicate
+over local TCP sockets.  By default, they use port 4567 for communication, but
+this can be overridden by creating a server configuration file named
+``$HOME/.poliqarp/poliqarpd.conf``. If this file contains the line::
+ 
+   port = <insert port number here>
+
+then the specified port number will be used for connections.  Also, make sure
+that your firewall allows local connections on the specified port.
+
+3. Usage
+--------
+
+3.1. The concordancer
+~~~~~~~~~~~~~~~~~~~~~
+
+Proper documentation for Poliqarp is not yet written.  However, there is
+a description of the query language (see ``gui/help/english/`` in this tarball)
+that should be enough to get started.  Just run it by typing::
+
+   $ poliqarp
+
+in a shell, then open a corpus and enter your query in the text field.
+
+3.2. The corpus builder
+~~~~~~~~~~~~~~~~~~~~~~~
+
+This tool (called ``bp``, for *build Poliqarp*) is useful when you want to 
+build your own corpora searchable with Poliqarp from XCES files.  
+An example corpus in XCES format (the corpus of "Frequency Dictionary 
+of Contemporary Polish") can be found at http://www.korpus.pl.
+
+A source corpus consists of:
+
+* a set of ``morph.xml`` and ``header.xml`` files, each pair in its own
+  directory;
+* a configuration file (``yourcorpus.cfg``), which, inter alia, specifies
+  the tagset used by the corpus, in the top-level directory;
+* a metadata lookup file (``yourcorpus.meta.lisp``), specifying which parts
+  of the header files should be scanned for metadata;
+* a metadata configuration file (``yourcorpus.meta.cfg``) in the top-level
+  directory, which will be used to find out what types of metadata are 
+  possible; it consists of a series of lines of the form ``TYPE NAME``, 
+  where ``TYPE`` can be ``S`` for string or ``D`` for date, and ``NAME`` is the
+  name of metadata.
+
+For examples of these files, see the corpus of "Frequency Dictionary...".
+
+Please note that: 
+
+* the names of ``.cfg``, ``.meta.cfg``, and ``.meta.lisp`` files must start
+  with a common prefix — this will be the name of the resulting corpus
+* the format and name of ``.meta.lisp`` file is subject to change and probably
+  will change in the near future
+* the ``.meta.cfg`` file is not (yet) generated automatically from
+  ``.meta.lisp``; you must prepare it by hand (this also will be changed)
+
+To build the corpus, type::
+  
+   $ bp yourcorpus
+
+in your corpus' toplevel directory.  This will create a bunch of
+``*.poliqarp.*`` files, which along with ``.cfg`` and ``.meta.cfg`` constitute
+the resulting binary corpus.  ``bp`` respects the value of the ``LC_COLLATE``
+environment variable, so, e.g., a typical way of building a Polish corpus from
+UTF-8 sources is::
+
+   $ LC_COLLATE=pl_PL.utf8 bp yourcorpus
+
+
+3.3. The corpus indexer
+~~~~~~~~~~~~~~~~~~~~~~~
+
+The indexer produces corpora that are readily available for use with
+Poliqarp, but the searching will be inefficient.  This utility performs
+a second (optional) stage of corpus building: it creates inverted indices
+that will help in speeding up most queries.  It is highly recommended
+to build the indices unless your corpus is (say) 1 million segments or less — 
+the difference will then be negligible.
+
+The indexer by default produces indices that provide an acceptable trade-off 
+between size and speed, so in most cases you should be fine with just doing::
+
+   $ bpindexer yourcorpus
+
+but feel free to experiment (as always, the ``-h`` option to indexer will show
+you a list of available options).
+
+4. For developers
+-----------------
+
+Please feel free to play around with the sources, modify them and post patches
+at http://poliqarp.sf.net/bugs/. There is (as yet) no document providing an
+introduction to the source code, but in the TODO file you can find several
+dozen ideas for things that should be done.

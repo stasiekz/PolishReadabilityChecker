@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cesAna SYSTEM "xcesAnaIPI.dtd">
+<cesAna xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" type="lex disamb">
+<chunkList>
+ <chunk>
+  <chunk type="s">
+   <tok>
+    <orth>Na</orth>
+    <lex><base>na</base><ctag>prep:acc</ctag></lex>
+    <lex><base>na</base><ctag>prep:loc</ctag></lex>
+   </tok>
+   <tok>
+    <orth>starym</orth>
+    <lex><base>stara</base><ctag>subst:pl:dat:f</ctag></lex>
+    <lex><base>stary</base><ctag>adj:pl:dat:f:pos</ctag></lex>
+    <lex><base>stary</base><ctag>adj:pl:dat:m1:pos</ctag></lex>
+    <lex><base>stary</base><ctag>adj:pl:dat:m2:pos</ctag></lex>
+    <lex><base>stary</base><ctag>adj:pl:dat:m3:pos</ctag></lex>
+    <lex><base>stary</base><ctag>adj:pl:dat:n:pos</ctag></lex>
+    <lex><base>stary</base><ctag>adj:sg:inst:m1:pos</ctag></lex>
+    <lex><base>stary</base><ctag>adj:sg:inst:m2:pos</ctag></lex>
+    <lex><base>stary</base><ctag>adj:sg:inst:m3:pos</ctag></lex>
+    <lex><base>stary</base><ctag>adj:sg:inst:n:pos</ctag></lex>
+    <lex><base>stary</base><ctag>adj:sg:loc:m1:pos</ctag></lex>
+    <lex><base>stary</base><ctag>adj:sg:loc:m2:pos</ctag></lex>
+    <lex><base>stary</base><ctag>adj:sg:loc:m3:pos</ctag></lex>
+    <lex><base>stary</base><ctag>adj:sg:loc:n:pos</ctag></lex>
+   </tok>
+   <tok>
+    <orth>stole</orth>
+    <lex><base>stola</base><ctag>subst:pl:acc:f</ctag></lex>
+    <lex><base>stola</base><ctag>subst:pl:nom:f</ctag></lex>
+    <lex><base>stola</base><ctag>subst:pl:voc:f</ctag></lex>
+    <lex><base>stół</base><ctag>subst:sg:loc:m3</ctag></lex>
+    <lex><base>stół</base><ctag>subst:sg:voc:m3</ctag></lex>
+   </tok>
+  </chunk>
+ </chunk>
+</chunkList>
+</cesAna>

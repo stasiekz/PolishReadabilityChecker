@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<units_description tagset='kipi'>
+<mwegroup name="SubstAdjSgFlex" type="flex" class="subst">
+                <condition>
+                        or(
+                               and(
+									inter(base[0],$s:Subst),
+									rlook(1, 10, $Pos, inter(base[$Pos],$s:Adj)),
+									setvar($Pos1, 0),
+									setvar($Pos2, $Pos),
+									inter(class[0],{subst,ger,depr}),
+									inter(class[$Pos],{adj}),
+									agrpp(0,$Pos,{nmb,gnd,cas})
+								),//and
+                                and(
+									inter(base[0],$s:Adj),
+									rlook(1, 10, $Pos, inter(base[$Pos],$s:Subst)),		
+									setvar($Pos1, $Pos),
+									setvar($Pos2, 0),
+									inter(class[0],{adj}),
+									equal(nmb[$Pos],{sg}),
+									in(class[$Pos],{subst,ger,depr}),
+									agrpp(0,$Pos,{nmb,gnd,cas})
+                                )
+                        )//or
+                </condition>
+                <instances>
+                        <MWE base="praca naukowa">
+                                <var name="Subst">praca</var>
+                                <var name="Adj">naukowy</var>
+                                <head>in(class[0],{subst,ger,depr})</head>
+                        </MWE>
+		</instances>
+        </mwegroup>
+</units_description>

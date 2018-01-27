@@ -1,0 +1,9 @@
+#ifndef LIBWCCL_VERSION_H
+#define LIBWCCL_VERSION_H
+
+#define LIBWCCL_VERSION_MAJOR @wccl_ver_major@
+#define LIBWCCL_VERSION_MINOR @wccl_ver_minor@
+#define LIBWCCL_VERSION_PATCH @wccl_ver_patch@
+#define LIBWCCL_VERSION "@LIBWCCL_VERSION@"
+
+#endif

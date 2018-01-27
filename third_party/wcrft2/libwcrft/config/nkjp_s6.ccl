@@ -1,0 +1,10 @@
+@ "default" (
+   orth[0];  // 0
+   class[0]; // 1
+   cas[0];   // 2
+   gnd[0];   // 3
+   nmb[0];   // 4
+   agrpp(0,1,{nmb,gnd,cas}); // 5
+   and(inside(-1), inside(1), wagr(-1,1,{nmb,gnd,cas})); // 6
+   regex(orth[0], "\\P{Ll}.*"); regex(orth[0], "\\P{Lu}.*") // 7, 8
+)

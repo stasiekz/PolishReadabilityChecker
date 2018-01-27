@@ -1,0 +1,23 @@
+; This is a 'naive' conversion from KIPI to NKJP.
+; The conversion is naive in that it only casts wordclasses
+; physically not present in NKJP to other wordclasses; no lexical
+; information is employed and some important differences will not
+; be reflected.
+
+[convert]
+tagset_from=kipi
+tagset_to=nkjp
+check=ignore
+; cast the TaKIPI tokeniser classes as ign
+override=twf:ign
+override=tnum:ign
+override=tsym:ign
+override=tdate:ign
+override=ttime:ign
+override=turi:ign
+override=tmail:ign
+; cast xxs as subst
+override=xxs:subst
+; comp -> com (value of deg)
+override=comp:com
+late-check=true

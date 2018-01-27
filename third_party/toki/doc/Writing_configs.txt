@@ -1,0 +1,126 @@
+Toki — a configurable tokeniser.
+© 2010, Tomasz Śniatowski and Adam Radziszewski
+
+This document explains how to write config files describing tokenisers and sentence splitters. Each config file defines a particular tokenisation strategy with possible reference to sentence-splitting rules (in SRX format).
+
+Toki first applies sentence-splitting rules (if set in the config). These sentences (or plain text) are then divided into tokens by white spaces. These tokens are assigned some initial token labels (token types). Then a sequence of processing layers perform further division and possible relabelling depending on the strings of the tokens.
+
+1. Configuration search path
+
+The installed configuration files are stored within the system library directory (LIB/toki). They should have .ini extension. The toki application (toki-app) as well as the underlying library looks for the configs first in the current directory and then within the installation site. The same goes for other files referenced by a config file.
+
+To use a specific config file, run toki-app -c configname (without .ini).
+
+To load a config from within Toki API, use Toki::get_named_config, e.g.:
+
+#include <libtoki/tokenizer/layertokenizer.h>
+#include <libtoki/util/settings.h>
+#include <iostream>
+int main(int argc, char** argv)
+{
+	const std::string confname("general");
+	Toki::LayerTokenizer tokr(std::cin, Toki::get_named_config(confname));
+	Toki::Token *tok;
+	while((tok = tokr.get_next_token()) != NULL)
+	{
+		std::cout << tok->orth_utf8() << "\n";
+		delete tok;
+	}
+	return 0;
+}
+
+2. Configuration file syntax
+
+The syntax roughly follows the commonly accepted INI file format. A notable exception is that keys may be duplicated and the order of entries is significant. E.g. the following section describes an ordering of layers (excerpt taken from the default config):
+
+[layers]
+	layer=exc_0
+	layer=suff_safe
+	layer=a_lexicon
+	layer=a_classify
+
+The file may contain the following sections:
+• [input] — defines the initial splitting of running text into tokens,
+• [layer:name] — defines a processing layer,
+• [layers] — defines the ordering of layers,
+• [debug] — currently the format string for toki-app (see toki/libtoki/util/debug.h for format string syntax).
+
+3. Input properties
+
+• token_type — label that is assigned to all the tokens in the first phase of tokenisation (splitting by whitespaces)
+• srx — (optional) name of file with SRX rules of sentence segmentation
+• srx_language — (optional) language code to select which rules will be loaded from the SRX file (the rules will be selected by matching regular expressions against this code)
+• srx_window — (optional, default is reasonable) the size in bytes of the window to fire SRX rules (see libtoki/srx/srx.h)
+• srx_margin — (optional, default is reasonable) the size in bytes of the margin to hold the longest expected regex match (see libtoki/srx/srx.h)
+• initial_whitespace — each token is assigned a qualitative description of whitespaces that came before it; this defines which one should be used for the first token (values: none, space, spaces, newline, newlines; default: newline).
+
+4. Layers
+
+There are several classes of layers available. The class is selected by the class key as in the following snippet:
+
+[layer:a_lexicon]
+; recognise abbrevs listed in the lexicon
+	class=lexicon_caseless
+	process_types=t
+	token_type=a
+	lexicon_file=abbrevs.txt
+
+By default, a layer processes all the tokens. It may be altered by specifying constraints on the labels (token types) that will be affected by its layer. Such constraints my be introduced by two keys: process_types and ignore_types. If present, these keys should be paired with a space-separated list of labels. If both are present, ingore_types surpresses the types listed in process_types.
+
+The following layer classes are available:
+
+• split — carves up one-character tokens satisfying given character set (separators=charset_def), labelling them as separator_token_type
+• group_split — as above, but continuous sequences of such characters are kept together
+• affix_split — splits up (possibly many) one-character tokens from beginning and end of a token (keys: prefix_chars, suffix_chars, prefix_token_type, suffix_token_type)
+• group_affix_split — as above, but continous sequences of such characters are kept together
+
+• regex_match_split — carves up sequences of characters based on regex match (most general but slower), parametrised with regex and separator_token_type
+• lexicon_caseless — looks up the form in a lexicon (case-insensitive), parametrised with token_type (label to set when found), lexicon (comma separated list of forms) or lexicon_file (filename with each entry in a new line, UTF-8)
+• lexicon — as above, yet case-sensitive
+
+• regexp — fires a series of regexen and the first matched is used to relabel the token; the rules are specified as type:label=regex (see config.ini for examples)
+
+• check — warns when a very long token or a very long sentence is encountered (for keys, see toki/libtoki/layers/check.h)
+
+• passthrough — no operation
+• combine — (pretty useless unless for debugging) combines each pair of tokens
+• append — (pretty useless unless for debugging) appends the given string to each token orth
+
+Toki relies on the ICU library to process unicode strings. Therefore:
+• regex syntax is that of ICU (http://userguide.icu-project.org/strings/regexp) and
+• all the parameters that expect a character set as their values (e.g. separators) can be provided a unicode set (http://userguide.icu-project.org/strings/unicodeset).
+
+For examples of both, see config.ini.
+
+NOTE: the most detailed and up-to-date descriptions of layer operation and their parameters are contained within toki/libtoki/layers/*.h files.
+
+
+5. Ordering layers
+
+The layers defined in [layer:name] sections may be put into work by defining an explicit ordering withing [layers] section. The layers' names should be listed using duplicated key layer.
+
+The layers in combination with filtering token types allow for writing complex processing pipelines. Consider an example: a tokeniser that distinguishes words/numbers and punctuation but keeps IP numbers together. This can be achieved by implementing the following schema:
+
+             [intput] token_type=w           [split]
+                      |                      separators=[[\p{P}]-[\.]]
+                      |     \                separator_token_type=p
+                      |      `----------------------.
+                      |                              \
+                      |                               |
+[regex] type:i=…   /  |     [split]                   |   
+          ,-------'   |     separators=.              |
+         |            |  \  separator_token_type=p    |
+         |            |   `-------------------------. |
+         |            |                              \|
+         |            |                               |
+         |            |                               |
+         i            w                               p
+       (IP)    (word or number)                 (punctuation)
+
+The input is set to label its pre-tokens as w (token_type=w). Then the following sequence of layers should be defined:
+[layers]
+	layer=split_punct0
+	layer=classify_ips
+	layer=split_dot
+
+NOTE: a full config file implementing this scenario is available as example.ini.

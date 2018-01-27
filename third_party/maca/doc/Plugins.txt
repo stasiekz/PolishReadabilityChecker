@@ -1,0 +1,8 @@
+The morphological analyser system uses a simple plugin architecture, where if a analyser of type T is not found, a shared library corresponding to the type will be dynamically loaded, in an attempt to provide the requested analyser type. This autoloading can be disabled in a config file by adding plugin_autoload=false in the [general] section. Additionally, plugins can be manually loaded by adding plugin=X in the [general] section. Errors during plugin loading are reported but are not treated as fatal, a missing analyser type is fatal though.
+
+The shared ibrary name is derived from the plugin name T as follows:
+* on Linux, T becomes libmaca_T.so
+* on Windows, it is not implemented yet, but will likely be libmaca_T.dll
+
+The SFST and Morfeusz analysers are built as plugins by default.
+

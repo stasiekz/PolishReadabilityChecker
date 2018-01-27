@@ -1,0 +1,16 @@
+match_rules(
+apply(
+  match(
+    inter( base[0], 'wyżyna' ),
+    repeat(
+      and( inter(class[0], {subst}), inter(cas[0], {nom}) )
+    )
+  ),
+  cond(
+    not( annsub(:2, 'Person' ) )
+  ),
+  actions(
+    mark(:2, 'Highland')
+  )
+)
+)

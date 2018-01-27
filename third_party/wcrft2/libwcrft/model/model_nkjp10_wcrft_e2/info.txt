@@ -1,0 +1,11 @@
+Model trained on full NKJP 1.0.
+To be used with nkjp_e2.ini config.
+
+Trained with WCRFT 0.9.5, 1 April 2014.
+
+time wcrft --train nkjp_e2.ini -d model_nkjp10_wcrft_e2/ nkjp10-merged-ng-rea.xml -v
+
+real    262m53.201s
+user    2475m4.391s
+sys     0m45.750s
+

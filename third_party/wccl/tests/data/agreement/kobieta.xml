@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cesAna SYSTEM "xcesAnaIPI.dtd">
+<cesAna xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" type="lex disamb">
+<chunkList>
+ <chunk>
+  <chunk type="s">
+   <tok>
+    <orth>Kobieta</orth>
+    <lex><base>kobieta</base><ctag>subst:sg:nom:f</ctag></lex>
+   </tok>
+   <tok>
+    <orth>nie</orth>
+    <lex><base>nie</base><ctag>qub</ctag></lex>
+    <lex><base>on</base><ctag>ppron3:sg:acc:n:ter:praep</ctag></lex>
+    <lex><base>on</base><ctag>ppron3:pl:acc:m2:ter:praep</ctag></lex>
+    <lex><base>on</base><ctag>ppron3:pl:acc:m3:ter:praep</ctag></lex>
+    <lex><base>on</base><ctag>ppron3:pl:acc:f:ter:praep</ctag></lex>
+    <lex><base>on</base><ctag>ppron3:pl:acc:n:ter:praep</ctag></lex>
+   </tok>
+   <tok>
+    <orth>bita</orth>
+    <lex><base>bity</base><ctag>adj:sg:nom:f:pos</ctag></lex>
+    <lex><base>bity</base><ctag>adj:sg:voc:f:pos</ctag></lex>
+    <lex><base>bić</base><ctag>ppas:sg:nom:f:imperf:aff</ctag></lex>
+    <lex><base>bić</base><ctag>ppas:sg:voc:f:imperf:aff</ctag></lex>
+   </tok>
+   <tok>
+    <orth>to</orth>
+    <lex><base>ten</base><ctag>adj:sg:nom:n:pos</ctag></lex>
+    <lex><base>ten</base><ctag>adj:sg:acc:n:pos</ctag></lex>
+    <lex><base>ten</base><ctag>adj:sg:voc:n:pos</ctag></lex>
+    <lex><base>to</base><ctag>conj</ctag></lex>
+   </tok>
+   <tok>
+    <orth>jak</orth>
+    <lex><base>jak</base><ctag>conj</ctag></lex>
+    <lex><base>jak</base><ctag>subst:sg:nom:m1</ctag></lex>
+    <lex><base>jak</base><ctag>subst:sg:nom:m2</ctag></lex>
+    <lex><base>jak</base><ctag>subst:sg:nom:m3</ctag></lex>
+    <lex><base>jaka</base><ctag>subst:pl:gen:f</ctag></lex>
+   </tok>
+   <tok>
+    <orth>kosa</orth>
+    <lex><base>kos</base><ctag>subst:sg:gen:m2</ctag></lex>
+    <lex><base>kos</base><ctag>subst:sg:acc:m2</ctag></lex>
+    <lex><base>kosa</base><ctag>subst:sg:nom:f</ctag></lex>
+    <lex><base>kosy</base><ctag>adj:sg:nom:f:pos</ctag></lex>
+    <lex><base>kosy</base><ctag>adj:sg:voc:f:pos</ctag></lex>
+   </tok>
+   <tok>
+    <orth>nie</orth>
+    <lex><base>nie</base><ctag>qub</ctag></lex>
+    <lex><base>on</base><ctag>ppron3:sg:acc:n:ter:praep</ctag></lex>
+    <lex><base>on</base><ctag>ppron3:pl:acc:m2:ter:praep</ctag></lex>
+    <lex><base>on</base><ctag>ppron3:pl:acc:m3:ter:praep</ctag></lex>
+    <lex><base>on</base><ctag>ppron3:pl:acc:f:ter:praep</ctag></lex>
+    <lex><base>on</base><ctag>ppron3:pl:acc:n:ter:praep</ctag></lex>
+   </tok>
+   <tok>
+    <orth>klepana</orth>
+    <lex><base>klepać</base><ctag>ppas:sg:nom:f:imperf:aff</ctag></lex>
+    <lex><base>klepać</base><ctag>ppas:sg:voc:f:imperf:aff</ctag></lex>
+   </tok>
+   <ns/>
+   <tok>
+    <orth>!</orth>
+    <lex><base>!</base><ctag>interp</ctag></lex>
+   </tok>
+  </chunk>
+ </chunk>
+</chunkList>
+</cesAna>

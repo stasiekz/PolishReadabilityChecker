@@ -1,0 +1,11 @@
+match_rules(
+apply(
+  match(
+    optional(repeat(inter(class[0], {adj, pact, ppas}))),
+    inter(class[0], {subst, ger, depr})
+  ),
+  actions(
+    mark(M, 'NP')
+  )
+)
+)

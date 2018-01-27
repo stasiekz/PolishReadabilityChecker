@@ -1,0 +1,42 @@
+[ATTR]
+Abbr Yes No
+Animacy Anim Hum Inan Nhum
+Aspect Hab Imp Iter Perf Prog Prosp
+Case Abs Acc Erg Nom
+Definite Com Cons Def Ind Spec
+Degree Abs Cmp Equ Pos Sup
+Evident Fh Nfh
+Foreign Yes No
+Gender Com Fem Masc Neut
+Mood Adm Cnd Des Imp Ind Jus Nec Opt Pot Prp Qot Sub
+NumType Card Dist Frac Mult Ord Range Sets
+Number Coll Count Dual Grpa Grpl Inv Pauc Plur Ptan Sing Tri
+Person p0 p1 p2 p3 p4
+Polarity Neg Pos
+Polite Elev Form Humb Infm
+Poss Yes No
+PronType Art Dem Emp Exc Ind Int Neg Prs Rcp Rel Tot
+Reflex Yes No
+Tense Fut Imp Past Pqp Pres
+VerbForm Conv Fin Gdv Ger Inf Part Sup Vnoun
+Voice Act Antip Cau Dir Inv Mid Pass Rcp
+
+[POS]
+ADJ [Abbr] [Animacy] [Aspect] [Case] [Definite] [Degree] [Evident] [Foreign] [Gender] [Mood] [NumType] [Number] [Person] [Polarity] [Polite] [Poss] [PronType] [Reflex] [Tense] [VerbForm] [Voice]
+ADP [Abbr] [Animacy] [Aspect] [Case] [Definite] [Degree] [Evident] [Foreign] [Gender] [Mood] [NumType] [Number] [Person] [Polarity] [Polite] [Poss] [PronType] [Reflex] [Tense] [VerbForm] [Voice]
+ADV [Abbr] [Animacy] [Aspect] [Case] [Definite] [Degree] [Evident] [Foreign] [Gender] [Mood] [NumType] [Number] [Person] [Polarity] [Polite] [Poss] [PronType] [Reflex] [Tense] [VerbForm] [Voice]
+AUX [Abbr] [Animacy] [Aspect] [Case] [Definite] [Degree] [Evident] [Foreign] [Gender] [Mood] [NumType] [Number] [Person] [Polarity] [Polite] [Poss] [PronType] [Reflex] [Tense] [VerbForm] [Voice]
+CCONJ [Abbr] [Animacy] [Aspect] [Case] [Definite] [Degree] [Evident] [Foreign] [Gender] [Mood] [NumType] [Number] [Person] [Polarity] [Polite] [Poss] [PronType] [Reflex] [Tense] [VerbForm] [Voice]
+DET [Abbr] [Animacy] [Aspect] [Case] [Definite] [Degree] [Evident] [Foreign] [Gender] [Mood] [NumType] [Number] [Person] [Polarity] [Polite] [Poss] [PronType] [Reflex] [Tense] [VerbForm] [Voice]
+INTJ [Abbr] [Animacy] [Aspect] [Case] [Definite] [Degree] [Evident] [Foreign] [Gender] [Mood] [NumType] [Number] [Person] [Polarity] [Polite] [Poss] [PronType] [Reflex] [Tense] [VerbForm] [Voice]
+NOUN [Abbr] [Animacy] [Aspect] [Case] [Definite] [Degree] [Evident] [Foreign] [Gender] [Mood] [NumType] [Number] [Person] [Polarity] [Polite] [Poss] [PronType] [Reflex] [Tense] [VerbForm] [Voice]
+NUM [Abbr] [Animacy] [Aspect] [Case] [Definite] [Degree] [Evident] [Foreign] [Gender] [Mood] [NumType] [Number] [Person] [Polarity] [Polite] [Poss] [PronType] [Reflex] [Tense] [VerbForm] [Voice]
+PART [Abbr] [Animacy] [Aspect] [Case] [Definite] [Degree] [Evident] [Foreign] [Gender] [Mood] [NumType] [Number] [Person] [Polarity] [Polite] [Poss] [PronType] [Reflex] [Tense] [VerbForm] [Voice]
+PRON [Abbr] [Animacy] [Aspect] [Case] [Definite] [Degree] [Evident] [Foreign] [Gender] [Mood] [NumType] [Number] [Person] [Polarity] [Polite] [Poss] [PronType] [Reflex] [Tense] [VerbForm] [Voice]
+PROPN [Abbr] [Animacy] [Aspect] [Case] [Definite] [Degree] [Evident] [Foreign] [Gender] [Mood] [NumType] [Number] [Person] [Polarity] [Polite] [Poss] [PronType] [Reflex] [Tense] [VerbForm] [Voice]
+PUNCT [Abbr] [Animacy] [Aspect] [Case] [Definite] [Degree] [Evident] [Foreign] [Gender] [Mood] [NumType] [Number] [Person] [Polarity] [Polite] [Poss] [PronType] [Reflex] [Tense] [VerbForm] [Voice]
+SCONJ [Abbr] [Animacy] [Aspect] [Case] [Definite] [Degree] [Evident] [Foreign] [Gender] [Mood] [NumType] [Number] [Person] [Polarity] [Polite] [Poss] [PronType] [Reflex] [Tense] [VerbForm] [Voice]
+SYM [Abbr] [Animacy] [Aspect] [Case] [Definite] [Degree] [Evident] [Foreign] [Gender] [Mood] [NumType] [Number] [Person] [Polarity] [Polite] [Poss] [PronType] [Reflex] [Tense] [VerbForm] [Voice]
+VERB [Abbr] [Animacy] [Aspect] [Case] [Definite] [Degree] [Evident] [Foreign] [Gender] [Mood] [NumType] [Number] [Person] [Polarity] [Polite] [Poss] [PronType] [Reflex] [Tense] [VerbForm] [Voice]
+X [Abbr] [Animacy] [Aspect] [Case] [Definite] [Degree] [Evident] [Foreign] [Gender] [Mood] [NumType] [Number] [Person] [Polarity] [Polite] [Poss] [PronType] [Reflex] [Tense] [VerbForm] [Voice]
+ign 

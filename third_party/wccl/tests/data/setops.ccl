@@ -1,0 +1,10 @@
+---
+intersection(["ala","ma","kota"], ["kota", "kij"])
+
+["kota"]
+---
+
+inter(union(["ala","ma","kota"], ["kota", "kij"]), ["ala", "ma", "kota", "kij"])
+
+True
+---

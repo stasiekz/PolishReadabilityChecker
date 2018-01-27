@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cesAna SYSTEM "xcesAnaIPI.dtd">
+<cesAna xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" type="lex disamb">
+<chunkList>
+ <chunk>
+  <chunk type="s">
+   <tok>
+    <orth>Bez</orth>
+    <lex><base>bez</base><ctag>prep:gen:nwok</ctag></lex>
+    <lex><base>bez</base><ctag>subst:sg:nom:m3</ctag></lex>
+    <lex><base>bez</base><ctag>subst:sg:acc:m3</ctag></lex>
+    <lex><base>beza</base><ctag>subst:pl:gen:f</ctag></lex>
+   </tok>
+   <tok>
+    <orth>pracy</orth>
+    <lex><base>praca</base><ctag>subst:sg:gen:f</ctag></lex>
+    <lex><base>praca</base><ctag>subst:sg:dat:f</ctag></lex>
+    <lex><base>praca</base><ctag>subst:sg:loc:f</ctag></lex>
+   </tok>
+   <tok>
+    <orth>dziś</orth>
+    <lex><base>dziś</base><ctag>qub</ctag></lex>
+   </tok>
+   <tok>
+    <orth>trudno</orth>
+    <lex><base>trudno</base><ctag>adv:pos</ctag></lex>
+   </tok>
+   <tok>
+    <orth>by</orth>
+    <lex><base>by</base><ctag>conj</ctag></lex>
+   </tok>
+   <tok>
+    <orth>przeżyć</orth>
+    <lex><base>przeżycie</base><ctag>subst:pl:gen:n</ctag></lex>
+    <lex><base>przeżyć</base><ctag>ger:pl:gen:n:perf:aff</ctag></lex>
+    <lex><base>przeżyć</base><ctag>inf:perf</ctag></lex>
+   </tok>
+  </chunk>
+ </chunk>
+</chunkList>
+</cesAna>

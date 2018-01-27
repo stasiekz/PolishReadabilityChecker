@@ -1,0 +1,12 @@
+@s:"orths" (
+   orth[-1]; orth[0]; orth[1]
+)
+
+@t:"wclass" (
+   class[-1]; class[0]; class[1]
+)
+
+@b:"agr2" (
+   agr(-1,1,{nmb,gnd,cas})
+)
+

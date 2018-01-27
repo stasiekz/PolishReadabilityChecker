@@ -1,0 +1,7 @@
+sentence=to.xml
+tagset=nkjp
+---
+class[0] // to tylko[0] komentarz orth[1]
+
+{adj,conj,pred,qub,subst}
+---

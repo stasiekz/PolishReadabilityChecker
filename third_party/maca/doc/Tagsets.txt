@@ -1,0 +1,3 @@
+TODO: this is a stub right now.
+
+This document explains how tagsets are defined and how to write tagset conversion scripts (.conv files).

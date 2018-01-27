@@ -1,0 +1,14 @@
+# this is a tagset for testing purposes only
+[ATTR]
+a = a1 a2 a3
+b = b1 b2
+c = c1 c2 c3 c4
+
+[POS]
+P1 = a b c
+P2 = 
+P3 = a b [c]
+P4 = [a] [b] [c]
+
+[IGN]
+P4

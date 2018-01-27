@@ -1,0 +1,10 @@
+match_rules(
+apply(
+  match(
+    text("Sp. z o.o.")
+  ),
+  actions(
+    mark(M, "Co")
+  )
+)
+)

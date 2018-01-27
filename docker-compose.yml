@@ -1,0 +1,24 @@
+version: '2'
+services:
+  db:
+    image: postgres
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data/
+  app:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+  tagger:
+    build:
+      context: .
+      dockerfile: Dockerfile-wcrft2
+    command: python3 wcrft2_server.py 8088
+    environment:
+      - LANG=C.UTF-8
+  converter:
+    image: zrrrzzt/docker-unoconv-webservice

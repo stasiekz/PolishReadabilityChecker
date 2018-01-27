@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cesAna SYSTEM "xcesAnaIPI.dtd">
+<cesAna xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" type="lex disamb">
+<chunkList>
+ <chunk>
+  <chunk type="s">
+   <tok>
+    <orth>Wielki</orth>
+    <lex><base>wielki</base><ctag>adj:sg:nom:m1:pos</ctag></lex>
+    <lex><base>wielki</base><ctag>adj:sg:voc:m1:pos</ctag></lex>
+    <lex><base>wielki</base><ctag>adj:sg:nom:m2:pos</ctag></lex>
+    <lex><base>wielki</base><ctag>adj:sg:voc:m2:pos</ctag></lex>
+    <lex><base>wielki</base><ctag>adj:sg:nom:m3:pos</ctag></lex>
+    <lex><base>wielki</base><ctag>adj:sg:acc:m3:pos</ctag></lex>
+   </tok>
+   <tok>
+    <orth>włochaty</orth>
+    <lex><base>włochaty</base><ctag>adj:sg:nom:m1:pos</ctag></lex>
+    <lex><base>włochaty</base><ctag>adj:sg:voc:m1:pos</ctag></lex>
+    <lex><base>włochaty</base><ctag>adj:sg:nom:m2:pos</ctag></lex>
+    <lex><base>włochaty</base><ctag>adj:sg:voc:m2:pos</ctag></lex>
+    <lex><base>włochaty</base><ctag>adj:sg:nom:m3:pos</ctag></lex>
+    <lex><base>włochaty</base><ctag>adj:sg:acc:m3:pos</ctag></lex>
+   </tok>
+   <tok>
+    <orth>mamut</orth>
+    <lex><base>mamut</base><ctag>subst:sg:nom:m2</ctag></lex>
+   </tok>
+   <tok>
+    <orth>zjadł</orth>
+    <lex><base>zjeść</base><ctag>praet:sg:m1:perf</ctag></lex>
+    <lex><base>zjeść</base><ctag>praet:sg:m2:perf</ctag></lex>
+    <lex><base>zjeść</base><ctag>praet:sg:m3:perf</ctag></lex>
+   </tok>
+   <tok>
+    <orth>kość</orth>
+    <lex><base>kość</base><ctag>subst:sg:nom:f</ctag></lex>
+    <lex><base>kość</base><ctag>subst:sg:acc:f</ctag></lex>
+   </tok>
+   <tok>
+    <orth>nawet</orth>
+    <lex><base>nawet</base><ctag>qub</ctag></lex>
+   </tok>
+   <tok>
+    <orth>smaczną</orth>
+    <lex><base>smaczny</base><ctag>adj:sg:acc:f:pos</ctag></lex>
+    <lex><base>smaczny</base><ctag>adj:sg:inst:f:pos</ctag></lex>
+   </tok>
+   <ns/>
+   <tok>
+    <orth>.</orth>
+    <lex><base>.</base><ctag>interp</ctag></lex>
+   </tok>
+  </chunk>
+ </chunk>
+</chunkList>
+</cesAna>

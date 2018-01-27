@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cesAna SYSTEM "xcesAnaIPI.dtd">
+<cesAna xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" type="lex disamb">
+<chunkList>
+ <chunk>
+  <sentence>
+   <tok>
+    <orth>Początek</orth>
+    <lex><base>początek</base><ctag>subst:sg:nom:m3</ctag></lex>
+    <lex><base>początek</base><ctag>subst:sg:acc:m3</ctag></lex>
+    <ann chan="NP">0</ann>
+   </tok>
+   <tok>
+    <orth>nowego</orth>
+    <lex><base>nowy</base><ctag>adj:sg:gen:m1:pos</ctag></lex>
+    <lex><base>nowy</base><ctag>adj:sg:acc:m1:pos</ctag></lex>
+    <lex><base>nowy</base><ctag>adj:sg:gen:m2:pos</ctag></lex>
+    <lex><base>nowy</base><ctag>adj:sg:acc:m2:pos</ctag></lex>
+    <lex><base>nowy</base><ctag>adj:sg:gen:m3:pos</ctag></lex>
+    <lex><base>nowy</base><ctag>adj:sg:gen:n:pos</ctag></lex>
+    <ann chan="NP" head="1">1</ann>
+   </tok>
+   <tok>
+    <orth>zdania</orth>
+    <lex><base>zdanie</base><ctag>subst:sg:gen:n</ctag></lex>
+    <lex><base>zdanie</base><ctag>subst:pl:nom:n</ctag></lex>
+    <lex><base>zdanie</base><ctag>subst:pl:acc:n</ctag></lex>
+    <lex><base>zdanie</base><ctag>subst:pl:voc:n</ctag></lex>
+    <lex><base>zdać</base><ctag>ger:sg:gen:n:perf:aff</ctag></lex>
+    <ann chan="NP">1</ann>
+   </tok>
+   <ns/>
+   <tok>
+    <orth>.</orth>
+    <lex><base>.</base><ctag>interp</ctag></lex>
+    <ann chan="NP">0</ann>
+   </tok>
+  </sentence>
+  <sentence>
+   <tok>
+    <orth>Nowy</orth>
+    <lex><base>nowy</base><ctag>adj:sg:nom:m1:pos</ctag></lex>
+    <lex><base>nowy</base><ctag>adj:sg:nom:m2:pos</ctag></lex>
+    <lex><base>nowy</base><ctag>adj:sg:nom:m3:pos</ctag></lex>
+    <lex><base>nowy</base><ctag>adj:sg:acc:m3:pos</ctag></lex>
+    <ann chan="NP">0</ann>
+   </tok>
+   <tok>
+    <orth>początek</orth>
+    <lex><base>początek</base><ctag>subst:sg:nom:m3</ctag></lex>
+    <lex><base>początek</base><ctag>subst:sg:acc:m3</ctag></lex>
+    <ann chan="NP">0</ann>
+   </tok>
+   <tok>
+    <orth>starego</orth>
+    <lex><base>stary</base><ctag>adj:sg:gen:m1:pos</ctag></lex>
+    <lex><base>stary</base><ctag>adj:sg:acc:m1:pos</ctag></lex>
+    <lex><base>stary</base><ctag>adj:sg:gen:m2:pos</ctag></lex>
+    <lex><base>stary</base><ctag>adj:sg:acc:m2:pos</ctag></lex>
+    <lex><base>stary</base><ctag>adj:sg:gen:m3:pos</ctag></lex>
+    <lex><base>stary</base><ctag>adj:sg:gen:n:pos</ctag></lex>
+    <ann chan="NP" head="1">1</ann>
+   </tok>
+   <tok>
+    <orth>zdania</orth>
+    <lex><base>zdanie</base><ctag>subst:sg:gen:n</ctag></lex>
+    <lex><base>zdanie</base><ctag>subst:pl:nom:n</ctag></lex>
+    <lex><base>zdanie</base><ctag>subst:pl:acc:n</ctag></lex>
+    <lex><base>zdanie</base><ctag>subst:pl:voc:n</ctag></lex>
+    <lex><base>zdać</base><ctag>ger:sg:gen:n:perf:aff</ctag></lex>
+    <ann chan="NP">1</ann>
+   </tok>
+   <ns/>
+   <tok>
+    <orth>.</orth>
+    <lex><base>.</base><ctag>interp</ctag></lex>
+    <ann chan="NP">0</ann>
+   </tok>
+  </sentence>
+ </chunk>
+</chunkList>
+</cesAna>

@@ -1,0 +1,93 @@
+tagset=kipi
+sentence=t01.xml
+---
+rlook(0, 1, $It, True)
+
+True
+It=0
+---
+llook(1, 0, $It, True)
+
+True
+It=1
+---
+rlook(1, 0, $It, True)
+
+False
+It=nowhere
+---
+llook(0, 1, $It, True)
+
+False
+It=nowhere
+---
+only(0, 1, $It, True)
+
+True
+It=1
+---
+only(1, 0, $It, True)
+
+True
+It=nowhere
+---
+only(1, 0, $It, False)
+
+True
+It=nowhere
+---
+and(setvar($It,2), rlook(0, 1, $It, True))
+
+True
+It=0
+---
+and(setvar($It,2), llook(1, 0, $It, True))
+
+True
+It=1
+---
+and(setvar($It,2), rlook(1, 0, $It, True))
+
+False
+It=nowhere
+---
+and(setvar($It,2), llook(0, 1, $It, True))
+
+False
+It=nowhere
+---
+and(setvar($It,2), only(0, 1, $It, True))
+
+True
+It=1
+---
+and(setvar($It,2), only(1, 0, $It, True))
+
+True
+It=2
+---
+and(setvar($It,2), only(1, 0, $It, False))
+
+True
+It=2
+---
+and(setvar($It,2), only(0, 1, $It, False))
+
+False
+It=nowhere
+---
+and(setvar($It,6), atleast(0, 3, $It, inside($It), 2))
+
+True
+It=1
+---
+and(setvar($It,6), atleast(3, 0, $It, inside($It), 2))
+
+False
+It=nowhere
+---
+and(setvar($It,6), atleast(0, 3, $It, inside($It), 7))
+
+False
+It=nowhere
+---

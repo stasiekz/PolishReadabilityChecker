@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cesAna SYSTEM "xcesAnaIPI.dtd">
+<cesAna xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" type="lex disamb">
+<chunkList>
+ <chunk>
+  <sentence>
+   <tok>
+    <orth>Dwa</orth>
+    <lex><base>dwa</base><ctag>other</ctag></lex>
+    <ann chan="A">0</ann>
+    <ann chan="B" head="1">1</ann>
+   </tok>
+   <tok>
+    <orth>wielkie</orth>
+    <lex><base>wielki</base><ctag>adj</ctag></lex>
+    <ann chan="A">0</ann>
+    <ann chan="B" head="1">2</ann>
+   </tok>
+   <tok>
+    <orth>włochate</orth>
+    <lex><base>włochaty</base><ctag>adj</ctag></lex>
+    <ann chan="A">0</ann>
+    <ann chan="B">2</ann>
+   </tok>
+   <tok>
+    <orth>zapchlone</orth>
+    <lex><base>zapchlić</base><ctag>adj</ctag></lex>
+    <ann chan="A">0</ann>
+    <ann chan="B">2</ann>
+   </tok>
+   <tok>
+    <orth>koty</orth>
+    <lex><base>kot</base><ctag>noun</ctag></lex>
+    <ann chan="A">0</ann>
+    <ann chan="B" head="1">3</ann>
+   </tok>
+   <tok>
+    <orth>zjadły</orth>
+    <lex><base>zjeść</base><ctag>verb</ctag></lex>
+    <ann chan="A">0</ann>
+    <ann chan="B" head="1">4</ann>
+   </tok>
+   <tok>
+    <orth>pięć</orth>
+    <lex><base>pięć</base><ctag>other</ctag></lex>
+    <ann chan="A">0</ann>
+    <ann chan="B">4</ann>
+   </tok>
+   <tok>
+    <orth>tłustych</orth>
+    <lex><base>tłusty</base><ctag>adj</ctag></lex>
+    <ann chan="A">0</ann>
+    <ann chan="B">4</ann>
+   </tok>
+   <tok>
+    <orth>soczystych</orth>
+    <lex><base>soczysty</base><ctag>adj</ctag></lex>
+    <ann chan="A">0</ann>
+    <ann chan="B">4</ann>
+   </tok>
+   <tok>
+    <orth>much</orth>
+    <lex><base>mucha</base><ctag>noun</ctag></lex>
+    <ann chan="A">0</ann>
+    <ann chan="B">0</ann>
+   </tok>
+  </sentence>
+ </chunk>
+</chunkList>
+</cesAna>

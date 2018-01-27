@@ -1,0 +1,13 @@
+import("indecl.lex", "indecl") // import file as "indecl" 
+
+@b:"indecl" ( // tests for particular classes from the lexicon
+   inter(lex(lower(orth[0]), "indecl"), ["adv"]);
+   inter(lex(lower(orth[0]), "indecl"), ["interj"]);
+   inter(lex(lower(orth[0]), "indecl"), ["part"]);
+   inter(lex(lower(orth[0]), "indecl"), ["prep"])
+)
+
+@s:"indecl_label" ( // gets the label from the lexicon
+   lex(lower(orth[0]), "indecl")
+)
+

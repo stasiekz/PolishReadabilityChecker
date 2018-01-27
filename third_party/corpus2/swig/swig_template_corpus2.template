@@ -1,0 +1,25 @@
+#ifndef SWIG_LIBCORPUS2_TEMPLATE_I
+#define SWIG_LIBCORPUS2_TEMPLATE_I
+
+%module libcorpustemplate
+%{
+  // Add includes here...
+  // #include <...>
+%}
+
+// %include "...i"
+
+namespace Corpus2 {
+  class Template {
+  public:
+    Template();
+
+    /* --------------------------------------------------------------------- */
+    ~Template();
+  };
+}
+
+using namespace std;
+using namespace Corpus2;
+
+#endif /* SWIG_LIBCORPUS2_TEMPLATE_I */

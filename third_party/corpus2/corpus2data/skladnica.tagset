@@ -1,0 +1,56 @@
+[ATTR]
+superpos	VERB SUBST ADJ ADV AGLT BREV BURK COMP CONJ INTERJ INTERP NUM NUMCOL PREP QUB XXX IGN
+nmb	sg pl
+cas	nom gen dat acc inst loc voc
+gnd	m1 m2 m3 f n
+per	pri sec ter
+deg	pos com sup
+asp	imperf perf
+ngt	aff neg
+acm	congr rec
+acn	akc nakc
+ppr	praep npraep
+agg	nagl agl
+vcl	wok nwok
+dot	pun npun
+
+[POS]
+adja	superpos
+adjp	superpos
+adjc	superpos
+conj	superpos
+comp	superpos
+interp	superpos
+pred	superpos
+xxx	superpos
+adv	superpos [deg]
+imps	superpos asp
+inf	superpos asp
+pant	superpos asp
+pcon	superpos asp
+qub	superpos [vcl]
+prep	superpos cas [vcl]
+siebie	superpos cas
+subst	superpos nmb cas gnd
+depr	superpos nmb cas gnd
+ger	superpos nmb cas gnd asp ngt
+ppron12	superpos nmb cas gnd per [acn]
+ppron3	superpos nmb cas gnd per [acn] [ppr]
+num	superpos nmb cas gnd [acm]
+numcol	superpos nmb cas gnd [acm]
+adj	superpos nmb cas gnd deg
+pact	superpos nmb cas gnd asp ngt
+ppas	superpos nmb cas gnd asp ngt
+winien	superpos nmb gnd asp
+praet	superpos nmb gnd asp [agg]
+bedzie	superpos nmb per asp
+fin	superpos nmb per asp
+impt	superpos nmb per asp
+aglt	superpos nmb per asp vcl
+ign	superpos
+brev	superpos dot
+burk	superpos
+interj superpos
+
+[IGN]
+ign:IGN

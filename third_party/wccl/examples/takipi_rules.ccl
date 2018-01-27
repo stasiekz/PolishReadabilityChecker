@@ -1,0 +1,692 @@
+tag_rules(
+
+	rule("10",
+
+		and(
+
+			equal(class[0],{adj,conj,pred,qub,subst}),
+			equal(class[-1],{prep}),
+			inter(cas[-1],cas[0]),
+			not(
+				in(orth[-1],["Niby","niby"]),
+				agrpp(0, 1, {sg,n,cas})
+			),
+			not(
+				and(
+					equal(class[1],{ppron3}),
+					inter(cas[1],{gen}),
+					agrpp(0, 2, {sg,n,cas})
+				)
+			)
+		),
+
+		delete(not(
+				equal(class[0],{subst})
+		))
+
+	);
+
+	rule("40",
+
+		and(
+			equal(orth[0],["wszystkim"]),
+			in(orth[-1],["przede","Przede"])
+		),
+
+		delete(not(
+				and(
+					equal(class[0],{subst}),
+					equal(cas[0],{inst}),
+					equal(gnd[0],{n})
+				)
+		))
+
+	);
+
+	rule("41",
+
+		and(
+			in(orth[0],["ze","Ze","ZE"]),
+			in(orth[1],["wszech","WSZECH"])
+		),
+
+		delete(not(equal(cas[0],{gen})))
+
+	);
+
+	rule("42",
+
+		and(
+			in(orth[0],["W","w"]),
+			in(orth[1],["stanie","STANIE"])
+		),
+
+		delete(not(equal(cas[0],{loc})))
+
+	);
+
+	rule("70",
+
+		and(
+			in(class[0],{adj,ger,subst}),
+			inter(cas[0],{gen}),
+			in(orth[-1],["dużo","mało","mnóstwo","parę","niewiele","wiele"])
+		),
+
+		delete(not(
+				equal(cas[0],{gen})
+		))
+
+	);
+
+	rule("96",
+
+		and(
+			in(orth[0],["z","Z","ze","Ze"]),
+			or(
+				in(orth[1],["dala","daleka","bliska","godzinę"]),
+				and(
+
+					inter(class[1],{num}),
+					not(inter(cas[1],{gen,inst}))
+				)
+			)
+		),
+
+		delete(not(
+				equal(class[0],{qub})
+		))
+
+	);
+
+	rule("97",
+
+		and(
+			in(orth[0],["z","Z","ze","Ze"]),
+			or(
+				inter(cas[1],{gen,inst}),
+				regex(orth[1], "\\p{Lu}.*"),
+				regex(orth[0], ".*[0-9].*")
+			)
+		),
+
+		delete(not(
+				equal(class[0],{prep})
+		))
+
+	);
+
+	rule("98",
+
+		and(
+			in(orth[0],["z","Z","ze","Ze"]),
+			in(orth[1], ["tak", "Tak"])
+		),
+
+		delete(not(
+				equal(class[0],{prep})
+		))
+
+	);
+
+	rule("99",
+
+		and(
+			in(orth[0],["niedawna","dawna"]),
+			in({prep},class[-1])
+		),
+
+		delete(not(equal(class[0],{qub})))
+
+	);
+
+	rule("100",
+
+		and(
+			equal(class[-1],{prep}),
+			not(
+				and(
+					not(
+						regex(orth[-1], "\\p{Lu}.*")
+					),
+					regex(orth[0], "\\p{Lu}.*")
+				),
+				in(orth[-1],["niby","Niby"]),
+				inter(class[0],{ppron3,num}),
+				in(orth[0],["tysiąc","tego","niedawna"]),
+				and(
+					in(orth[-1],["po","Po"]),
+					equal(cas[0],{dat})
+				),
+
+				and(
+					in(orth[-1],["o","O"]),
+					in(orth[0],["rany", "RANY"])
+				),
+				equal(class[0],{prep}),
+
+				and(
+					in(orth[-1],["mimo","Mimo","pomimo","Pomimo"]),
+					equal(orth[0],["to"])
+				)
+			),
+			in(cas[0],{nom,gen,acc,dat,loc,inst,voc})
+		),
+
+		delete(
+			not(
+				equal(cas[0],{}),
+				equal(cas[0],{gen}),
+				in(cas[0],cas[-1])
+		))
+
+	);
+
+	rule("101",
+
+		and(
+			equal(class[-1],{prep}),
+			equal(class[0],{ppron3}),
+			not(
+				inter(class[1],{adj,ger,ign,num,numcol,pact,ppas,subst,xxs,xxx}),
+				and(
+					inter(class[1],{adv,qub}),
+					inter(class[2],{adj,ger,ign,num,numcol,pact,ppas,subst,xxs,xxx})
+				)
+			)
+		),
+
+		delete(not(
+				equal(cas[0],{}),
+				in(cas[0],cas[-1])
+		))
+
+	);
+
+	rule("103",
+
+		and(
+			equal(orth[-1],["w"]),
+			equal(orth[0],["tysiąc"]),
+			equal(class[1],{num})
+		),
+
+		delete(not(
+				equal(cas[0],{}),
+				equal(cas[0],{nom})
+		))
+
+	);
+
+	rule("105",
+
+		and(
+			equal(class[0],{subst}),
+			not(
+				equal(orth[0],["tysiąc"]),
+				and(
+					equal(class[-1],{prep}),
+					regex(orth[0], "\\p{Lu}.*"),
+					not(
+						regex(orth[-1], "\\p{Lu}.*")
+					)
+				)
+			),
+			llook(-1,begin,$Prep,equal(class[$Prep],{prep})),
+			not(
+				inter(base[$Prep],["niby"])
+			),
+			only($Prep + 1,-1,$A,and(
+					equal(class[$A],{adj}),
+					not(
+						inter(base[$A],["który","jakiś","jaki"])
+					)
+			))
+		),
+
+		delete(not(
+				equal(cas[0],{gen}),
+				in(cas[0],cas[-1])
+		))
+
+	);
+
+	rule("130",
+
+		and(
+			and(
+				equal(class[-1],{num}),
+				not(
+					inter(base[-1],["oba","półtora","wiele"])
+				)
+			),
+			and(
+				in(class[0],{subst}),
+				not(
+					inter(base[0],["jeden","procent","deka","gram","kilo","para","wolta"])
+				),
+				agrpp(0, -1, {nmb,gnd,cas})
+			)
+		),
+
+		delete(equal(nmb[0],{sg}))
+
+	);
+
+	rule("140",
+
+		and(
+			inter(class[0],{fin}),
+			equal(class[-1],{fin}),
+			not(
+				and(
+					in(orth[-1],["jest","znaczy"]),
+					equal(orth[-2],["to"])
+				),
+				and(
+					equal(orth[-1],["wydaje"]),
+					equal(orth[0],["może"])
+				)
+			)
+		),
+
+		delete(equal(class[0],{fin}))
+
+	);
+
+	rule("141",
+
+		and(
+			inter(class[0],{fin}),
+			equal(class[-1],{qub}),
+			equal(class[-2],{fin})
+		),
+
+		delete(equal(class[0],{fin}))
+
+	);
+
+	rule("142",
+
+		and(
+			inter(class[0],{fin}),
+			equal(class[-1],{qub}),
+			equal(class[-2],{qub}),
+			equal(class[-3],{fin})
+		),
+
+		delete(equal(class[0],{fin}))
+
+	);
+
+	rule("150",
+
+		and(
+			inter(class[0],{fin}),
+			equal(class[1],{fin})
+		),
+
+		delete(equal(class[0],{fin}))
+
+	);
+
+	rule("151",
+
+		and(
+			inter(class[0],{fin}),
+			equal(class[1],{qub}),
+			equal(class[2],{fin})
+		),
+
+		delete(equal(class[0],{fin}))
+
+	);
+
+	rule("152",
+
+		and(
+			inter(class[0],{fin}),
+			equal(class[1],{qub}),
+			equal(class[2],{qub}),
+			equal(class[3],{fin})
+		),
+
+		delete(equal(class[0],{fin}))
+
+	);
+
+	rule("160",
+
+		and(
+			equal(class[-1],{prep}),
+			not(
+				in(orth[-1],["Niby","niby"])
+			),
+			inter(class[0],{fin,praet})
+		),
+
+		delete(in(class[0],{fin,praet}))
+
+	);
+
+	rule("170",
+
+		and(
+			equal(class[-1],{prep}),
+			equal(class[0],{adj}),
+			not(
+				inter(base[0],["który"]),
+				and(
+					equal(orth[-1],["po"]),
+					in(orth[0],["pierwsze","drugie","trzecie","czwarte","piąte"])
+				),
+				and(
+					inter(base[0],["niektóry","inny"]),
+					inter(nmb[0],{pl})
+				)
+			),
+			or(
+				equal(class[1],{adj}),
+				and(
+					equal(class[1],{subst}),
+					in(cas[1],{nom,acc,dat,loc,inst,voc}),
+					not(
+						in(base[1],["tysiąc","milion","miliard"])
+					)
+				)
+			),
+			agrpp(0, 1, {nmb,gnd,cas})
+		),
+
+		delete(not(
+				agrpp(0, 1, {nmb,gnd,cas})
+		))
+
+	);
+
+	rule("175",
+
+		and(
+			equal(orth[-1],["po"]),
+			in(orth[0],["pierwsze","drugie","trzecie","czwarte","piąte"])
+		),
+
+		delete(
+			not(
+				and(
+					equal(class[0],{adj}),
+					equal(nmb[0],{sg}),
+					equal(cas[0],{acc}),
+					equal(gnd[0],{n})
+				)
+		))
+
+	);
+
+	rule("180",
+
+		and(
+			equal(orth[0],["po"]),
+			equal(class[1],{adjp})
+		),
+
+		delete(not(
+				equal(cas[0],{loc})
+		))
+
+	);
+
+	rule("181",
+
+		and(
+			in(orth[0],["prawie","Prawie","PRAWIE"]),
+			not(
+				and(
+					in({prep},class[-1]),
+					inter(cas[-1],cas[0])
+				)
+			)
+		),
+
+		delete(not(
+				equal(class[0],{qub})
+		))
+
+	);
+
+	rule("190",
+
+		and(
+			equal(class[0],{prep}),
+			in(class[1],{adj,ppas,pact,subst,depr,ger,num,ppron12,ppron3,numcol}),
+			not(
+				and(
+					inter(cas[1],{gen}),
+					not(
+						equal(cas[2],{})
+					)
+				),
+				and(
+					in(orth[0],["Po","po"]),
+					equal(cas[1],{dat})
+				),
+				and(
+					in(orth[-1],["Z","z"]),
+					equal(orth[0],["nad"])
+				),
+				and(
+					in(orth[-1],["Od","od"]),
+					equal(orth[0],["przed"])
+				),
+				and(
+					in(orth[0],["Ze","ze","Pomiędzy","pomiędzy"]),
+					inter(class[1],{num})
+				),
+				and(
+					in(base[1],["tysiąc","milion","miliard"]),
+					inter(cas[1],{nom})
+				),
+				and(
+					not(
+						regex(orth[0], "\\p{Lu}.*")
+					),
+					regex(orth[1], "\\p{Lu}.*")
+				)
+			)
+		),
+
+		delete(not(
+				in(cas[0],cas[1])
+		))
+
+	);
+
+	rule("200",
+
+		and(
+			inter(cas[0],{acc}),
+			not(
+				inter(class[0],{prep})
+			),
+			equal(orth[-1],["jako"])
+		),
+
+		delete(not(
+				in(cas[0],{gen,acc,nom}),
+				equal(cas[0],{})
+		))
+
+	);
+
+	rule("210",
+
+		and(
+			inter(base[0],["który"]),
+			equal(orth[-1],[","]),
+			not(
+				equal(cas[-2],{}),
+				inter(cas[-2],{gen})
+			),
+			agrpp(-2, 0, {nmb,gnd})
+		),
+
+		delete(not(
+				agrpp(-2, 0, {nmb,gnd})
+		))
+
+	);
+
+	rule("250",
+
+		and(
+			inter(base[2],["który"]),
+			equal(orth[1],[","]),
+			not(
+				equal(cas[0],{}),
+				inter(cas[0],{gen}),
+				and(
+					not(
+						agrpp(2, 0, {nmb,gnd})
+					),
+					inter( gnd[0],gnd[1])
+				)
+			),
+			agrpp(2, 0, {nmb,gnd})
+		),
+
+		delete(not(
+				agrpp(2, 0, {nmb,gnd})
+		))
+
+	);
+
+	rule("270",
+
+		and(
+			in(class[-1],{subst,ger}),
+			in(class[0],{adj,pact,ppas}),
+			equal(orth[1],[","]),
+			inter(base[2],["który"]),
+			not(
+				inter(base[0],["ten"])
+			),
+			agrpp(-1, 0, {nmb,gnd,cas})
+		),
+
+		delete(not(
+				agrpp(-1, 0, {nmb,gnd,cas})
+		))
+
+	);
+
+	rule("280",
+
+		and(
+			equal(class[-1],{}),
+			equal(class[0],{adj}),
+			in(class[1],{subst,ger}),
+			agrpp(0, 1, {nmb,gnd,cas})
+		),
+
+		delete(not(
+				in(gnd[0],gnd[1])
+		))
+
+	);
+
+	rule("300",
+
+		and(
+			inter(acm[-1],{rec}),
+			inter(gnd[0],{m1}),
+			not(
+				inter(class[0],{num}),
+				in(orth[0],["jeden"])
+			)
+		),
+
+		delete(and(
+				equal(gnd[0],{m1}),
+				equal(cas[0],{nom})
+		))
+
+	);
+
+	rule("320",
+
+		and(
+			equal(orth[0],["obok"]),
+			equal(class[1],{interp}),
+			in(orth[1],[",","."])
+		),
+
+		delete(equal(class[0],{prep}))
+
+	);
+
+	rule("330",
+
+		and(
+			equal(class[-1],{prep}),
+			not(
+				equal(class[0],{prep})
+			),
+			inter(class[0],{prep}),
+			not(
+				in(orth[-1],["Niby","niby"]),
+				and(
+					in(orth[-1],["Na","na"]),
+					equal(orth[1],["dzień"])
+				),
+				and(
+					equal(orth[0],["ponad"]),
+					in(orth[-1],["O","o","Przez","przez","Na","na"])
+				),
+				and(
+					in(orth[0],["z"]),
+					in(orth[-1],["Przed","przed"])
+				),
+				and(
+					in(orth[0],["przed"]),
+					in(orth[-1],["Od","od"])
+				)
+			)
+		),
+
+		delete(equal(class[0],{prep}))
+
+	);
+
+	rule("340",
+
+		and(
+			equal(class[0],{adj}),
+			in(class[1],{subst,ger}),
+			agrpp(0, 1, {nmb,gnd,cas}),
+			not(
+
+				in(base[0],["jeden","czyj","nasz","swój","twój","mój","godny","niegodny"]),
+				and(
+					inter(base[0],["który","jaki"]),
+					or(
+						equal(class[-1],{interp}),
+						equal(class[-2],{interp})
+					)
+				),
+				inter(class[-1],{prep,ign}),
+				and(
+					equal(orth[-1],["-"]),
+					inter(class[-2],{adja})
+				),
+				agrpp(-1, 0, {nmb,gnd,cas})
+			)
+		),
+
+		delete(not(
+				agrpp(0, 1, {nmb,gnd,cas})
+		))
+
+	)
+
+)
+

@@ -1,0 +1,241 @@
+<!--                                                          -->
+<!--                                                          -->
+<!--                Corpus Encoding Standard                  -->
+<!--                                                          -->
+<!--                          CES                             -->
+<!--                                                          -->
+<!--         Encoding conventions for annotated data          -->
+<!--                                                          -->
+<!--                                                          -->
+<!--         Modified for the IPI PAN corpus                  -->
+<!--         Version IPI-1.6                                  -->
+<!--                                                          -->
+<!--                                                          -->
+<!--                                                          -->
+<!--                                                          -->
+<!--                                                          -->
+<!--
+     Original Date: 1996/08/05 19:07:30 
+     Original Revision: 1.11 
+     Author of 1.11: Patrice Bonhomme
+
+     $Id: xcesAnaIPI.dtd,v 1.1.1.1 2007/11/08 15:26:49 adamp Exp $
+*    $Log: xcesAnaIPI.dtd,v $
+*    Revision 1.1.1.1  2007/11/08 15:26:49  adamp
+*    Spejd
+*
+*    Revision 1.1  2007/10/20 13:11:39  adamp
+*    *** empty log message ***
+*
+*    Revision 1.6  2006/06/03 12:53:28  adamp
+*    Updated version number of xcesAnaIPI.dtd.
+*
+*    Revision 1.5  2006/06/03 12:45:41  adamp
+*    Simplified.
+*
+*    Revision 1.2  2006/06/03 12:33:13  adamp
+*    Changed name from doc2ana.sh to index.morph.sh.
+*
+*    Revision 1.1  2006/06/03 11:43:59  adamp
+*    *** empty log message ***
+*
+*    Revision 1.4  2006/02/03 14:00:50  adamp
+*    Corresponding change of version number (to 1.3).
+*
+*    Revision 1.3  2006/02/03 13:59:03  adamp
+*    Changed (tok|ns)+ to (tok|ns)* - let's hope that Poliqarp can deal with empty chunks...
+*
+*    Revision 1.2  2004-03-16 19:00:48  adamp
+*    ATTLIST for lex was defined twice, so I've removed the first
+*    definition.  This caused version change to IPI-1.2 (maybe it shouldn't
+*    have, but just to be on the safe side).
+*
+*    Revision 1.1.1.1  2004/03/10 19:21:29  adamp
+*    x2XCES converters for the IPI PAN corpus
+*
+*    Revision 1.14  2004/03/01 16:00:48  adamp
+*    New version: 'IPI-1.1'.
+*
+*    Revision 1.13  2004/03/01 15:58:05  adamp
+*    Only typos in comments.
+*
+*    Revision 1.12  2004/03/01 13:58:55  adamp
+*    PB's modifications: the value of 'lang' is CDATA now, and the locus of
+*    xmlns:xlink changed.
+*
+*    Revision 1.11  2004/03/01 10:55:46  adamp
+*    PB's modifications.
+*
+*    Revision 1.11  2004/03/01 01:15:30  piotr
+*    Added fully specified xmlns:xlink (to make the xlink namespace legal)
+*    and the xml:base attribute for use in <chunkList>
+*
+*    $Log: xcesAnaIPI.dtd,v $
+*    Revision 1.1.1.1  2007/11/08 15:26:49  adamp
+*    Spejd
+*
+*    Revision 1.1  2007/10/20 13:11:39  adamp
+*    *** empty log message ***
+*
+*    Revision 1.6  2006/06/03 12:53:28  adamp
+*    Updated version number of xcesAnaIPI.dtd.
+*
+*    Revision 1.5  2006/06/03 12:45:41  adamp
+*    Simplified.
+*
+*    Revision 1.2  2006/06/03 12:33:13  adamp
+*    Changed name from doc2ana.sh to index.morph.sh.
+*
+*    Revision 1.1  2006/06/03 11:43:59  adamp
+*    *** empty log message ***
+*
+*    Revision 1.4  2006/02/03 14:00:50  adamp
+*    Corresponding change of version number (to 1.3).
+*
+*    Revision 1.3  2006/02/03 13:59:03  adamp
+*    Changed (tok|ns)+ to (tok|ns)* - let's hope that Poliqarp can deal with empty chunks...
+*
+*    Revision 1.2  2004-03-16 19:00:48  adamp
+*    ATTLIST for lex was defined twice, so I've removed the first
+*    definition.  This caused version change to IPI-1.2 (maybe it shouldn't
+*    have, but just to be on the safe side).
+*
+*    Revision 1.1.1.1  2004/03/10 19:21:29  adamp
+*    x2XCES converters for the IPI PAN corpus
+*
+*    Revision 1.14  2004/03/01 16:00:48  adamp
+*    New version: 'IPI-1.1'.
+*
+*    Revision 1.13  2004/03/01 15:58:05  adamp
+*    Only typos in comments.
+*
+*    Revision 1.12  2004/03/01 13:58:55  adamp
+*    PB's modifications: the value of 'lang' is CDATA now, and the locus of
+*    xmlns:xlink changed.
+*
+*    Revision 1.11  2004/03/01 10:55:46  adamp
+*    PB's modifications.
+*
+*    Revision 1.10  2004/02/27 22:38:09  adamp
+*    Wyrzucone atrybuty xml..., dodany element <ns> (no space).
+*
+*    Revision 1.9  2004/02/25 23:00:34  adamp
+*    Changes in comments only.
+*
+*    Revision 1.8  2004/02/25 16:36:50  adamp
+*    Re-introducing various modifications by PB.
+*
+*    Revision 1.7  2004/02/22 19:10:58  adamp
+*    Only minor changes in comments.
+*
+*    Revision 1.6  2004/02/12 15:43:47  adamp
+*    *** empty log message ***
+*
+*    Revision 1.5  2004/02/11 22:38:47  adamp
+*    Typo.
+*
+*    Revision 1.4  2004/02/10 17:51:51  adamp
+*    Wersja zawierająca <par> (tak jak w oryginalnym XCES, inaczej niż w
+*    wersji Piotrka Bańskiego).
+*
+*    Revision 1.3  2004/02/10 17:18:09  adamp
+*    No real change, just testing CVS.
+*
+*    Revision 1.2  2004/02/10 17:17:30  adamp
+*    Added xmlns.
+
+  This is a modification of the original CES DTD designed for use with
+  the IPI PAN Corpus.  Created by Adam Przepiórkowski, on the basis of
+  ealier modifications by Piotr Bański, cf. PB (who's the author of
+  the vast majority of changes, as of 9th February 2004).
+
+                                                              -->
+
+<!--                  Global attributes                       -->
+
+<!-- Modification by Piotr Bański: -->
+<!-- The addition of the xlink:href attribute below. -->
+<!-- PB, 010304: 'lang IDREFS' zmienione na 'lang CDATA'. -->
+<!ENTITY % a.global '
+	id		ID                  #IMPLIED
+	n		CDATA               #IMPLIED
+	xml:lang	CDATA               #IMPLIED
+        xlink:href      CDATA               #IMPLIED
+	lang		CDATA               #IMPLIED'		>
+
+<!-- Modification by PB: adding xlink:... attributes.  Also xml:base.  -->
+<!ENTITY % a.ana '%a.global;
+        xml:base        CDATA               #IMPLIED
+	type		CDATA               #IMPLIED
+	wsd		CDATA               #IMPLIED'		>
+ 
+
+<!ELEMENT cesAna	(cesHeader?, chunkList)			>
+<!-- Modification by PB: xmlns:xlink.  -->
+<!ATTLIST cesAna	%a.ana;                         
+	doc		CDATA		#IMPLIED
+        xmlns:xlink     CDATA           "http://www.w3.org/1999/xlink"
+	version		CDATA		#REQUIRED		>
+
+<!ENTITY % xces.header SYSTEM 'xheaderIPI.elt'                       >
+%xces.header;
+
+<!ELEMENT chunkList     (chunk)+                           >
+<!ATTLIST chunkList          %a.ana;                            >
+
+<!-- AP: Chunks contain either smaller chunks or tokens + no white space -->
+<!-- markers. -->
+<!-- AP: Changed + to * - let's hope that Poliqarp can deal with empty chunks... -->
+<!ELEMENT chunk         ((tok|ns)* | chunk+)                 >
+<!-- PB's modification: no attributes 'doc', 'from' and 'to'. -->
+<!ATTLIST chunk              %a.ana;                   >
+
+<!-- AP: elements 'par' and 's' disappear; instead, there chunks of type -->
+<!-- 's' and 'p'. --> 
+
+
+<!-- PB's modification (and comment) -->
+<!--
+threw out the disamb element - it will be an attribute now
+more simplification:
+eliminated msds, cause we use ctags for them; guarantee at least one lex;
+-->
+<!ELEMENT tok           (orth, lex+)              >
+
+<!-- PB's modification: -->
+<!-- Removed attributes 'from' and 'to'. -->
+<!ATTLIST tok                %a.ana;
+          class              CDATA               #IMPLIED >
+
+<!-- AP: Adding a 'no white space between tokens' marker: -->
+<!ELEMENT ns           EMPTY                              >
+
+<!ELEMENT orth          (#PCDATA)                          >
+<!ATTLIST orth               %a.ana;                            >
+
+<!-- PB's modification (and comment): -->
+<!--
+msd removed for simplicity, we use msds as ctags
+and ctags are grouped around a unique base (note: uniqueness of the base is not
+guaranteed by the DTD)
+-->
+<!ELEMENT lex           (base, ctag+)                 >
+<!-- AP: gotten rid of spurious attlist for lex. -->
+<!-- <!ATTLIST lex                %a.ana;                      > -->
+
+
+<!-- Modification by Piotr Bański: -->
+<!-- duplicated 'disamb' with 'human', indicating hand-checked bits -->
+<!ATTLIST lex                %a.ana;
+          disamb        (1 | 0)                   #IMPLIED
+          human         (1 | 0)                   #IMPLIED         >
+
+<!ELEMENT base          (#PCDATA)                          >
+<!ATTLIST base               %a.ana;                            >
+
+<!-- The msd element removed (by PB). -->
+
+<!-- PB's modification and comment: -->
+<!-- added the disamb attribute here -->
+<!ELEMENT ctag          (#PCDATA)                          >
+<!ATTLIST ctag               %a.ana;                            >

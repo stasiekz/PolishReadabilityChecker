@@ -1,0 +1,28 @@
+The ``win32/pthreads/`` directory contains the pthreads-win32 library, version
+2.8.0. It has been downloaded from http://sourceware.org/pthreads-win32/.
+The source is modified in that it's trimmed to ``*.c`` and ``*.h`` files (the
+documentation and tests deleted) and there is a brand new Makefile which
+fits neatly into Poliqarp's build process.
+
+The following license and copyright terms apply to these files:
+
+  Copyright © 1998 John E. Bossom
+  Copyright © 1999-2005 Pthreads-win32 contributors
+  
+  The current list of contributors is contained in the file CONTRIBUTORS
+  included with the source code distribution. The list can also be seen at the
+  following World Wide Web location:
+  http://sources.redhat.com/pthreads-win32/contributors.html
+  
+  This library is free software; you can redistribute it and/or modify it under
+  the terms of the GNU Lesser General Public License as published by the Free
+  Software Foundation; either version 2 of the License, or (at your option) any
+  later version.
+  
+  This library is distributed in the hope that it will be useful, but WITHOUT
+  ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+  FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more
+  details.
+ 
+The complete text of the GNU Lesser General Public License is included in the
+``doc/COPYING.LIB`` file.

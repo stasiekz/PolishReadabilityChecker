@@ -1,0 +1,24 @@
+match_rules(
+	apply(
+		match(
+			optional(equal(base[0], "nie")),
+			repeat(
+				inter(class[0], {adj, ppas, pact})
+			)
+		),
+		actions(
+			mark(M, "AdjP")
+		)
+	);
+ 
+	apply(
+		match(
+			optional(is("AdjP")),
+			inter(class[0], {subst, ger, depr})
+		),
+		actions(
+			mark(M, M, :2, "NP")
+		)
+	)
+)
+

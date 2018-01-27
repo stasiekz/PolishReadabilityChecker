@@ -1,0 +1,14 @@
+match_rules(
+apply(
+  match(
+    text("Sp."),
+    inter(class[0], {prep}),
+    repeat(text("o."))
+  ),
+  actions(
+    mark(:1, "Sp"),
+    mark(:2, "Z"),
+    mark(:3, "O")
+  )
+)
+)

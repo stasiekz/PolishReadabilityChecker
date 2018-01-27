@@ -1,0 +1,31 @@
+Source: corpus2
+Priority: extra
+Maintainer: Adam Radziszewski <adam.radziszewski@pwr.wroc.pl>
+Build-Depends: debhelper (>= 7), cmake, swig, python-dev, libboost-program-options1.42-dev, libboost-system1.42-dev, libboost-filesystem1.42-dev, libboost-regex1.42-dev, libedit-dev, libxml++2.6-dev, libicu-dev (>= 4.2)
+Standards-Version: 3.8.3
+Section: libs
+Homepage: http://nlp.pwr.wroc.pl/redmine/projects/libpltagger/wiki
+
+Package: libcorpus2-dev
+Section: libdevel
+Architecture: any
+Depends: libcorpus2 (= ${binary:Version})
+Description: data structures and I/O for morpho-syntactic processing of Polish
+ Library providing convenient framework of corpus readers and writers
+ to process morpho-syntactically annotated text, targeted at Polish.
+ Corpus2 supports configurable tagset, Unicode. Data structures for tagset,
+ tag, sentence and token are provided.
+ The package also gives convenient Python wrappers that support rapid
+ NLP application development.
+
+Package: libcorpus2
+Section: libs
+Architecture: any
+Depends: swig, python, libxml++2.6, ${shlibs:Depends}, ${misc:Depends}
+Description: data structures and I/O for morpho-syntactic processing of Polish
+ Library providing convenient framework of corpus readers and writers
+ to process morpho-syntactically annotated text, targeted at Polish.
+ Corpus2 supports configurable tagset, Unicode. Data structures for tagset,
+ tag, sentence and token are provided.
+ The package also gives convenient Python wrappers that support rapid
+ NLP application development.

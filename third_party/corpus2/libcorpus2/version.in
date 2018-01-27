@@ -1,0 +1,9 @@
+#ifndef LIBCORPUS2_VERSION_H
+#define LIBCORPUS2_VERSION_H
+
+#define LIBCORPUS2_VERSION_MAJOR @corpus2_ver_major@
+#define LIBCORPUS2_VERSION_MINOR @corpus2_ver_minor@
+#define LIBCORPUS2_VERSION_PATCH @corpus2_ver_patch@
+#define LIBCORPUS2_VERSION "@LIBCORPUS2_VERSION@"
+
+#endif

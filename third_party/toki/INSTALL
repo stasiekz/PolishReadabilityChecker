@@ -1,0 +1,28 @@
+To install the library and the test application, you'll need CMake 2.6.
+
+Required libraries:
+• ICU 4.2
+• Boost 1.41
+• Loki
+• libxml++2.6 (for SRX support)
+• libpwrutils from corpus2 repository, http://nlp.pwr.wroc.pl/corpus2.git
+
+These libraries must be installed along with their headers. If you are using a repository with older versions (provided by your Linux distribution), you may need to uninstall the old versions from the repository and install new from sources.
+
+To install, issue the following:
+
+cmake -i
+
+(or maybe  ``CXX=/usr/lib/distcc/g++ CXXFLAGS="-march=i686 -m32" cmake -i'' or similar)
+
+and confirm the proposed default values (when asked for seeing advanced options, confirm No). There should be no errors; if there are any, they probably come from lack of the required libraries. If there are errors and you want to retry the install procedure (having installed the missing libraries), remove the CMakeCache.txt file to make sure CMake hasn't memorised the previous state of your system.
+
+After running CMake successfully, you are ready to proceed with the standard make-and-install procedure:
+
+make
+
+(wait for it to finish, make sure there are no errors)
+
+sudo make install
+
+make test (if you want to run the unit tests)

@@ -1,0 +1,48 @@
+WCRFT, Wrocław CRF Tagger
+(C) 2012 Adam Radziszewski (name.surname at pwr.wroc.pl)
+Istitute of Informatics, Wrocław University of Technology
+
+http://nlp.pwr.wroc.pl/redmine/projects/wcrft/wiki
+
+Dependencies:
+* g++ 4.6.3
+* CRF++ - http://crfpp.googlecode.com/svn/trunk/doc/index.html
+* Corpus2 library (http://nlp.pwr.wroc.pl/redmine/projects/libpltagger/wiki)
+* MACA library (http://nlp.pwr.wroc.pl/redmine/projects/libpltagger/wiki)
+* Morfeusz SGJP (http://sgjp.pl/morfeusz/index.html), please install it before installing MACA so that it also builds Morfeusz plugin
+* WCCL library (http://nlp.pwr.wroc.pl/redmine/projects/joskipi/wiki)
+
+WCRFT (Wrocław CRF Tagger) is a simple morpho-syntactic tagger for Polish.
+
+The tagger combines tiered tagging, conditional random fields (CRF) and features tailored for inflective languages written in WCCL. The algorithm and code are inspired by Wrocław Memory-Based Tagger. WCRFT uses CRF++ API as the underlying CRF implementation.
+
+Tiered tagging is assumed. Grammatical class is disambiguated first, then subsequent attributes (as defined in a config file) are taken care of. Each attribute is treated with a separate CRF and may be supplied a different set of feature templates.
+
+The tagger is able to tag morphologically analysed input (sentences divided into tokens, tokens assigned lists of candidate interpretations).
+If you need to tag plain text, it is recommended to use MACA for the analysis (http://nlp.pwr.wroc.pl/redmine/projects/libpltagger/wiki).
+
+
+Instalation:
+First you need to install the above dependencies. Then run the setup.py installation script:
+sudo ./setup.py install
+
+This will install the code (including the wcrft executable and Python module with the same name) as well as configuration files.
+Note that no trained model will be installed, as the models are generally too large to be stored in the repository. You can obtain a trained model from the project site.
+There are two possibilities with respect to placement of the model:
+* you can keep it locally (e.g. in you home directory) and provide path to it when running wcrft (point to the model directory with -d),
+* you can locate the "model" subdirectory in the installation directory for Python modules default for your system (e.g. /usr/local/lib/python2.6/dist-packages/wcrft-....egg/wcrft/model) and put the model directory there for system-wide installation (then point just to the name of model directory with -d).
+
+
+Basic usage:
+The package comes with ready-made configuration for tagging (NCP, nkjp.pl) tagset. The configuration is config/nkjp.ini. A configuration specifies parameter values and points to a file with features used for different layers. To get a working tagger, a TRAINED MODEL is also needed. You can obtain one by training the tagger with a reference corpus and storing the model to a given directory, for instance:
+
+wcrft-app -d path/to/nkjp_model config/nkjp_s2.ini --train path/to/training-corpus.xml -i xces
+
+Note: for best results it is highly recommended to re-analyse the training data using the same version of morphological analyser (e.g. the same MACA config) as will be using during tagger usage. The model available for download at the WCRFT wiki page already includes this.
+
+To use the trained model to tag a single file:
+
+wcrft-app -d path/to/nkjp_model config/nkjp_s2.ini input.xml -O tagged.xml
+
+For more details, see wcrft-app -h and the project wiki.
+

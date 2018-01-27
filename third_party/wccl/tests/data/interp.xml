@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cesAna SYSTEM "xcesAnaIPI.dtd">
+<cesAna xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" type="lex disamb">
+<chunkList>
+ <chunk>
+  <chunk type="s">
+   <tok>
+    <orth>Idę</orth>
+    <lex><base>iść</base><ctag>verb</ctag></lex>
+   </tok>
+   <tok>
+    <orth>na</orth>
+    <lex><base>na</base><ctag>other</ctag></lex>
+   </tok>
+   <tok>
+    <orth>„</orth>
+    <lex><base>„</base><ctag>interp</ctag></lex>
+   </tok>
+   <ns/>
+   <tok>
+    <orth>Czarnego</orth>
+    <lex><base>czarny</base><ctag>adj</ctag></lex>
+   </tok>
+   <tok>
+    <orth>Kota</orth>
+    <lex><base>kot</base><ctag>noun</ctag></lex>
+    <lex><base>kota</base><ctag>noun</ctag></lex>
+   </tok>
+   <tok>
+    <orth>(</orth>
+    <lex><base>(</base><ctag>interp</ctag></lex>
+   </tok>
+   <ns/>
+   <tok>
+    <orth>1998</orth>
+    <lex><base>1998</base><ctag>unk</ctag></lex>
+   </tok>
+   <ns/>
+   <tok>
+    <orth>)</orth>
+    <lex><base>)</base><ctag>interp</ctag></lex>
+   </tok>
+   <ns/>
+   <tok>
+    <orth>”</orth>
+    <lex><base>”</base><ctag>interp</ctag></lex>
+   </tok>
+   <tok>
+    <orth>do</orth>
+    <lex><base>do</base><ctag>other</ctag></lex>
+   </tok>
+   <tok>
+    <orth>kina</orth>
+    <lex><base>kino</base><ctag>noun</ctag></lex>
+   </tok>
+   <tok>
+    <orth>—</orth>
+    <lex><base>—</base><ctag>interp</ctag></lex>
+   </tok>
+   <tok>
+    <orth>już</orth>
+    <lex><base>już</base><ctag>qub</ctag></lex>
+   </tok>
+   <tok>
+    <orth>czas</orth>
+    <lex><base>czas</base><ctag>noun</ctag></lex>
+    <lex><base>czas</base><ctag>verb</ctag></lex>
+   </tok>
+   <ns/>
+   <tok>
+    <orth>.</orth>
+    <lex><base>.</base><ctag>interp</ctag></lex>
+   </tok>
+  </chunk>
+ </chunk>
+</chunkList>
+</cesAna>

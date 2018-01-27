@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cesAna SYSTEM "xcesAnaIPI.dtd">
+<cesAna xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" type="lex disamb">
+<chunkList>
+ <chunk>
+  <chunk type="s">
+   <tok>
+    <orth>Kobieta</orth>
+    <lex><base>kobieta</base><ctag>subst:sg:nom:f</ctag></lex>
+   </tok>
+   <tok>
+    <orth>nie</orth>
+    <lex><base>nie</base><ctag>qub</ctag></lex>
+  </tok>
+   <tok>
+    <orth>bita</orth>
+    <lex><base>bity</base><ctag>adj:sg:nom:f:pos</ctag></lex>
+    <lex><base>bić</base><ctag>ppas:sg:nom:f:imperf:aff</ctag></lex>
+   </tok>
+   <tok>
+    <orth>to</orth>
+    <lex><base>to</base><ctag>conj</ctag></lex>
+   </tok>
+   <tok>
+    <orth>jak</orth>
+    <lex><base>jak</base><ctag>conj</ctag></lex>
+   </tok>
+   <tok>
+    <orth>kosa</orth>
+    <lex><base>kosa</base><ctag>subst:sg:nom:f</ctag></lex>
+    <lex><base>kosy</base><ctag>adj:sg:nom:f:pos</ctag></lex>
+    <lex><base>kosy</base><ctag>adj:sg:voc:f:pos</ctag></lex>
+   </tok>
+   <tok>
+    <orth>nie</orth>
+    <lex><base>nie</base><ctag>qub</ctag></lex>
+  </tok>
+   <tok>
+    <orth>klepana</orth>
+    <lex><base>klepać</base><ctag>ppas:sg:nom:f:imperf:aff</ctag></lex>
+    <lex><base>klepać</base><ctag>ppas:sg:voc:f:imperf:aff</ctag></lex>
+   </tok>
+   <ns/>
+   <tok>
+    <orth>!</orth>
+    <lex><base>!</base><ctag>interp</ctag></lex>
+   </tok>
+  </chunk>
+ </chunk>
+</chunkList>
+</cesAna>

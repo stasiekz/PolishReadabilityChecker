@@ -1,0 +1,84 @@
+tagset=simple
+sentence=interp.xml
+---
+skip(0,$P, inter(class[$P],interp), 0)
+
+True
+P=0
+---
+skip(0,$P, inter(class[$P],interp), 1)
+
+True
+P=1
+---
+skip(0,$P, inter(class[$P],interp), 8)
+
+True
+P=13
+---
+skip(-1,$P, inter(class[$P],interp), 0)
+
+False
+P=nowhere
+---
+skip(0,$P, inter(class[$P],interp), 1)
+
+True
+P=1
+---
+skip(0,$P, inter(class[$P],interp), 2)
+
+True
+P=3
+---
+skip(0,$P, inter(class[$P],interp), 3)
+
+True
+P=4
+---
+
+skip(0,$P, inter(class[$P],interp), 5)
+
+True
+P=9
+---
+skip(0,$P, inter(class[$P],interp), 9) // OOS
+
+False
+P=nowhere
+---
+skip(2,$P, inter(class[$P],interp), 0) // at skipped
+
+True
+P=2
+---
+skip(2,$P, inter(class[$P],interp), 1) // at skipped
+
+True
+P=3
+---
+skip(2,$P, inter(class[$P],interp), -1) // at skipped
+
+True
+P=1
+---
+skip(11,$P, inter(class[$P],interp), -1) // już -> kina
+
+True
+P=10
+---
+skip(11,$P, inter(class[$P],interp), -2) // już -> do
+
+True
+P=9
+---
+skip(11,$P, inter(class[$P],interp), -6) // już -> na
+
+True
+P=1
+---
+skip(11,$P, inter(class[$P],interp), -8) // już -> OOS
+
+False
+P=nowhere
+---

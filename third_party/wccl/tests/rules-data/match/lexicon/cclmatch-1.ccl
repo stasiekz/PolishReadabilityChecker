@@ -1,0 +1,19 @@
+import("prep-qub.lex", "qp")
+
+match_rules(
+  apply(
+    match(
+      repeat(
+        equal(lex(lower(orth[0]), "qp"), "qub")
+      )
+    ),
+    actions(mark(M, "QP"))
+  );
+  apply(
+    match(
+      equal(lex(lower(orth[0]), "qp"), ["prep"]),
+      inter(class[0], {noun,other})
+    ),
+    actions(mark(M, "PrepNP"))
+  )
+)

@@ -1,0 +1,11 @@
+match_rules(
+apply(
+  match(
+    optional(equal(class[0], other)),
+    repeat(inter(class[0], adj))
+  ),
+  actions(
+    unmark(M, "A")
+  )
+)
+)

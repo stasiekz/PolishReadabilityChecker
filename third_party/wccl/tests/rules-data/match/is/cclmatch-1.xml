@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cesAna SYSTEM "xcesAnaIPI.dtd">
+<cesAna xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" type="lex disamb">
+<chunkList>
+ <chunk id="ch1" type="p">
+  <sentence>
+   <tok>
+    <orth>To</orth>
+    <lex><base>ten</base><ctag>adj:sg:nom:n:pos</ctag></lex>
+    <lex><base>ten</base><ctag>adj:sg:acc:n:pos</ctag></lex>
+    <lex><base>to</base><ctag>conj</ctag></lex>
+    <lex><base>to</base><ctag>pred</ctag></lex>
+    <lex><base>to</base><ctag>qub</ctag></lex>
+    <lex><base>to</base><ctag>subst:sg:nom:n</ctag></lex>
+    <lex><base>to</base><ctag>subst:sg:acc:n</ctag></lex>
+    <lex><base>to</base><ctag>subst:sg:voc:n</ctag></lex>
+    <ann chan="N_NOM" head="1">1</ann>
+   </tok>
+   <tok>
+    <orth>jest</orth>
+    <lex><base>być</base><ctag>fin:sg:ter:imperf</ctag></lex>
+    <ann chan="N_NOM">0</ann>
+   </tok>
+   <tok>
+    <orth>wyżyna</orth>
+    <lex><base>wyżyna</base><ctag>subst:sg:nom:f</ctag></lex>
+    <ann chan="N_NOM" head="1">2</ann>
+   </tok>
+   <tok>
+    <orth>pies</orth>
+    <lex><base>pies</base><ctag>subst:sg:nom:m2</ctag></lex>
+    <ann chan="N_NOM">2</ann>
+   </tok>
+  </sentence>
+ </chunk>
+</chunkList>
+</cesAna>
